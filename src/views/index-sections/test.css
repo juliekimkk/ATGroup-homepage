@@ -1,0 +1,18 @@
+
+.company_story {
+    position: relative;
+    display: flex;
+    width: 25%;
+    height: 450px;
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f6f7;
+      .divider {
+        position: relative;
+        width: 50px;
+        background: #101010";
+        height: 2px;
+        margin: 0 auto
+    
+      }
+  }
