@@ -37,36 +37,26 @@ import ATA from "views/business/ATA";
 import ATB from "views/business/ATB";
 import ATC from "views/business/ATC";
 import ATN from "views/business/ATN";
+import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Switch>
         <Route path="/index" render={(props) => <Index {...props} />} />
-        {/* <Route
-          path="/nucleo-icons"
-          render={(props) => <NucleoIcons {...props} />}
-        />
-        <Route
-          path="/landing-page"
-          render={(props) => <LandingPage {...props} />}
-        />
-        <Route
-          path="/profile-page"
-          render={(props) => <ProfilePage {...props} />}
-        />
-        <Route
-          path="/login-page"
-          render={(props) => <LoginPage {...props} />}
-        /> */}
 
+        <Route path="/history" render={(props) => <History {...props} />} />
+        <Route path="/ATA" render={(props) => <ATA {...props} />} />
+        <Route path="/ATB" render={(props) => <ATB {...props} />} />
+        <Route path="/ATC" render={(props) => <ATC {...props} />} />
+        {/* 
         <Route exact path="/history" component={History} />
         <Route exact path="/vision" component={Vision} />
 
         <Route exact path="/ATA" component={ATA} />
         <Route exact path="/ATB" component={ATB} />
         <Route exact path="/ATC" component={ATC} />
-        <Route exact path="/ATN" component={ATN}></Route>
+        <Route exact path="/ATN" component={ATN}></Route> */}
 
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />
@@ -75,3 +65,4 @@ ReactDOM.render(
   </BrowserRouter>,
   document.getElementById("root")
 );
+reportWebVitals();
