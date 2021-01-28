@@ -25,7 +25,7 @@ import "assets/scss/now-ui-kit.scss?v=1.4.0";
 import "assets/demo/demo.css?v=1.4.0";
 import "assets/demo/nucleo-icons-page-styles.css?v=1.4.0";
 // pages for this kit
-import App from "views/App.js";
+import App from "App.js";
 import NucleoIcons from "views/NucleoIcons.js";
 // import LoginPage from "views/examples/LoginPage.js";
 // import LandingPage from "views/examples/LandingPage.js";
@@ -170,9 +170,9 @@ ReactDOM.render(
         <Route exact path="/ATB" component={ATB} />
         <Route exact path="/ATC" component={ATC} />
         <Route exact path="/ATN" component={ATN}></Route> */}
-
-      <Redirect path="*" to="/" />
-      {/* <Redirect from="/" to="/App" /> */}
+      {/* 
+      <Redirect path="*" to="/" /> */}
+      <Redirect from="/" to="/App" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
