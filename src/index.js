@@ -84,7 +84,10 @@ ReactDOM.render(
         path="/historyText2"
         render={(props) => <HistoryText2 {...props} />}
       />
-      <Route path="/ATN" render={(props) => <ATN {...props} />} />
+      <Route
+        path="/atgroup.netlify.app/ATA"
+        render={(props) => <ATN {...props} />}
+      />
       <Route path="/ATseperate" render={(props) => <ATseperate {...props} />} />
       <Route
         path="/BasicElements"
