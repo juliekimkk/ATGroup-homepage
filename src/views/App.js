@@ -29,7 +29,7 @@ import SignUp from "./index-sections/SignUp.js";
 import Examples from "./index-sections/Examples.js";
 import Download from "./index-sections/Download.js";
 
-function Index() {
+function App() {
   React.useEffect(() => {
     document.body.classList.add("index-page");
     document.body.classList.add("sidebar-collapse");
@@ -48,9 +48,9 @@ function Index() {
         <IndexHeader />
         <div className="main">
           <Content />
-          {/* <Footer /> */}
+          <Footer />
 
-          {/* <BasicElements />
+          <BasicElements />
           <Navbars />
           <Tabs />
           <Pagination />
@@ -62,7 +62,7 @@ function Index() {
           <CompleteExamples />
           <SignUp />
           <Examples />
-          <Download /> */}
+          <Download />
         </div>
         <DarkFooter />
       </div>
@@ -70,4 +70,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default App;
