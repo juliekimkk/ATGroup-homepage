@@ -69,116 +69,100 @@ import IndexNavbar from "components/Navbars/IndexNavbar";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Switch>
-        <Route path="/App" render={(props) => <App {...props} />} />
+      <Route path="/App" render={(props) => <App {...props} />} />
 
-        <Route path="/history" render={(props) => <History {...props} />} />
-        <Route path="/ATA" render={(props) => <ATA {...props} />} />
-        <Route path="/ATB" render={(props) => <ATB {...props} />} />
-        <Route path="/ATC" render={(props) => <ATC {...props} />} />
+      <Route path="/history" render={(props) => <History {...props} />} />
+      <Route path="/ATA" render={(props) => <ATA {...props} />} />
+      <Route path="/ATB" render={(props) => <ATB {...props} />} />
+      <Route path="/ATC" render={(props) => <ATC {...props} />} />
 
-        <Route
-          path="/historyText"
-          render={(props) => <HistoryText {...props} />}
-        />
-        <Route
-          path="/historyText2"
-          render={(props) => <HistoryText2 {...props} />}
-        />
-        <Route path="/ATN" render={(props) => <ATN {...props} />} />
-        <Route
-          path="/ATseperate"
-          render={(props) => <ATseperate {...props} />}
-        />
-        <Route
-          path="/BasicElements"
-          render={(props) => <BasicElements {...props} />}
-        />
-        <Route
-          path="/Carousel"
-          render={(props) => <CarouselSection {...props} />}
-        />
-        <Route
-          path="/completeExamples"
-          render={(props) => <CompleteExamples {...props} />}
-        />
-        <Route path="/Content" render={(props) => <Content {...props} />} />
-        <Route path="/Download" render={(props) => <Download {...props} />} />
-        <Route path="/Examples" render={(props) => <Examples {...props} />} />
-        <Route path="/Footer" render={(props) => <Footer {...props} />} />
-        <Route
-          path="/HeaderText"
-          render={(props) => <HeaderText {...props} />}
-        />
-        <Route
-          path="/Javascript"
-          render={(props) => <Javascript {...props} />}
-        />
-        <Route path="/Navbars" render={(props) => <Navbars {...props} />} />
-        <Route
-          path="/Notifications"
-          render={(props) => <Notifications {...props} />}
-        />
-        <Route
-          path="/NucleoIcons"
-          render={(props) => <NucleoIcons {...props} />}
-        />
-        <Route
-          path="/Pagination"
-          render={(props) => <PaginationSection {...props} />}
-        />
-        <Route path="/SignUp" render={(props) => <SignUp {...props} />} />
-        <Route path="/Strategy" render={(props) => <Strategy {...props} />} />
-        <Route path="/Tabs" render={(props) => <Tabs {...props} />} />
+      <Route
+        path="/historyText"
+        render={(props) => <HistoryText {...props} />}
+      />
+      <Route
+        path="/historyText2"
+        render={(props) => <HistoryText2 {...props} />}
+      />
+      <Route path="/ATN" render={(props) => <ATN {...props} />} />
+      <Route path="/ATseperate" render={(props) => <ATseperate {...props} />} />
+      <Route
+        path="/BasicElements"
+        render={(props) => <BasicElements {...props} />}
+      />
+      <Route
+        path="/Carousel"
+        render={(props) => <CarouselSection {...props} />}
+      />
+      <Route
+        path="/completeExamples"
+        render={(props) => <CompleteExamples {...props} />}
+      />
+      <Route path="/Content" render={(props) => <Content {...props} />} />
+      <Route path="/Download" render={(props) => <Download {...props} />} />
+      <Route path="/Examples" render={(props) => <Examples {...props} />} />
+      <Route path="/Footer" render={(props) => <Footer {...props} />} />
+      <Route path="/HeaderText" render={(props) => <HeaderText {...props} />} />
+      <Route path="/Javascript" render={(props) => <Javascript {...props} />} />
+      <Route path="/Navbars" render={(props) => <Navbars {...props} />} />
+      <Route
+        path="/Notifications"
+        render={(props) => <Notifications {...props} />}
+      />
+      <Route
+        path="/NucleoIcons"
+        render={(props) => <NucleoIcons {...props} />}
+      />
+      <Route
+        path="/Pagination"
+        render={(props) => <PaginationSection {...props} />}
+      />
+      <Route path="/SignUp" render={(props) => <SignUp {...props} />} />
+      <Route path="/Strategy" render={(props) => <Strategy {...props} />} />
+      <Route path="/Tabs" render={(props) => <Tabs {...props} />} />
 
-        <Route
-          path="/Typography"
-          render={(props) => <Typography {...props} />}
-        />
-        <Route
-          path="/NucleoIcons"
-          render={(props) => <NucleoIcons {...props} />}
-        />
-        <Route
-          path="/reportWebVitals"
-          render={(props) => <reportWebVitals {...props} />}
-        />
-        <Route
-          path="/DarkFooter"
-          render={(props) => <DarkFooter {...props} />}
-        />
+      <Route path="/Typography" render={(props) => <Typography {...props} />} />
+      <Route
+        path="/NucleoIcons"
+        render={(props) => <NucleoIcons {...props} />}
+      />
+      <Route
+        path="/reportWebVitals"
+        render={(props) => <reportWebVitals {...props} />}
+      />
+      <Route path="/DarkFooter" render={(props) => <DarkFooter {...props} />} />
 
-        <Route
-          path="/DefaultFooter"
-          render={(props) => <DefaultFooter {...props} />}
-        />
+      <Route
+        path="/DefaultFooter"
+        render={(props) => <DefaultFooter {...props} />}
+      />
 
-        <Route
-          path="/TransparentFooter"
-          render={(props) => <TransparentFooter {...props} />}
-        />
-        <Route
-          path="/IndexHeader"
-          render={(props) => <IndexHeader {...props} />}
-        />
-        <Route
-          path="/LandingPageHeader"
-          render={(props) => <LandingPageHeader {...props} />}
-        />
-        <Route
-          path="/ProfilePageHeader"
-          render={(props) => <ProfilePageHeader {...props} />}
-        />
-        <Route
-          path="/ExamplesNavbar"
-          render={(props) => <ExamplesNavbar {...props} />}
-        />
-        <Route
-          path="/IndexNavbar"
-          render={(props) => <IndexNavbar {...props} />}
-        />
+      <Route
+        path="/TransparentFooter"
+        render={(props) => <TransparentFooter {...props} />}
+      />
+      <Route
+        path="/IndexHeader"
+        render={(props) => <IndexHeader {...props} />}
+      />
+      <Route
+        path="/LandingPageHeader"
+        render={(props) => <LandingPageHeader {...props} />}
+      />
+      <Route
+        path="/ProfilePageHeader"
+        render={(props) => <ProfilePageHeader {...props} />}
+      />
+      <Route
+        path="/ExamplesNavbar"
+        render={(props) => <ExamplesNavbar {...props} />}
+      />
+      <Route
+        path="/IndexNavbar"
+        render={(props) => <IndexNavbar {...props} />}
+      />
 
-        {/* 
+      {/* 
         <Route exact path="/history" component={History} />
         <Route exact path="/vision" component={Vision} />
 
@@ -187,9 +171,8 @@ ReactDOM.render(
         <Route exact path="/ATC" component={ATC} />
         <Route exact path="/ATN" component={ATN}></Route> */}
 
-        <Redirect to="/App" />
-        <Redirect from="/" to="/App" />
-      </Switch>
+      <Redirect path="*" to="/" />
+      {/* <Redirect from="/" to="/App" /> */}
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
