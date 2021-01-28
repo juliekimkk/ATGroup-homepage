@@ -72,10 +72,12 @@ ReactDOM.render(
       <Route path="/App" render={(props) => <App {...props} />} />
 
       <Route path="/history" render={(props) => <History {...props} />} />
-      <Route path="/ATA" render={(props) => <ATA {...props} />} />
+      <Route
+        path="/atgroup.netlify.app/ATA"
+        render={(props) => <ATA {...props} />}
+      />
       <Route path="/ATB" render={(props) => <ATB {...props} />} />
       <Route path="/ATC" render={(props) => <ATC {...props} />} />
-
       <Route
         path="/historyText"
         render={(props) => <HistoryText {...props} />}
@@ -84,10 +86,7 @@ ReactDOM.render(
         path="/historyText2"
         render={(props) => <HistoryText2 {...props} />}
       />
-      <Route
-        path="/atgroup.netlify.app/ATA"
-        render={(props) => <ATN {...props} />}
-      />
+
       <Route path="/ATseperate" render={(props) => <ATseperate {...props} />} />
       <Route
         path="/BasicElements"
@@ -123,7 +122,6 @@ ReactDOM.render(
       <Route path="/SignUp" render={(props) => <SignUp {...props} />} />
       <Route path="/Strategy" render={(props) => <Strategy {...props} />} />
       <Route path="/Tabs" render={(props) => <Tabs {...props} />} />
-
       <Route path="/Typography" render={(props) => <Typography {...props} />} />
       <Route
         path="/NucleoIcons"
@@ -134,12 +132,10 @@ ReactDOM.render(
         render={(props) => <reportWebVitals {...props} />}
       />
       <Route path="/DarkFooter" render={(props) => <DarkFooter {...props} />} />
-
       <Route
         path="/DefaultFooter"
         render={(props) => <DefaultFooter {...props} />}
       />
-
       <Route
         path="/TransparentFooter"
         render={(props) => <TransparentFooter {...props} />}
@@ -164,7 +160,6 @@ ReactDOM.render(
         path="/IndexNavbar"
         render={(props) => <IndexNavbar {...props} />}
       />
-
       {/* 
         <Route exact path="/history" component={History} />
         <Route exact path="/vision" component={Vision} />
