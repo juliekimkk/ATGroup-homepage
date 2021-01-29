@@ -1,9 +1,0 @@
-/history    /history
-/ATB  /ATB
-
-[[redirects]]
-  from = "/ATC"
-  to = "https://flamboyant-brahmagupta-ac1358.netlify.app/ATC"
-  status = 200
-  force = true
-  headers = {X-From = "Netlify"}
