@@ -14,6 +14,9 @@ import {
   NavLink,
   Nav,
   Container,
+  PopoverBody,
+  PopoverHeader,
+  UncontrolledPopover,
   UncontrolledTooltip,
 } from "reactstrap";
 
@@ -155,7 +158,16 @@ function IndexNavbar() {
                 </DropdownMenu>
               </UncontrolledDropdown>
               {/*세번째 영역 */}
-              <NavItem>
+              {/* <Button
+                id="tooltip822900491"
+                className="nav-link btn-neutral"
+                style={{ color: "black", fontWeight: "bold" }}
+              >
+                English
+              </Button> */}
+              {/* <PopoverHeader id="tooltip822900491">English</PopoverHeader> */}
+
+              {/* <NavItem>
                 <Link to="/index">
                   <Button
                     className="nav-link btn-neutral"
@@ -165,7 +177,7 @@ function IndexNavbar() {
                     <p>ENGLISH</p>
                   </Button>
                 </Link>
-              </NavItem>
+              </NavItem> */}
             </Nav>
           </Collapse>
         </Container>

@@ -4,7 +4,8 @@ import "aos/dist/aos.css";
 import { AnimationWrapper } from "react-hover-animation";
 import styled, { keyframes } from "styled-components";
 import ATAbutton from "../business/ATA";
-import { BrowserRouter as NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Button } from "reactstrap";
 
 const Ourstory = styled.div`
   width: 100%;
@@ -84,13 +85,13 @@ const PText = styled.div`
   &:hover {
   }
 `;
-const ATALink = styled.div`
-  position: relative;
-  width: 100%;
-  height: 36px;
-  margin: 0 auto;
-  margin-top: 10%;
-`;
+// const ATALink = styled.div`
+//   position: relative;
+//   width: 100%;
+//   height: 36px;
+//   margin: 0 auto;
+//   margin-top: 10%;
+// `;
 
 const ButtonStyle = styled.button`
   margin-top: 3%;
@@ -191,9 +192,8 @@ const ATseperate = () => {
                       </AnimationWrapper>
                     </PText>
 
-                    <ATALink>
+                    <Link to="/ATA">
                       <a
-                        href="/ATA"
                         className="Link_detail"
                         style={{
                           border: "solid black 1px",
@@ -208,7 +208,7 @@ const ATseperate = () => {
                       >
                         View Details
                       </a>
-                    </ATALink>
+                    </Link>
                   </CompanyStory>
                 </div>
 
@@ -239,7 +239,7 @@ const ATseperate = () => {
                       </AnimationWrapper>
                     </PText>
 
-                    <ATALink>
+                    <Link to="/ATB">
                       <a
                         href="/ATB"
                         className="Link_detail"
@@ -256,7 +256,7 @@ const ATseperate = () => {
                       >
                         View Details
                       </a>
-                    </ATALink>
+                    </Link>
                   </CompanyStory>
                 </div>
               </Content_section_oneline>
@@ -276,9 +276,8 @@ const ATseperate = () => {
                       </AnimationWrapper>
                     </PText>
 
-                    <ATALink>
+                    <Link to="/ATC">
                       <a
-                        href="/ATC"
                         className="Link_detail"
                         style={{
                           border: "solid black 1px",
@@ -293,7 +292,7 @@ const ATseperate = () => {
                       >
                         View Details
                       </a>
-                    </ATALink>
+                    </Link>
                   </CompanyStory>
                 </div>
 
@@ -325,9 +324,8 @@ const ATseperate = () => {
                       </AnimationWrapper>
                     </PText>
 
-                    <ATALink>
+                    <Link to="/history">
                       <a
-                        href="/History"
                         className="Link_detail"
                         style={{
                           border: "solid black 1px",
@@ -342,7 +340,7 @@ const ATseperate = () => {
                       >
                         View Details
                       </a>
-                    </ATALink>
+                    </Link>
                   </CompanyStory>
                 </div>
 

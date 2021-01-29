@@ -160,9 +160,7 @@ function Javascript() {
               </Button>
               <UncontrolledPopover placement="bottom" target="tooltip822900491">
                 <PopoverHeader>Popover on Bottom</PopoverHeader>
-                <PopoverBody>
-                  Here will be some very useful information about his popover.
-                </PopoverBody>
+                <PopoverBody>comming soon</PopoverBody>
               </UncontrolledPopover>
             </Col>
             <br></br>

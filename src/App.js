@@ -50,7 +50,7 @@ function App() {
           <Content />
           <Footer />
 
-          <BasicElements />
+          {/* <BasicElements />
           <Navbars />
           <Tabs />
           <Pagination />
@@ -62,7 +62,7 @@ function App() {
           <CompleteExamples />
           <SignUp />
           <Examples />
-          <Download />
+          <Download /> */}
         </div>
         <DarkFooter />
       </div>
