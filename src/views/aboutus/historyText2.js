@@ -5,6 +5,7 @@ import { bounce, bounceInLeft, fadeInUp } from "react-animations";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import DarkFooter from "components/Footers/DarkFooter";
+import { Link } from "react-router-dom";
 
 const Content = styled.div`
   position: relative;
@@ -80,25 +81,22 @@ const HistoryText2 = () => {
                 align: "center",
               }}
             ></img>
-            <ATALink>
-              <a
-                href="/ATA"
-                className="Link_detail"
-                style={{
-                  border: "solid black 2px",
-                  display: "block",
-                  width: "140px",
-                  height: "30px",
-                  margin: "0 auto",
-                  textDecoration: "none",
-                  color: "black",
-                  fontWeight: "bold",
-                  borderRadius: "50px 50px 50px 50px",
-                }}
-              >
-                바로가기
-              </a>
-            </ATALink>
+            <Link
+              to="/ATA"
+              style={{
+                border: "solid black 2px",
+                display: "block",
+                width: "140px",
+                height: "30px",
+                margin: "0 auto",
+                textDecoration: "none",
+                color: "black",
+                fontWeight: "bold",
+                borderRadius: "50px 50px 50px 50px",
+              }}
+            >
+              바로가기
+            </Link>
           </div>
 
           <div
@@ -128,25 +126,22 @@ const HistoryText2 = () => {
                 marginTop: "15px",
               }}
             ></img>{" "}
-            <ATALink>
-              <a
-                href="/ATB"
-                className="Link_detail"
-                style={{
-                  border: "solid black 2px",
-                  display: "block",
-                  width: "140px",
-                  height: "30px",
-                  margin: "0 auto",
-                  textDecoration: "none",
-                  color: "black",
-                  fontWeight: "bold",
-                  borderRadius: "50px 50px 50px 50px",
-                }}
-              >
-                바로가기
-              </a>
-            </ATALink>
+            <Link
+              to="/ATA"
+              style={{
+                border: "solid black 2px",
+                display: "block",
+                width: "140px",
+                height: "30px",
+                margin: "0 auto",
+                textDecoration: "none",
+                color: "black",
+                fontWeight: "bold",
+                borderRadius: "50px 50px 50px 50px",
+              }}
+            >
+              바로가기
+            </Link>
           </div>
           <div
             style={{ width: "25%" }}
@@ -169,25 +164,22 @@ const HistoryText2 = () => {
               src={require("assets/img/ATC.png")}
               style={{ width: "100px", height: "100px", margin: "10px" }}
             ></img>{" "}
-            <ATALink>
-              <a
-                href="/ATC"
-                className="Link_detail"
-                style={{
-                  border: "solid black 2px",
-                  display: "block",
-                  width: "140px",
-                  height: "30px",
-                  margin: "0 auto",
-                  textDecoration: "none",
-                  color: "black",
-                  fontWeight: "bold",
-                  borderRadius: "50px 50px 50px 50px",
-                }}
-              >
-                바로가기
-              </a>
-            </ATALink>
+            <Link
+              to="/ATA"
+              style={{
+                border: "solid black 2px",
+                display: "block",
+                width: "140px",
+                height: "30px",
+                margin: "0 auto",
+                textDecoration: "none",
+                color: "black",
+                fontWeight: "bold",
+                borderRadius: "50px 50px 50px 50px",
+              }}
+            >
+              바로가기
+            </Link>
           </div>
           {/* <div
             style={{ width: "25%" }}
