@@ -48,7 +48,7 @@ function App() {
         <IndexHeader />
         <div className="main">
           <Content />
-          <Footer />
+          {/* <Footer /> */}
 
           {/* <BasicElements />
           <Navbars />
