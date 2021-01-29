@@ -111,10 +111,9 @@ function IndexNavbar() {
                   <p>About Us</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem href="/history" target="">
-                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                    History
-                  </DropdownItem>
+                  <Link to="/history" style={{ color: "black" }}>
+                    <DropdownItem>history</DropdownItem>
+                  </Link>
                   {/* <DropdownItem href="/vision" target="">
                     <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                     Vision
@@ -142,27 +141,22 @@ function IndexNavbar() {
                   <p>Business</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem href="/ATA" target="">
-                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                    ATA
-                  </DropdownItem>
-                  <DropdownItem href="/ATB" target="">
-                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                    ATB
-                  </DropdownItem>
-                  <DropdownItem href="/ATC" target="">
-                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                    ATC
-                  </DropdownItem>
-                  {/* <DropdownItem href="/ATN" target="">
-                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                    ATN
-                  </DropdownItem> */}
+                  <Link to="/ATA" style={{ color: "black" }}>
+                    <DropdownItem>ATA</DropdownItem>
+                  </Link>
+
+                  <Link to="/ATB" style={{ color: "black" }}>
+                    <DropdownItem>ATB</DropdownItem>
+                  </Link>
+
+                  <Link to="/ATC" style={{ color: "black" }}>
+                    <DropdownItem>ATC</DropdownItem>
+                  </Link>
                 </DropdownMenu>
               </UncontrolledDropdown>
               {/*세번째 영역 */}
               <NavItem>
-                <Link to="/ATA">
+                <Link to="/index">
                   <Button
                     className="nav-link btn-neutral"
                     color="info"
