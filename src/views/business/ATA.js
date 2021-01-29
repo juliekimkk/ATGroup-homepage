@@ -177,7 +177,7 @@ function ATA() {
                 <img
                   alt="..."
                   className="n-logo"
-                  src={require("assets/img/ATA.png")}
+                  src={require("assets/img/ATAgray.png")}
                   style={{ width: "100px", height: "100px" }}
                 ></img>
                 <h1

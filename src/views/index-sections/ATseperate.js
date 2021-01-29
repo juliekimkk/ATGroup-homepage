@@ -194,7 +194,7 @@ const ATseperate = () => {
 
                     <Link to="/ATA">
                       <a
-                        className="Link_detail"
+                        target="top"
                         style={{
                           border: "solid black 1px",
                           display: "block",

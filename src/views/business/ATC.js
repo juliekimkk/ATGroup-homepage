@@ -239,7 +239,7 @@ function ATC() {
                 <img
                   alt="..."
                   className="n-logo"
-                  src={require("assets/img/ATC.png")}
+                  src={require("assets/img/ATCwhite2.png")}
                   style={{ width: "100px", height: "100px" }}
                 ></img>
                 <h1
