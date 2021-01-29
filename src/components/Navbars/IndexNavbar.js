@@ -142,7 +142,7 @@ function IndexNavbar() {
                   <p>Business</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem href="/atgroup.netlify.app/ATA" target="">
+                  <DropdownItem href="/ATA" target="">
                     <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                     ATA
                   </DropdownItem>

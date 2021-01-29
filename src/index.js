@@ -69,7 +69,8 @@ import IndexNavbar from "components/Navbars/IndexNavbar";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/App" render={(props) => <App {...props} />} />
+      <Switch>
+        {/* <Route path="/App" render={(props) => <App {...props} />} />
 
       <Route path="/history" render={(props) => <History {...props} />} />
       <Route
@@ -159,18 +160,19 @@ ReactDOM.render(
       <Route
         path="/IndexNavbar"
         render={(props) => <IndexNavbar {...props} />}
-      />
-      {/* 
+      /> */}
+        <Route path="/App" render={(props) => <App {...props} />} />
         <Route exact path="/history" component={History} />
-        <Route exact path="/vision" component={Vision} />
+        {/* <Route exact path="/vision" component={Vision} /> */}
 
         <Route exact path="/ATA" component={ATA} />
         <Route exact path="/ATB" component={ATB} />
         <Route exact path="/ATC" component={ATC} />
-        <Route exact path="/ATN" component={ATN}></Route> */}
-      {/* 
-      <Redirect path="*" to="/" /> */}
-      <Redirect from="/" to="/App" />
+        <Route exact path="/ATN" component={ATN}></Route>
+
+        <Redirect path="/App" />
+        <Redirect from="/" to="/App" />
+      </Switch>
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
