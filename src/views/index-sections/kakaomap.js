@@ -8,7 +8,6 @@ const Location = styled.div`
   width: 100%;
   height: 300px;
   position: relative;
-
   margin-bottom: 100px;
 `;
 
@@ -71,7 +70,7 @@ export default function GenerateMap() {
           <p>주소 : 서울특별시 금천구 가산디지털1로 75-15 10층</p>
           <p>전화 : 02-6956-8800</p>
         </div>
-        <Location id="map"></Location>
+        <div id="map" style={{ width: "100%", height: "300px" }}></div>
       </div>
     </div>
   );
