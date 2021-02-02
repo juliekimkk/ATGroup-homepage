@@ -2,8 +2,6 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 
-const { kakao } = window;
-
 const Location = styled.div`
   width: 100%;
   height: 300px;
@@ -11,22 +9,41 @@ const Location = styled.div`
   margin-bottom: 100px;
 `;
 
+const { kakao } = window;
+
+const script = document.createElement("script");
+script.async = true;
+//  script.src = "/km.js?apikey=18df447c17187c3c03e9cfaa7b8c84f6";
+script.src =
+  "//dapi.kakao.com/v2/maps/sdk.js?appkey=18df447c17187c3c03e9cfaa7b8c84f6&libraries=services";
+//  alert(script.src);
+document.head.appendChild(script);
+alert(script.innerText);
+
 export default function GenerateMap() {
   useEffect(() => {
     mapscript();
   }, []);
 
   const mapscript = () => {
+    /*
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "/km.js?apikey=18df447c17187c3c03e9cfaa7b8c84f6";
+    document.head.appendChild(script);
+    */
+
     let container = document.getElementById("map");
+    alert(window);
     let options = {
       center: new kakao.maps.LatLng(37.47226318266345, 126.88421079198216),
       level: 5,
     };
-    const script = document.createElement("script");
-    script.async = true;
-    script.src =
-      "http//dapi.kakao.com/v2/maps/sdk.js?appkey=18df447c17187c3c03e9cfaa7b8c84f6&autoload=false";
-    document.head.appendChild(script);
+    // const script = document.createElement("script");
+    // script.async = true;
+    // script.src =
+    //   "/km.js?appkey=18df447c17187c3c03e9cfaa7b8c84f6&autoload=false";
+
     //map
     const map = new kakao.maps.Map(container, options);
 
