@@ -157,17 +157,262 @@ function IndexNavbar() {
                   </Link>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              {/*세번째 영역 */}
-              {/* <Button
-                id="tooltip822900491"
-                className="nav-link btn-neutral"
-                style={{ color: "black", fontWeight: "bold" }}
-              >
-                English
-              </Button> */}
-              {/* <PopoverHeader id="tooltip822900491">English</PopoverHeader> */}
 
-              {/* <NavItem>
+              {/* 패밀리맵 영역*/}
+              <UncontrolledDropdown nav>
+                <DropdownToggle
+                  style={
+                    navbarColor !== ""
+                      ? {
+                          textShadow: "1px 1px 1px black, 1px 1px 1px black",
+                        }
+                      : null
+                  }
+                  caret
+                  color="default"
+                  href="#pablo"
+                  nav
+                  onClick={(e) => e.preventDefault()}
+                >
+                  <i className="now-ui-icons design_app mr-1"></i>
+                  <p>Family Map</p>
+                </DropdownToggle>
+                <DropdownMenu>
+                  <div
+                    style={{
+                      width: "600px",
+                      height: "200px",
+                      position: "relative",
+                      display: "flex",
+                    }}
+                  >
+                    <div
+                      className="corp"
+                      style={{
+                        display: "flex",
+                        width: "200px",
+                        height: "210px",
+                        // padding: "0 30px 10px 30px",
+                        borderLeft: "1px solid #ddd",
+                      }}
+                    >
+                      <ul>
+                        <div
+                          style={{
+                            display: "flex",
+                            position: "relative",
+                            marginRight: "7px",
+                          }}
+                        >
+                          <img
+                            alt="..."
+                            className="n-logo"
+                            src={require("assets/img/ATAgray.png")}
+                            style={{
+                              width: "30px",
+                              height: "30px",
+                              // margin: "10px",
+                            }}
+                          ></img>
+                          <h5>ATA</h5>
+                        </div>
+
+                        <div
+                          style={{
+                            borderBottom: "2px solid #0075c2",
+                            width: "125px",
+                          }}
+                        ></div>
+                        <li
+                          style={{
+                            padding: "14px 10px 14px 0",
+                          }}
+                        >
+                          <Link to="ATA">
+                            <div style={{ color: "black" }}>건설부문</div>
+                          </Link>
+                        </li>
+                        <li
+                          style={{
+                            padding: "14px 10px 14px 0",
+                            borderTop: "1px dotted #cbcbcb",
+                          }}
+                        >
+                          <Link to="ATA">
+                            <div style={{ color: "black" }}>건설부문</div>
+                          </Link>
+                        </li>
+                        <li
+                          style={{
+                            padding: "14px 10px 14px 0",
+                            borderTop: "1px dotted #cbcbcb",
+                          }}
+                        >
+                          <Link to="ATA">
+                            <div style={{ color: "black" }}>건설부문</div>
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div
+                      className="corp"
+                      style={{
+                        display: "flex",
+                        width: "200px",
+                        height: "210px",
+                        // padding: "0 30px 10px 30px",
+                        borderLeft: "1px solid #ddd",
+                      }}
+                    >
+                      <ul>
+                        <div style={{ display: "flex", position: "relative" }}>
+                          <img
+                            alt="..."
+                            className="n-logo"
+                            src={require("assets/img/ATB.png")}
+                            style={{
+                              width: "30px",
+                              height: "25px",
+                              marginRight: "7px",
+                              // margin: "10px",
+                            }}
+                          ></img>
+                          <h5>ATB</h5>
+                        </div>
+                        <div
+                          style={{
+                            borderBottom: "2px solid #0075c2",
+                            width: "125px",
+                          }}
+                        ></div>
+                        <li
+                          style={{
+                            padding: "14px 10px 14px 0",
+                          }}
+                        >
+                          <Link to="ATA">
+                            <div style={{ color: "black" }}>건설부문</div>
+                          </Link>
+                        </li>
+                        <li
+                          style={{
+                            padding: "14px 10px 14px 0",
+                            borderTop: "1px dotted #cbcbcb",
+                          }}
+                        >
+                          <Link to="ATA">
+                            <div style={{ color: "black" }}>건설부문</div>
+                          </Link>
+                        </li>
+                        <li
+                          style={{
+                            padding: "14px 10px 14px 0",
+                            borderTop: "1px dotted #cbcbcb",
+                          }}
+                        >
+                          <Link to="ATA">
+                            <div style={{ color: "black" }}>건설부문</div>
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div
+                      className="corp"
+                      style={{
+                        display: "flex",
+                        width: "200px",
+                        height: "210px",
+                        // padding: "0 30px 10px 30px",
+                        borderLeft: "1px solid #ddd",
+                      }}
+                    >
+                      <ul>
+                        <div
+                          style={{
+                            display: "flex",
+                            position: "relative",
+                            marginRight: "7px",
+                          }}
+                        >
+                          <img
+                            alt="..."
+                            className="n-logo"
+                            src={require("assets/img/ATC.png")}
+                            style={{
+                              width: "30px",
+                              height: "30px",
+                              // margin: "10px",
+                            }}
+                          ></img>
+                          <h5>ATC</h5>
+                        </div>
+                        <div
+                          style={{
+                            borderBottom: "2px solid #0075c2",
+                            width: "125px",
+                          }}
+                        ></div>
+                        <li
+                          style={{
+                            padding: "14px 10px 14px 0",
+                          }}
+                        >
+                          <Link to="ATA">
+                            <div style={{ color: "black" }}>건설부문</div>
+                          </Link>
+                        </li>
+                        <li
+                          style={{
+                            padding: "14px 10px 14px 0",
+                            borderTop: "1px dotted #cbcbcb",
+                          }}
+                        >
+                          <Link to="ATA">
+                            <div style={{ color: "black" }}>건설부문</div>
+                          </Link>
+                        </li>
+                        <li
+                          style={{
+                            padding: "14px 10px 14px 0",
+                            borderTop: "1px dotted #cbcbcb",
+                          }}
+                        >
+                          <Link to="ATA">
+                            <div style={{ color: "black" }}>건설부문</div>
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+
+              {/*세번째 영역 */}
+              <Link to="/index">
+                <Button
+                  className="nav-link btn-neutral"
+                  style={{
+                    color: "black",
+                    fontWeight: "bold",
+                    marginRight: "5px",
+                  }}
+                >
+                  EN
+                </Button>
+              </Link>
+
+              <Link to="/index">
+                <Button
+                  className="nav-link btn-neutral"
+                  style={{ color: "black", fontWeight: "bold" }}
+                >
+                  CN
+                </Button>
+              </Link>
+              {/* 
+              <NavItem>
                 <Link to="/index">
                   <Button
                     className="nav-link btn-neutral"

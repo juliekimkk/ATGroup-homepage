@@ -32,7 +32,7 @@ function DarkFooter() {
         <Info>
           주소 : 서울특별시 금천구 가산디지털1로 75-15 1011~1012호
           &nbsp;&nbsp;|&nbsp;&nbsp;전화 : 02-6956-8800
-          &nbsp;&nbsp;|&nbsp;&nbsp;이메일 : dbseo@atcworld.co.kr
+          &nbsp;&nbsp;|&nbsp;&nbsp;이메일 : info@atg.camp.com
         </Info>
         <Underdivier></Underdivier>
 
