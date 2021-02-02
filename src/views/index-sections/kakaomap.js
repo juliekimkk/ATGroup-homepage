@@ -2,6 +2,8 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 
+const { kakao } = window;
+
 const Location = styled.div`
   width: 100%;
   height: 300px;
@@ -9,6 +11,7 @@ const Location = styled.div`
 
   margin-bottom: 100px;
 `;
+
 export default function Map() {
   useEffect(() => {
     mapscript();
@@ -20,6 +23,11 @@ export default function Map() {
       center: new kakao.maps.LatLng(37.47226318266345, 126.88421079198216),
       level: 5,
     };
+    const script = document.createElement("script");
+    script.async = true;
+    script.src =
+      "//dapi.kakao.com/v2/maps/sdk.js?appkey=18df447c17187c3c03e9cfaa7b8c84f6&autoload=false";
+    document.head.appendChild(script);
     //map
     const map = new kakao.maps.Map(container, options);
 
