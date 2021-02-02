@@ -2,8 +2,6 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 
-const { kakao } = window;
-
 const Location = styled.div`
   width: 100%;
   height: 300px;
@@ -15,7 +13,7 @@ export default function GenerateMap() {
   useEffect(() => {
     mapscript();
   }, []);
-
+  const { kakao } = window;
   const mapscript = () => {
     let container = document.getElementById("map");
     let options = {
