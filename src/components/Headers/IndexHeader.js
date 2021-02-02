@@ -186,7 +186,7 @@ function IndexHeader() {
                   <img
                     alt="..."
                     className="n-logo"
-                    src={require("assets/img/ATAgray.png")}
+                    src={require("assets/img/ATA.png")}
                     style={{ width: "100px", height: "100px", margin: "10px" }}
                   ></img>
                   <img
@@ -198,15 +198,15 @@ function IndexHeader() {
                   <img
                     alt="..."
                     className="n-logo"
-                    src={require("assets/img/ATCwhite2.png")}
+                    src={require("assets/img/ATC.png")}
                     style={{ width: "100px", height: "100px", margin: "10px" }}
                   ></img>
-                  {/* <img
+                  <img
                     alt="..."
                     className="n-logo"
                     src={require("assets/img/ATN3.png")}
                     style={{ width: "100px", height: "100px", margin: "10px" }}
-                  ></img> */}
+                  ></img>
                   {/* <img
                     alt="..."
                     className="n-logo"

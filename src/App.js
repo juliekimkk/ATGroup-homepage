@@ -8,7 +8,7 @@ import React from "react";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
-
+import Map from "./views/index-sections/kakaomap.js";
 // import Init from "../assets/css/init.css";
 
 // sections for this page
@@ -28,6 +28,7 @@ import CompleteExamples from "./views/index-sections/CompleteExamples.js";
 import SignUp from "./views/index-sections/SignUp.js";
 import Examples from "./views/index-sections/Examples.js";
 import Download from "./views/index-sections/Download.js";
+import KakaoMap from "views/index-sections/kakaomap.js";
 
 function App() {
   React.useEffect(() => {
@@ -48,6 +49,8 @@ function App() {
         <IndexHeader />
         <div className="main">
           <Content />
+          <KakaoMap />
+          {/* <Map /> */}
           {/* <Footer /> */}
 
           {/* <BasicElements />

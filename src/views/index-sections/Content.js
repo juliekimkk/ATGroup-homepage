@@ -7,6 +7,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Strategy from "./Strategy";
 import ATseperate from "./ATseperate";
+import Kakaomap from "./kakaomap";
 
 const textAnimation = keyframes`${fadeInUp}`;
 

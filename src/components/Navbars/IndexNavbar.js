@@ -399,7 +399,7 @@ function IndexNavbar() {
                     marginRight: "5px",
                   }}
                 >
-                  EN
+                  KR
                 </Button>
               </Link>
 

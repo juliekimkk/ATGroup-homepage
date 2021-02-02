@@ -27,6 +27,7 @@ import "assets/demo/nucleo-icons-page-styles.css?v=1.4.0";
 // pages for this kit
 import App from "App.js";
 import NucleoIcons from "views/NucleoIcons.js";
+import KakaoMap from "views/index-sections/kakaomap";
 // import LoginPage from "views/examples/LoginPage.js";
 // import LandingPage from "views/examples/LandingPage.js";
 // import ProfilePage from "views/examples/ProfilePage.js";
@@ -161,6 +162,7 @@ ReactDOM.render(
         path="/IndexNavbar"
         render={(props) => <IndexNavbar {...props} />}
       /> */}
+
         <Route path="/App" render={(props) => <App {...props} />} />
         <Route exact path="/history" component={History} />
         {/* <Route exact path="/vision" component={Vision} /> */}
