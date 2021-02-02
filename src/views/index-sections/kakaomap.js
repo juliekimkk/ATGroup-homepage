@@ -1,70 +1,70 @@
-/*global kakao */
-import React, { useEffect } from "react";
-import styled from "styled-components";
+// /*global kakao */
+// import React, { useEffect } from "react";
+// import styled from "styled-components";
 
-const Location = styled.div`
-  width: 100%;
-  height: 300px;
-  position: relative;
+// const Location = styled.div`
+//   width: 100%;
+//   height: 300px;
+//   position: relative;
 
-  margin-bottom: 100px;
-`;
-export default function Map() {
-  useEffect(() => {
-    mapscript();
-  }, []);
+//   margin-bottom: 100px;
+// `;
+// export default function Map() {
+//   useEffect(() => {
+//     mapscript();
+//   }, []);
 
-  const mapscript = () => {
-    let container = document.getElementById("map");
-    let options = {
-      center: new kakao.maps.LatLng(37.47226318266345, 126.88421079198216),
-      level: 5,
-    };
-    //map
-    const map = new kakao.maps.Map(container, options);
+//   const mapscript = () => {
+//     let container = document.getElementById("map");
+//     let options = {
+//       center: new kakao.maps.LatLng(37.47226318266345, 126.88421079198216),
+//       level: 5,
+//     };
+//     //map
+//     const map = new kakao.maps.Map(container, options);
 
-    //마커가 표시 될 위치
-    let markerPosition = new kakao.maps.LatLng(
-      37.62197524055062,
-      127.16017523675508
-    );
+//     //마커가 표시 될 위치
+//     let markerPosition = new kakao.maps.LatLng(
+//       37.62197524055062,
+//       127.16017523675508
+//     );
 
-    // 마커를 생성
-    let marker = new kakao.maps.Marker({
-      position: map.getCenter(),
-    });
+//     // 마커를 생성
+//     let marker = new kakao.maps.Marker({
+//       position: map.getCenter(),
+//     });
 
-    // 마커를 지도 위에 표시
-    marker.setMap(map);
-  };
+//     // 마커를 지도 위에 표시
+//     marker.setMap(map);
+//   };
 
-  return (
-    <div style={{ marginTop: "150px", textAlign: "center" }}>
-      <h3>LOCATION</h3>
-      <div
-        style={{
-          display: "block",
-          position: "relative",
-          justifyContent: "center",
-        }}
-      >
-        <div
-          className="detail"
-          style={{
-            // fontSize: "18px",
-            lineHeight: "18px",
-            color: "#1e1e1e",
-            position: "relative",
-            fontWeight: "bold",
-            textAlign: "center",
-          }}
-        >
-          <h3>보고그룹 본사</h3>
-          <p>주소 : 서울특별시 금천구 가산디지털1로 75-15 10층</p>
-          <p>전화 : 02-6956-8800</p>
-        </div>
-        <Location id="map"></Location>
-      </div>
-    </div>
-  );
-}
+//   return (
+//     <div style={{ marginTop: "150px", textAlign: "center" }}>
+//       <h3>LOCATION</h3>
+//       <div
+//         style={{
+//           display: "block",
+//           position: "relative",
+//           justifyContent: "center",
+//         }}
+//       >
+//         <div
+//           className="detail"
+//           style={{
+//             // fontSize: "18px",
+//             lineHeight: "18px",
+//             color: "#1e1e1e",
+//             position: "relative",
+//             fontWeight: "bold",
+//             textAlign: "center",
+//           }}
+//         >
+//           <h3>보고그룹 본사</h3>
+//           <p>주소 : 서울특별시 금천구 가산디지털1로 75-15 10층</p>
+//           <p>전화 : 02-6956-8800</p>
+//         </div>
+//         <Location id="map"></Location>
+//       </div>
+//     </div>
+//   );
+// }
