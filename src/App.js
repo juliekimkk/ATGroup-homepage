@@ -49,7 +49,7 @@ function App() {
         <IndexHeader />
         <div className="main">
           <Content />
-          <GenerateMap />
+          {/* <GenerateMap /> */}
           {/* <Map /> */}
           {/* <Footer /> */}
 
