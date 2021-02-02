@@ -12,7 +12,7 @@ const Location = styled.div`
   margin-bottom: 100px;
 `;
 
-export default function Map() {
+export default function GenerateMap() {
   useEffect(() => {
     mapscript();
   }, []);
@@ -26,7 +26,7 @@ export default function Map() {
     const script = document.createElement("script");
     script.async = true;
     script.src =
-      "//dapi.kakao.com/v2/maps/sdk.js?appkey=18df447c17187c3c03e9cfaa7b8c84f6&autoload=false";
+      "http//dapi.kakao.com/v2/maps/sdk.js?appkey=18df447c17187c3c03e9cfaa7b8c84f6&autoload=false";
     document.head.appendChild(script);
     //map
     const map = new kakao.maps.Map(container, options);
