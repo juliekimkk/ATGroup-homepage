@@ -66,6 +66,11 @@ import LandingPageHeader from "components/Headers/LandingPageHeader";
 import ProfilePageHeader from "components/Headers/ProfilePageHeader";
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar";
 import IndexNavbar from "components/Navbars/IndexNavbar";
+import AppKr from "AppKr";
+import ATAKr from "views/business/ATAKr";
+import ATBKr from "views/business/ATBKr";
+import ATCKr from "views/business/ATCKr";
+import HistoryKr from "views/aboutus/HistoryKr";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -171,6 +176,12 @@ ReactDOM.render(
         <Route exact path="/ATB" component={ATB} />
         <Route exact path="/ATC" component={ATC} />
         <Route exact path="/ATN" component={ATN}></Route>
+
+        <Route path="/AppKr" render={(props) => <AppKr {...props} />} />
+        <Route path="/ATAKr" render={(props) => <ATAKr {...props} />} />
+        <Route path="/ATBKr" render={(props) => <ATBKr {...props} />} />
+        <Route path="/ATCKr" render={(props) => <ATCKr {...props} />} />
+        <Route path="/historyKr" render={(props) => <HistoryKr {...props} />} />
 
         <Redirect path="/App" />
         <Redirect from="/" to="/App" />

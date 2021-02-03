@@ -112,7 +112,7 @@ const ButtonStyle = styled.button`
   }
 `;
 
-const ATseperate = () => {
+const ATseperateKr = () => {
   React.useEffect(() => {
     Aos.init({});
   }, []);
@@ -143,7 +143,7 @@ const ATseperate = () => {
                     data-aos-duration="2000"
                     data-aos-easing="ease-in-out"
                   >
-                    OUR BUSINESS
+                    OUR BUSINESS 한글판
                   </span>
                 </h2>
               </div>
@@ -185,15 +185,14 @@ const ATseperate = () => {
                     <PText>
                       <AnimationWrapper>
                         <p>
-                          We've been using platform technology and data that's
-                          been stored for over a decade. Global to drive
-                          continuous growth and innovation on the foundation A
-                          influencer marketing platform company.
+                          우리는 플랫폼 기술과 10여 년간 축전된 데이터를
+                          기반으로 지속적인 성장과 혁신을 창출하는 글로벌
+                          인플루언서 마케팅 플랫폼 기업입니다.
                         </p>
                       </AnimationWrapper>
                     </PText>
 
-                    <Link to="/ATA">
+                    <Link to="/ATAKr">
                       <a
                         target="top"
                         style={{
@@ -233,17 +232,15 @@ const ATseperate = () => {
                     <PText>
                       <AnimationWrapper>
                         <p>
-                          We've been using platform technology and data that's
-                          been stored for over a decade. Global to drive
-                          continuous growth and innovation on the foundation A
-                          influencer marketing platform company.
+                          우리는 플랫폼 기술과 10여 년간 축전된 데이터를
+                          기반으로 지속적인 성장과 혁신을 창출하는 글로벌
+                          인플루언서 마케팅 플랫폼 기업입니다.
                         </p>
                       </AnimationWrapper>
                     </PText>
 
-                    <Link to="/ATB">
+                    <Link to="/ATBKr">
                       <a
-                        href="/ATB"
                         className="Link_detail"
                         style={{
                           border: "solid black 1px",
@@ -271,15 +268,14 @@ const ATseperate = () => {
                     <PText>
                       <AnimationWrapper>
                         <p>
-                          We've been using platform technology and data that's
-                          been stored for over a decade. Global to drive
-                          continuous growth and innovation on the foundation A
-                          influencer marketing platform company.
+                          우리는 플랫폼 기술과 10여 년간 축전된 데이터를
+                          기반으로 지속적인 성장과 혁신을 창출하는 글로벌
+                          인플루언서 마케팅 플랫폼 기업입니다.
                         </p>
                       </AnimationWrapper>
                     </PText>
 
-                    <Link to="/ATC">
+                    <Link to="/ATCKr">
                       <a
                         className="Link_detail"
                         style={{
@@ -320,14 +316,14 @@ const ATseperate = () => {
                     <PText>
                       <AnimationWrapper>
                         <p>
-                          AT Group invests, develops, and delivers international
-                          business infrastructure £br A group of five individual
-                          companies.
+                          AT 그룹은 국제 비지니스 인프라를 투자, 개발 및
+                          배포하고있는 <br />
+                          5개의 개별 기업으로 구성된 그룹입니다.
                         </p>
                       </AnimationWrapper>
                     </PText>
 
-                    <Link to="/history">
+                    <Link to="/historyKr">
                       <a
                         className="Link_detail"
                         style={{
@@ -375,4 +371,4 @@ const ATseperate = () => {
   );
 };
 
-export default ATseperate;
+export default ATseperateKr;

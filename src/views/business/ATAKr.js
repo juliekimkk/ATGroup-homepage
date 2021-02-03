@@ -1,7 +1,7 @@
 import IndexNavbar from "../../components/Navbars/IndexNavbar.js";
 
 /*eslint-disable*/
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { TimelineLite, TweenMax, Power3 } from "gsap";
 import styled, { keyframes } from "styled-components";
 import { bounce, bounceInLeft, fadeInUp } from "react-animations";
@@ -17,11 +17,10 @@ import HorizontalScroll from "react-scroll-horizontal";
 const ContentInnerDetails = styled.div`
   font-weight: 500;
   font-size: 23px;
-  font-family: "NotoKR", "San-Serif";
-  color: black;
+
+  color: #fff;
   margin-top: 30px;
-  letter-spacing: 0px;
-  font-family: "Montserrat,Helvetica Neue";
+  font-family: Montserrat, Helvetica Neue;
 `;
 const Content = styled.div`
   position: relative;
@@ -35,26 +34,6 @@ const ContentInner = styled.div`
   justify-content: center;
   align-items: center;
   font-weight: ;
-  font-family: "Montserrat,Helvetica Neue";
-`;
-
-const ButtonStyle = styled.button`
-  margin-top: 1%;
-  background: transparent;
-  border: solid 1px black;
-  width: 130px;
-  height: 40px;
-  text-align: center;
-  color: black;
-  padding: 0;
-  position: relative;
-  font-weight: bold;
-  &:hover {
-    background: black;
-    color: #fff;
-    border: 1px solid black;
-    font-weight: bold;
-  }
 `;
 const EmptySpace = styled.div`
   height: 400px;
@@ -67,22 +46,22 @@ const EmptySpace2 = styled.div`
 `;
 const Content2 = styled.div`
   position: relative;
-  text-align: right;
-  margin-right: 25%;
+  text-align: left;
+  margin-left: 30%;
   font-family: NotoKR, San-Serif;
+  z-index: 2;
 `;
 const Underdivier = styled.div`
   width: 50px;
   border: 0.5px solid #f0ff87;
-  margin-left: auto;
+  margin-left: 0;
   margin-top: 2%;
 `;
 const ContentInner2 = styled.div`
   position: relative;
   display: block;
-  margin: 0 auto;
   justify-content: left;
-  align-items: left;
+  align-items: center;
 `;
 const ContentInnerDetails2 = styled.div`
   font-weight: 500;
@@ -90,13 +69,12 @@ const ContentInnerDetails2 = styled.div`
   font-family: "NotoKR", "San-Serif";
   color: #fff;
   margin-top: 20px;
-  font-family: "Montserrat,Helvetica Neue";
 `;
 
-const ButtonStyle2 = styled.button`
-  margin-top: 1.5%;
+const ButtonStyle = styled.button`
+  margin-top: 1%;
   background: transparent;
-  border: solid 1px black;
+  border: solid 1px #fff;
   width: 130px;
   height: 40px;
   text-align: center;
@@ -104,6 +82,7 @@ const ButtonStyle2 = styled.button`
   padding: 0;
   position: relative;
   font-weight: bold;
+  font-size: 15px;
   &:hover {
     background: #fff;
     color: black;
@@ -115,21 +94,22 @@ const ButtonStyle2 = styled.button`
 const ButtonToWebsite = styled.button`
   margin-top: 10%;
   background: transparent;
-  border: solid 2px #fff;
+  border: solid 1px #fff;
   width: 230px;
   height: 50px;
   text-align: center;
-  color: black;
+  color: #fff;
   padding: 0;
   position: absolute;
   margin-left: -7%;
   font-size: 17px;
   font-weight: bold;
   &:hover {
-    background: black;
-    color: #fff;
+    background: #f6dc3f;
+    color: black;
     font-size: 17px;
-    border: 1px solid black;
+    font-weight: bold;
+    border: 1px solid #f6dc3f;
   }
 `;
 
@@ -138,30 +118,11 @@ const EmptySpace3 = styled.div`
   height: 350px;
 `;
 
-const ButtonStyle3 = styled.button`
-  margin-top: 1.5%;
-  background: transparent;
-  border: solid 1px #fff;
-  width: 130px;
-  height: 40px;
-  text-align: center;
-  color: #fff;
-  padding: 0;
-  position: relative;
-  font-weight: bold;
-  &:hover {
-    background: #fff;
-    color: black;
-    border: 1px solid #fff;
-    font-weight: bold;
-  }
-`;
-
 // reactstrap components
 import { Container } from "reactstrap";
 // core components
 
-function ATB() {
+function ATA() {
   let app = useRef(null);
   let pageHeader = React.createRef();
   let content = useRef(null);
@@ -197,8 +158,7 @@ function ATB() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage:
-              "url(" + require("assets/img/blockchain.jpg") + ")",
+            backgroundImage: "url(" + require("assets/img/e-sports2.jpg") + ")",
             // opacity: 0.8,
             height: "1400px",
             maxWidth: "100%",
@@ -217,7 +177,7 @@ function ATB() {
                 <img
                   alt="..."
                   className="n-logo"
-                  src={require("assets/img/ATB.png")}
+                  src={require("assets/img/ATAgray.png")}
                   style={{ width: "100px", height: "100px" }}
                 ></img>
                 <h1
@@ -227,41 +187,40 @@ function ATB() {
                     marginLeft: "20px",
                     fontSize: "70px",
                     fontWeight: "1000",
-                    fontFamily: "NotoKR,San-Serif",
-                    color: "#025ab7",
+                    color: "#f6dc3f",
                     fontFamily: "Montserrat,Helvetica Neue",
                   }}
                 >
                   {/* ATA (A<span style={{ color: "#fff" }}>bout</span> T
                   <span style={{ color: "#fff" }}>he&nbsp;</span>A
                   <span style={{ color: "#fff" }}>pp</span>) */}
-                  ATB (About The Block)
+                  ATA (About The App)
                 </h1>
               </ContentInner>
               <ContentInnerDetails>
-                ⁠ATB is a blockchain based technology investor and operator,
-                <br /> developing leading technologies with global leading
-                blockchain researchers. 
+                ATA는 게임 및 미디어 솔루션을 투자하고 개발하는 데 주력합니다.
+                <br />
+                공식 e-스포츠 팀을 운영합니다.
               </ContentInnerDetails>
               <div style={{ position: "relative", display: "block" }}>
-                <ButtonStyle onClick={gotoFirstSection}>NEXT</ButtonStyle>
+                <ButtonStyle onClick={gotoFirstSection}>Next</ButtonStyle>
                 <a
                   href={"http://atcworld.cafe24.com/default/"}
                   className="Link_detail"
                   style={{
-                    border: "solid black 1px",
+                    border: "solid #fff 1px",
                     display: "block",
                     width: "250px",
                     height: "40px",
                     margin: "0 auto",
                     marginTop: "50px",
                     textDecoration: "none",
-                    color: "black",
+                    color: "#fff",
                     fontSize: "20px",
                     verticalAlign: "middle",
                   }}
                 >
-                  Go official website
+                  공식 홈페이지 바로가기
                 </a>
               </div>
             </Content>
@@ -273,8 +232,8 @@ function ATB() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/data3.jpg") + ")",
-            opacity: "0.9",
+            backgroundImage: "url(" + require("assets/img/e-sports3.jpg") + ")",
+            opacity: "0.95",
             height: "1400px",
             maxWidth: "100%",
           }}
@@ -297,7 +256,7 @@ function ATB() {
                 ></img> */}
                 <h1
                   style={{
-                    textAlign: "right",
+                    textAlign: "left",
                     marginLeft: "0px",
                     fontSize: "70px",
                     fontWeight: "1000",
@@ -306,29 +265,29 @@ function ATB() {
                   }}
                   ref={commentSection}
                 >
-                  Server Solution
+                  E-SPORTS
                 </h1>
                 <Underdivier></Underdivier>
                 <img
                   alt="..."
                   className="n-logo"
-                  src={require("assets/img/server.png")}
+                  src={require("assets/img/competition.png")}
                   style={{ marginTop: "50px" }}
                   // style={{ width: "50px", height: "50px" }}
                 ></img>
               </ContentInner2>
               <ContentInnerDetails2>
-                We are currently focusing on developing a global Content
-                Distribution Network (CDN) <br />
-                using IPFS(decentralized, web 3.0) and its data sever solutions{" "}
+                우리는 다양한 멀티 미디어 파트너와 협력하여
                 <br />
-                those will lead the future content storage and streaming
-                industry <br />
-                through security-specific blockchain technology.
+                향후 선도적인 멀티미디어 프로젝트를 개발하고 있습니다.
+                <br />
+                나아가 글로벌 e스포츠 리그의 미디어 네트워크 제작과 <br />
+                글로벌 커뮤니티와의 소통 개선을 위한 <br />
+                엔터테인먼트 제작도 진행하고 있습니다.
               </ContentInnerDetails2>
-              <ButtonStyle2 onClick={gotoSecondSection} style={{ top: "0" }}>
+              <ButtonStyle onClick={gotoSecondSection} style={{ top: "0" }}>
                 Next
-              </ButtonStyle2>
+              </ButtonStyle>
             </Content2>
           </div>
         </div>
@@ -339,7 +298,7 @@ function ATB() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/nasa1.jpg") + ")",
+            backgroundImage: "url(" + require("assets/img/e-sports4.jpg") + ")",
 
             height: "1400px",
             maxWidth: "100%",
@@ -367,7 +326,7 @@ function ATB() {
                 ></img> */}
                 <h1
                   style={{
-                    textAlign: "right",
+                    textAlign: "left",
                     marginLeft: "0px",
                     fontSize: "70px",
                     fontWeight: "1000",
@@ -376,36 +335,40 @@ function ATB() {
                   }}
                   ref={commentSection}
                 >
-                  Internet
+                  TEAM
                 </h1>
                 <Underdivier></Underdivier>
                 <img
                   alt="..."
                   className="n-logo"
-                  src={require("assets/img/internet.png")}
+                  src={require("assets/img/united.png")}
                   style={{ marginTop: "50px" }}
                   // style={{ width: "50px", height: "50px" }}
                 ></img>
               </ContentInner2>
               <ContentInnerDetails2>
-                We are currently focusing on developing a global Content
-                Distribution Network (CDN) <br />
-                using IPFS(decentralized, web 3.0) and its data sever solutions{" "}
+                ATA는 다양한 e스포츠와 콘텐츠 사업을 운영하며,
                 <br />
-                those will lead the future content storage and streaming
-                industry <br />
-                through security-specific blockchain technology.
+                배틀그라운드(PUBG)에서 인기 있는 ATA LAVEGA로
+                <br />
+                사내 공식 e스포츠 팀을 운영하고 있습니다.
               </ContentInnerDetails2>
-              <ButtonStyle3 onClick={gotoThirdSection} style={{ top: "0" }}>
+              <ButtonStyle onClick={gotoThirdSection} style={{ top: "0" }}>
                 Next
-              </ButtonStyle3>
+              </ButtonStyle>
+
               <div
+                className="gotoUp"
                 style={{
                   bottom: "-130%",
                   position: "absolute",
                   textAlign: "50%",
-                  marginLeft: "60%",
+                  marginLeft: "30%",
                 }}
+                data-aos="fade-up"
+                data-aos-duration="900"
+                data-aos-delay="400"
+                data-aos-easing="ease-in-out"
               >
                 <a
                   href="#"
@@ -421,7 +384,7 @@ function ATB() {
             </Content2>
           </div>
         </div>
-
+        {/*하단 갤러리 */}
         <div style={parent}>
           <HorizontalScroll>
             <div
@@ -435,7 +398,7 @@ function ATB() {
               <img
                 alt="..."
                 className="n-logo"
-                src={require("assets/img/server2.png")}
+                src={require("assets/img/pubg1.jpg")}
                 style={{
                   maxWidth: "800px",
                   height: "500px",
@@ -449,22 +412,7 @@ function ATB() {
               <img
                 alt="..."
                 className="n-logo"
-                src={require("assets/img/code2.jpg")}
-                style={{
-                  maxWidth: "800px",
-                  height: "500px",
-                  position: "relative",
-                }}
-
-                // style={{ width: "50px", height: "50px" }}
-              ></img>
-            </div>
-            <div style={child}>
-              {" "}
-              <img
-                alt="..."
-                className="n-logo"
-                src={require("assets/img/code3.jpg")}
+                src={require("assets/img/pubg2.jpg")}
                 style={{
                   maxWidth: "800px",
                   height: "500px",
@@ -479,7 +427,22 @@ function ATB() {
               <img
                 alt="..."
                 className="n-logo"
-                src={require("assets/img/code1.jpg")}
+                src={require("assets/img/pubg3.png")}
+                style={{
+                  maxWidth: "800px",
+                  height: "500px",
+                  position: "relative",
+                }}
+
+                // style={{ width: "50px", height: "50px" }}
+              ></img>
+            </div>
+            <div style={child}>
+              {" "}
+              <img
+                alt="..."
+                className="n-logo"
+                src={require("assets/img/pubg1.jpg")}
                 style={{
                   maxWidth: "800px",
                   height: "500px",
@@ -497,4 +460,4 @@ function ATB() {
   );
 }
 
-export default ATB;
+export default ATA;

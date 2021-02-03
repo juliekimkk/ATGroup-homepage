@@ -260,13 +260,12 @@ function ATC() {
                 </h1>
               </ContentInner>
               <ContentInnerDetails>
-                ATC는 콘텐츠 데이터 전달을 중심으로
-                <br />
-                국내 뉴미디어 콘텐츠를 제작·유통해 <br />
-                다양한 주요 크리에이터와 미디어 파트너들이 협업해 <br />
-                <b style={{ fontSize: "20px" }}>
-                  "고품질 멀티미디어 데이터를 제공합니다."
-                </b>
+                ⁠ATC produces and distributes Korean new media contents <br />
+                focusing on the delivery of content data to Greater Chinese and
+                Southeast
+                <br /> Asian markets to provide high-quality multimedia data in
+                cooperation with <br />
+                various major creators and media partners.
               </ContentInnerDetails>
               <div style={{ position: "relative", display: "block" }}>
                 <ButtonStyle onClick={gotoFirstSection}>Next</ButtonStyle>
@@ -300,7 +299,7 @@ function ATC() {
                     verticalAlign: "middle",
                   }}
                 >
-                  공식 홈페이지 바로가기
+                  Go offical homepage
                 </a>
               </div>
             </Content>
@@ -345,7 +344,7 @@ function ATC() {
                   }}
                   ref={commentSection}
                 >
-                  콘텐츠
+                  Contents
                 </h1>
                 <Underdivier2></Underdivier2>
                 <img
@@ -357,9 +356,9 @@ function ATC() {
                 ></img>
               </ContentInner2>
               <ContentInnerDetails2>
-                한국의 뉴미디어 크리에이터들이 <br />
-                양질의 콘텐츠를 제작할 수 있도록 돕고
-                <br />전 세계 시청자들과 소통할수 있도록 제공하고있습니다.
+                We help Korean new-media creators to produce high-quality
+                contents
+                <br /> and  provide  to global viewer around the world.
               </ContentInnerDetails2>
               <ButtonStyle2 onClick={gotoSecondSection} style={{ top: "0" }}>
                 Next
@@ -410,7 +409,7 @@ function ATC() {
                   }}
                   ref={commentSection}
                 >
-                  소셜마케팅 · 플랫폼
+                  Social Marketing and Flatform
                 </h1>
                 <Underdivier></Underdivier>
                 <img
@@ -422,13 +421,13 @@ function ATC() {
                 ></img>
               </ContentInner2>
               <ContentInnerDetails3>
-                한국의 뉴미디어 크리에이터들이 양질의 콘텐츠를 <br />
-                제작할 수 있도록 돕고 전 세계 시청자들과 <br />
-                소통할수 있도록 제공하고있습니다.
+                We help Korean new-media creators to produce high-quality
+                contents
+                <br /> and  provide  to global viewer around the world.
                 <br />
                 <b style={{ fontSize: "15px" }}>
-                  "여러분의 콘텐츠를 가장 완벽한 형태로 중국의 모든 플랫폼과
-                  연결합니다"
+                  "Your content is the most complete form of all the platforms
+                  in China, Connect"
                 </b>
               </ContentInnerDetails3>
               <ButtonStyle3 onClick={gotoThirdSection} style={{ top: "0" }}>

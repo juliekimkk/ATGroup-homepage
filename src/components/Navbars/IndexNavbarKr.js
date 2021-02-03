@@ -28,7 +28,7 @@ const LogoText = styled.div`
   font-weight: 400;
 `;
 
-function IndexNavbar() {
+function IndexNavbarKr() {
   const CurrentPath = window.location.pathname;
   console.log(window.location.pathname);
   console.log(window.scrollY);
@@ -114,7 +114,7 @@ function IndexNavbar() {
                   <p>About Us</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <Link to="/history" style={{ color: "black" }}>
+                  <Link to="/HistoryKr" style={{ color: "black" }}>
                     <DropdownItem>history</DropdownItem>
                   </Link>
                   {/* <DropdownItem href="/vision" target="">
@@ -144,15 +144,15 @@ function IndexNavbar() {
                   <p>Business</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <Link to="/ATA" style={{ color: "black" }}>
+                  <Link to="/ATAKr" style={{ color: "black" }}>
                     <DropdownItem>ATA</DropdownItem>
                   </Link>
 
-                  <Link to="/ATB" style={{ color: "black" }}>
+                  <Link to="/ATBKr" style={{ color: "black" }}>
                     <DropdownItem>ATB</DropdownItem>
                   </Link>
 
-                  <Link to="/ATC" style={{ color: "black" }}>
+                  <Link to="/ATCKr" style={{ color: "black" }}>
                     <DropdownItem>ATC</DropdownItem>
                   </Link>
                 </DropdownMenu>
@@ -390,7 +390,7 @@ function IndexNavbar() {
               </UncontrolledDropdown>
 
               {/*세번째 영역 */}
-              <Link to="/AppKr">
+              <Link to="/index">
                 <Button
                   className="nav-link btn-neutral"
                   style={{
@@ -431,4 +431,4 @@ function IndexNavbar() {
   );
 }
 
-export default IndexNavbar;
+export default IndexNavbarKr;

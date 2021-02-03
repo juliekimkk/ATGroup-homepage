@@ -16,7 +16,7 @@ const Location = styled.div`
 // document.head.appendChild(script);
 // alert(script.innerText);
 
-export default function GenerateMap() {
+export default function KakaoMapKr() {
   useEffect(() => {
     mapscript();
   }, []);
@@ -79,12 +79,9 @@ export default function GenerateMap() {
             textAlign: "center",
           }}
         >
-          <h3>VOGO Group Headquarter</h3>
-          <p>
-            Address : 10F 75-15, Gasan digital 1-ro, Geumcheon-gu, Seoul,
-            Republic of Korea
-          </p>
-          <p>Phone : 02-6956-8800</p>
+          <h3>보고그룹 본사</h3>
+          <p>주소 : 서울특별시 금천구 가산디지털1로 75-15 10층</p>
+          <p>전화 : 02-6956-8800</p>
         </div>
         <div id="map" style={{ width: "100%", height: "300px" }}></div>
       </div>
