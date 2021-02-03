@@ -164,12 +164,12 @@ function IndexHeader() {
                 </ContentInner>
                 <ContentInnerDetails>
                   <b>
-                    AT Group invests, develops, and deploys international
-                    business infrastructure A group of five individual companies
+                    AT 그룹은 국제 비즈니스 인프라를 투자, 개발 및 배포하는{" "}
+                    5개의 개별 기업으로 구성된 그룹입니다.
                   </b>
                   <br />
                   <b style={{ fontSize: "20px" }}>
-                    We provide high-quality multimedia data
+                    "고품질 멀티미디어 데이터를 제공합니다."
                   </b>
                 </ContentInnerDetails>
                 <div

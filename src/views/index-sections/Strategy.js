@@ -82,7 +82,7 @@ const Strategy = () => {
                 src={require("assets/img/1.5x/handout.png")}
                 style={{ width: "10%" }}
               ></img> */}
-              Strategy
+              전략 · 기획
             </h4>
 
             <div
@@ -94,9 +94,9 @@ const Strategy = () => {
                 color: "#878890",
               }}
             >
-              Pre-interview, requirement analysis steps Identify your client's
-              projects.
-              <br /> Derive Implications for Project Strategy and Korean Version
+              사전 인터뷰, 요구사항 분석 단계를 통해 <br />
+              고객사의 프로젝트를 파악하고,
+              <br /> 시사점을 도출해 프로젝트 전략과
             </div>
             <div
               style={{
@@ -157,7 +157,7 @@ const Strategy = () => {
               data-aos-duration="350"
               data-aos-easing="ease-in-out"
             >
-              Design
+              디자인
             </h4>
 
             <div
@@ -173,10 +173,9 @@ const Strategy = () => {
               data-aos-duration="350"
               data-aos-easing="ease-in-out"
             >
-              Apply the latest trend design and for greater user convenience We
-              are providing you with an attractive design.
-              <br />
-              for more future
+              최신 트렌드 디자인을 적용 및 <br />
+              사용자 편의성을 증대할 수 있는 <br />
+              매력적인 디자인을 제공해 드리고 있습니다.
             </div>
             <div
               style={{
@@ -238,7 +237,7 @@ const Strategy = () => {
               data-aos-duration="350"
               data-aos-easing="ease-in-out"
             >
-              Development
+              개발 · 구현
             </h4>
 
             <div
@@ -254,10 +253,10 @@ const Strategy = () => {
               data-aos-duration="350"
               data-aos-easing="ease-in-out"
             >
-              Developed for user and administrator purposes, Flexible internal
-              system connectivity, re-establishment of infrastructure
+              사용자 및 관리자 목적 중심으로 개발하며, <br />
+              유연한 내부 시스템 연계, 인프라 재정립을 통해
               <br />
-              Implement to successfully open. <br />
+              성공적으로 오픈할 수 있도록 구현합니다. <br />
             </div>
             <div
               style={{
@@ -319,7 +318,7 @@ const Strategy = () => {
               data-aos-duration="350"
               data-aos-easing="ease-in-out"
             >
-              Image
+              영상 · 이미지
             </h4>
 
             <div
@@ -335,10 +334,10 @@ const Strategy = () => {
               data-aos-duration="350"
               data-aos-easing="ease-in-out"
             >
-              for richer corporate and product branding We are filming and
-              producing digital images and videos.
+              보다 풍부한 기업 및 제품 브랜딩을 위한 <br />
+              디지털 이미지 및 영상물을 촬영, 제작하고 있습니다.
               <br />
-              In addition, the content business is under way.
+              더불어 컨텐츠 사업또한 진행중입니다
             </div>
           </div>
         </div>

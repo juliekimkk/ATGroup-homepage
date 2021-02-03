@@ -53,12 +53,12 @@ const Content = () => {
           // // data-aos-once="false"
           // data-aos-anchor-placement="top-center"
         >
-          We are investing heavily in emerging environmentally friendly and
-          future-oriented projects.
+          우리는 환경 친화적이며 미래 지향적인 신흥 프로젝트에 많은 투자를 하고
+          있으며, <br />
+          한국을 기반으로 시작해 중국, 동남아시아, 일본, 러시아, 중앙아시아에
+          이른
           <br />
-          From Korea to China, Southeast Asia, Japan, Russia, Central Asia,
-          <br />
-          We've established a strong business network.
+          강력한 비즈니스 네트워크를 구축했습니다.
           {/* VOGO Group, with its roots going back to 1970s, has been dedicated to
           advance Korea's Industrial Development through <br />
           Construction of Major Infrastructures, IT Technology Innovation,

@@ -185,10 +185,9 @@ const ATseperate = () => {
                     <PText>
                       <AnimationWrapper>
                         <p>
-                          We've been using platform technology and data that's
-                          been stored for over a decade. Global to drive
-                          continuous growth and innovation on the foundation A
-                          influencer marketing platform company.
+                          우리는 플랫폼 기술과 10여 년간 축전된 데이터를
+                          기반으로 지속적인 성장과 혁신을 창출하는 글로벌
+                          인플루언서 마케팅 플랫폼 기업입니다.
                         </p>
                       </AnimationWrapper>
                     </PText>
@@ -233,10 +232,9 @@ const ATseperate = () => {
                     <PText>
                       <AnimationWrapper>
                         <p>
-                          We've been using platform technology and data that's
-                          been stored for over a decade. Global to drive
-                          continuous growth and innovation on the foundation A
-                          influencer marketing platform company.
+                          우리는 플랫폼 기술과 10여 년간 축전된 데이터를
+                          기반으로 지속적인 성장과 혁신을 창출하는 글로벌
+                          인플루언서 마케팅 플랫폼 기업입니다.
                         </p>
                       </AnimationWrapper>
                     </PText>
@@ -271,10 +269,9 @@ const ATseperate = () => {
                     <PText>
                       <AnimationWrapper>
                         <p>
-                          We've been using platform technology and data that's
-                          been stored for over a decade. Global to drive
-                          continuous growth and innovation on the foundation A
-                          influencer marketing platform company.
+                          우리는 플랫폼 기술과 10여 년간 축전된 데이터를
+                          기반으로 지속적인 성장과 혁신을 창출하는 글로벌
+                          인플루언서 마케팅 플랫폼 기업입니다.
                         </p>
                       </AnimationWrapper>
                     </PText>
@@ -320,9 +317,9 @@ const ATseperate = () => {
                     <PText>
                       <AnimationWrapper>
                         <p>
-                          AT Group invests, develops, and delivers international
-                          business infrastructure £br A group of five individual
-                          companies.
+                          AT 그룹은 국제 비지니스 인프라를 투자, 개발 및
+                          배포하고있는 <br />
+                          5개의 개별 기업으로 구성된 그룹입니다.
                         </p>
                       </AnimationWrapper>
                     </PText>

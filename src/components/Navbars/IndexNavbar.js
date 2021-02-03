@@ -390,7 +390,7 @@ function IndexNavbar() {
               </UncontrolledDropdown>
 
               {/*세번째 영역 */}
-              <Link to="/AppKr">
+              <Link to="/index">
                 <Button
                   className="nav-link btn-neutral"
                   style={{
