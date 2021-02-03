@@ -9,22 +9,18 @@ const Location = styled.div`
   margin-bottom: 100px;
 `;
 
-const { kakao } = window;
-
-const script = document.createElement("script");
-script.async = true;
-//  script.src = "/km.js?apikey=18df447c17187c3c03e9cfaa7b8c84f6";
-script.src =
-  "//dapi.kakao.com/v2/maps/sdk.js?appkey=18df447c17187c3c03e9cfaa7b8c84f6&libraries=services";
-//  alert(script.src);
-document.head.appendChild(script);
-alert(script.innerText);
+// const script = document.createElement("script");
+// script.async = true;
+// script.src = "/km.js?apikey=18df447c17187c3c03e9cfaa7b8c84f6";
+// //  alert(script.src);
+// document.head.appendChild(script);
+// alert(script.innerText);
 
 export default function GenerateMap() {
   useEffect(() => {
     mapscript();
   }, []);
-  const { kakao } = window;
+
   const mapscript = () => {
     /*
     const script = document.createElement("script");
@@ -34,7 +30,7 @@ export default function GenerateMap() {
     */
 
     let container = document.getElementById("map");
-    alert(window);
+    // alert(window);
     let options = {
       center: new kakao.maps.LatLng(37.47226318266345, 126.88421079198216),
       level: 5,
