@@ -198,9 +198,11 @@ function ATA() {
                 </h1>
               </ContentInner>
               <ContentInnerDetails>
-                ATA는 게임 및 미디어 솔루션을 투자하고 개발하는 데 주력합니다.
+                ⁠ATA, About the APP ⁠ATA focuses on investing and developing
+                game and media solutions, operating official e-sports teams
+                under its wing.
                 <br />
-                공식 e-스포츠 팀을 운영합니다.
+                We run an official e-sports team.
               </ContentInnerDetails>
               <div style={{ position: "relative", display: "block" }}>
                 <ButtonStyle onClick={gotoFirstSection}>Next</ButtonStyle>
@@ -220,7 +222,7 @@ function ATA() {
                     verticalAlign: "middle",
                   }}
                 >
-                  공식 홈페이지 바로가기
+                  Go official website
                 </a>
               </div>
             </Content>
@@ -277,13 +279,14 @@ function ATA() {
                 ></img>
               </ContentInner2>
               <ContentInnerDetails2>
-                우리는 다양한 멀티 미디어 파트너와 협력하여
+                We collaborate with a variety of multi-media partners to develop
                 <br />
-                향후 선도적인 멀티미디어 프로젝트를 개발하고 있습니다.
+                future leading multi-media projects. <br />
+                ⁠Furthermore, we are in the process of producing media networks
+                in the global e-sports
                 <br />
-                나아가 글로벌 e스포츠 리그의 미디어 네트워크 제작과 <br />
-                글로벌 커뮤니티와의 소통 개선을 위한 <br />
-                엔터테인먼트 제작도 진행하고 있습니다.
+                league and entertainment production to communicate better with
+                the global community.
               </ContentInnerDetails2>
               <ButtonStyle onClick={gotoSecondSection} style={{ top: "0" }}>
                 Next
@@ -347,11 +350,9 @@ function ATA() {
                 ></img>
               </ContentInner2>
               <ContentInnerDetails2>
-                ATA는 다양한 e스포츠와 콘텐츠 사업을 운영하며,
-                <br />
-                배틀그라운드(PUBG)에서 인기 있는 ATA LAVEGA로
-                <br />
-                사내 공식 e스포츠 팀을 운영하고 있습니다.
+                ⁠ATA operates various e-sports and content businesses, <br />
+                holding an inhouse official e-sports team <br />
+                as ATA LAVEGA popular in PUBG(Player's unknown battleground).
               </ContentInnerDetails2>
               <ButtonStyle onClick={gotoThirdSection} style={{ top: "0" }}>
                 Next

@@ -239,9 +239,10 @@ function ATB() {
                 </h1>
               </ContentInner>
               <ContentInnerDetails>
-                ⁠ATB is a blockchain based technology investor and operator,
-                <br /> developing leading technologies with global leading
-                blockchain researchers. 
+                ATB는 블록체인 기반 기술 투자자 겸 운영자로
+                <br />
+                글로벌 유력 블록체인 연구진과 함께 선도 기술을 개발하고
+                있습니다.
               </ContentInnerDetails>
               <div style={{ position: "relative", display: "block" }}>
                 <ButtonStyle onClick={gotoFirstSection}>NEXT</ButtonStyle>
@@ -261,7 +262,7 @@ function ATB() {
                     verticalAlign: "middle",
                   }}
                 >
-                  Go official website
+                  공식 홈페이지 바로가기
                 </a>
               </div>
             </Content>
@@ -306,7 +307,7 @@ function ATB() {
                   }}
                   ref={commentSection}
                 >
-                  Server Solution
+                  서버 솔루션
                 </h1>
                 <Underdivier></Underdivier>
                 <img
@@ -318,13 +319,13 @@ function ATB() {
                 ></img>
               </ContentInner2>
               <ContentInnerDetails2>
-                We are currently focusing on developing a global Content
-                Distribution Network (CDN) <br />
-                using IPFS(decentralized, web 3.0) and its data sever solutions{" "}
+                우리는 현재 보안특화 블록체인 기술을 통해
                 <br />
-                those will lead the future content storage and streaming
-                industry <br />
-                through security-specific blockchain technology.
+                미래의 콘텐츠저장 및 스트리밍 산업을 선도할
+                <br />
+                IPFS(분권화, 웹 3.0)를 활용한 글로벌 콘텐츠 유통망(CDN)과
+                <br />
+                데이터 서버 솔루션 개발에 주력하고 있습니다.
               </ContentInnerDetails2>
               <ButtonStyle2 onClick={gotoSecondSection} style={{ top: "0" }}>
                 Next
@@ -376,7 +377,7 @@ function ATB() {
                   }}
                   ref={commentSection}
                 >
-                  Internet
+                  인터넷
                 </h1>
                 <Underdivier></Underdivier>
                 <img
@@ -388,13 +389,13 @@ function ATB() {
                 ></img>
               </ContentInner2>
               <ContentInnerDetails2>
-                We are currently focusing on developing a global Content
-                Distribution Network (CDN) <br />
-                using IPFS(decentralized, web 3.0) and its data sever solutions{" "}
+                우리는 현재 보안특화 블록체인 기술을 통해
                 <br />
-                those will lead the future content storage and streaming
-                industry <br />
-                through security-specific blockchain technology.
+                미래의 콘텐츠저장 및 스트리밍 산업을 선도할
+                <br />
+                IPFS(분권화, 웹 3.0)를 활용한 글로벌 콘텐츠 유통망(CDN)과
+                <br />
+                데이터 서버 솔루션 개발에 주력하고 있습니다.
               </ContentInnerDetails2>
               <ButtonStyle3 onClick={gotoThirdSection} style={{ top: "0" }}>
                 Next

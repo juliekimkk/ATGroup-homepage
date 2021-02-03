@@ -1,9 +1,11 @@
 import IndexNavbar from "../../components/Navbars/IndexNavbar.js";
 
 /*eslint-disable*/
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, Component } from "react";
+import { BrowserRouter as Route, Link, useParams } from "react-router-dom";
+
 import { TimelineLite, TweenMax, Power3 } from "gsap";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { bounce, bounceInLeft, fadeInUp } from "react-animations";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -18,16 +20,20 @@ const ContentInnerDetails = styled.div`
   font-weight: 500;
   font-size: 23px;
   font-family: "NotoKR", "San-Serif";
-  color: black;
+  color: #fff;
   margin-top: 30px;
-  letter-spacing: 0px;
-  font-family: "Montserrat,Helvetica Neue";
+  fontfamily: "Montserrat,Helvetica Neue";
 `;
 const Content = styled.div`
   position: relative;
   text-align: center;
-
   font-family: "NotoKR", "San-Serif";
+`;
+const Underdivier = styled.div`
+  width: 50px;
+  border: 0.5px solid #fff;
+  margin-left: 0;
+  margin-top: 2%;
 `;
 const ContentInner = styled.div`
   position: relative;
@@ -35,13 +41,15 @@ const ContentInner = styled.div`
   justify-content: center;
   align-items: center;
   font-weight: ;
-  font-family: "Montserrat,Helvetica Neue";
+`;
+const EmptySpace = styled.div`
+  height: 400px;
 `;
 
 const ButtonStyle = styled.button`
   margin-top: 1%;
   background: transparent;
-  border: solid 1px black;
+  border: solid 1px #fff;
   width: 130px;
   height: 40px;
   text-align: center;
@@ -49,15 +57,13 @@ const ButtonStyle = styled.button`
   padding: 0;
   position: relative;
   font-weight: bold;
+  font-size: 15px;
   &:hover {
-    background: black;
-    color: #fff;
-    border: 1px solid black;
+    background: #fff;
+    color: black;
+    border: 1px solid #fff;
     font-weight: bold;
   }
-`;
-const EmptySpace = styled.div`
-  height: 400px;
 `;
 
 /*두번째영역 */
@@ -67,22 +73,22 @@ const EmptySpace2 = styled.div`
 `;
 const Content2 = styled.div`
   position: relative;
-  text-align: right;
-  margin-right: 25%;
+  text-align: left;
+  margin-left: 30%;
   font-family: NotoKR, San-Serif;
+  z-index: 2;
 `;
-const Underdivier = styled.div`
+const Underdivier2 = styled.div`
   width: 50px;
-  border: 0.5px solid #f0ff87;
-  margin-left: auto;
+  border: 0.5px solid #fff;
+  margin-left: 0;
   margin-top: 2%;
 `;
 const ContentInner2 = styled.div`
   position: relative;
   display: block;
-  margin: 0 auto;
   justify-content: left;
-  align-items: left;
+  align-items: center;
 `;
 const ContentInnerDetails2 = styled.div`
   font-weight: 500;
@@ -90,56 +96,10 @@ const ContentInnerDetails2 = styled.div`
   font-family: "NotoKR", "San-Serif";
   color: #fff;
   margin-top: 20px;
-  font-family: "Montserrat,Helvetica Neue";
 `;
 
 const ButtonStyle2 = styled.button`
-  margin-top: 1.5%;
-  background: transparent;
-  border: solid 1px black;
-  width: 130px;
-  height: 40px;
-  text-align: center;
-  color: #fff;
-  padding: 0;
-  position: relative;
-  font-weight: bold;
-  &:hover {
-    background: #fff;
-    color: black;
-    border: 1px solid #fff;
-    font-weight: bold;
-  }
-`;
-
-const ButtonToWebsite = styled.button`
-  margin-top: 10%;
-  background: transparent;
-  border: solid 2px #fff;
-  width: 230px;
-  height: 50px;
-  text-align: center;
-  color: black;
-  padding: 0;
-  position: absolute;
-  margin-left: -7%;
-  font-size: 17px;
-  font-weight: bold;
-  &:hover {
-    background: black;
-    color: #fff;
-    font-size: 17px;
-    border: 1px solid black;
-  }
-`;
-
-/*세번째영역 */
-const EmptySpace3 = styled.div`
-  height: 350px;
-`;
-
-const ButtonStyle3 = styled.button`
-  margin-top: 1.5%;
+  margin-top: 3%;
   background: transparent;
   border: solid 1px #fff;
   width: 130px;
@@ -149,6 +109,62 @@ const ButtonStyle3 = styled.button`
   padding: 0;
   position: relative;
   font-weight: bold;
+  font-size: 15px;
+  &:hover {
+    background: #fff;
+    color: black;
+    border: 1px solid #fff;
+    font-weight: bold;
+  }
+`;
+
+const ButtonToWebsite = styled.a`
+  margin-top: 10%;
+  background: transparent;
+  border: solid 1px #fff;
+  width: 230px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  padding: 0;
+  position: absolute;
+  margin-left: -7%;
+  font-size: 17px;
+  font-weight: bold;
+  &:hover {
+    background: #f6dc3f;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    border: 1px solid #f6dc3f;
+  }
+`;
+
+/*세번째영역 */
+const EmptySpace3 = styled.div`
+  height: 350px;
+`;
+
+const ContentInnerDetails3 = styled.div`
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "NotoKR", "San-Serif";
+  color: black;
+  margin-top: 20px;
+`;
+
+const ButtonStyle3 = styled.button`
+  margin-top: 3%;
+  background: transparent;
+  border: solid 1px black;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+  color: black;
+  padding: 0;
+  position: relative;
+  font-weight: bold;
+  font-size: 15px;
   &:hover {
     background: #fff;
     color: black;
@@ -161,7 +177,7 @@ const ButtonStyle3 = styled.button`
 import { Container } from "reactstrap";
 // core components
 
-function ATB() {
+function ATC() {
   let app = useRef(null);
   let pageHeader = React.createRef();
   let content = useRef(null);
@@ -178,6 +194,12 @@ function ATB() {
     window.scrollTo({ top: 4200, behavior: "smooth" });
 
   const gotoTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
+  const [user, setUser] = React.useState(null);
+  const { account } = useParams();
+  // React.useEffect(() => {
+  //   fetch(`http://atcworld.cafe24.com/default/${account}`).then(setUser);
+  // }, account);
 
   const child = { width: `50%`, height: `100%` };
   const parent = {
@@ -197,11 +219,11 @@ function ATB() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage:
-              "url(" + require("assets/img/blockchain.jpg") + ")",
+            backgroundImage: "url(" + require("assets/img/media3.jpg") + ")",
             // opacity: 0.8,
             height: "1400px",
             maxWidth: "100%",
+            opacity: "0.9",
           }}
           ref={pageHeader}
         >
@@ -217,7 +239,7 @@ function ATB() {
                 <img
                   alt="..."
                   className="n-logo"
-                  src={require("assets/img/ATB.png")}
+                  src={require("assets/img/ATCwhite2.png")}
                   style={{ width: "100px", height: "100px" }}
                 ></img>
                 <h1
@@ -227,41 +249,58 @@ function ATB() {
                     marginLeft: "20px",
                     fontSize: "70px",
                     fontWeight: "1000",
-                    fontFamily: "NotoKR,San-Serif",
-                    color: "#025ab7",
+                    color: "#fff",
                     fontFamily: "Montserrat,Helvetica Neue",
                   }}
                 >
                   {/* ATA (A<span style={{ color: "#fff" }}>bout</span> T
                   <span style={{ color: "#fff" }}>he&nbsp;</span>A
                   <span style={{ color: "#fff" }}>pp</span>) */}
-                  ATB (About The Block)
+                  ATC (About The Contents)
                 </h1>
               </ContentInner>
               <ContentInnerDetails>
-                ⁠ATB is a blockchain based technology investor and operator,
-                <br /> developing leading technologies with global leading
-                blockchain researchers. 
+                ATC는 콘텐츠 데이터 전달을 중심으로
+                <br />
+                국내 뉴미디어 콘텐츠를 제작·유통해 <br />
+                다양한 주요 크리에이터와 미디어 파트너들이 협업해 <br />
+                <b style={{ fontSize: "20px" }}>
+                  "고품질 멀티미디어 데이터를 제공합니다."
+                </b>
               </ContentInnerDetails>
               <div style={{ position: "relative", display: "block" }}>
-                <ButtonStyle onClick={gotoFirstSection}>NEXT</ButtonStyle>
+                <ButtonStyle onClick={gotoFirstSection}>Next</ButtonStyle>
+                {/* <Route
+                  render={({ history }) => (
+                    <ButtonToWebsite
+                      onClick={() => {
+                        history.push("/ATA");
+                      }}
+                    >
+                      공식홈페이지 바로가기
+                    </ButtonToWebsite>
+                  )}
+                /> */}
+
+                {/* <ButtonToWebsite>공식홈페이지 바로가기 </ButtonToWebsite> */}
+
                 <a
                   href={"http://atcworld.cafe24.com/default/"}
                   className="Link_detail"
                   style={{
-                    border: "solid black 1px",
+                    border: "solid #fff 1px",
                     display: "block",
                     width: "250px",
                     height: "40px",
                     margin: "0 auto",
                     marginTop: "50px",
                     textDecoration: "none",
-                    color: "black",
+                    color: "#fff",
                     fontSize: "20px",
                     verticalAlign: "middle",
                   }}
                 >
-                  Go official website
+                  공식 홈페이지 바로가기
                 </a>
               </div>
             </Content>
@@ -273,8 +312,8 @@ function ATB() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/data3.jpg") + ")",
-            opacity: "0.9",
+            backgroundImage: "url(" + require("assets/img/media6.jpg") + ")",
+            opacity: "0.95",
             height: "1400px",
             maxWidth: "100%",
           }}
@@ -297,7 +336,7 @@ function ATB() {
                 ></img> */}
                 <h1
                   style={{
-                    textAlign: "right",
+                    textAlign: "left",
                     marginLeft: "0px",
                     fontSize: "70px",
                     fontWeight: "1000",
@@ -306,25 +345,21 @@ function ATB() {
                   }}
                   ref={commentSection}
                 >
-                  Server Solution
+                  콘텐츠
                 </h1>
-                <Underdivier></Underdivier>
+                <Underdivier2></Underdivier2>
                 <img
                   alt="..."
                   className="n-logo"
-                  src={require("assets/img/server.png")}
+                  src={require("assets/img/content.png")}
                   style={{ marginTop: "50px" }}
                   // style={{ width: "50px", height: "50px" }}
                 ></img>
               </ContentInner2>
               <ContentInnerDetails2>
-                We are currently focusing on developing a global Content
-                Distribution Network (CDN) <br />
-                using IPFS(decentralized, web 3.0) and its data sever solutions{" "}
-                <br />
-                those will lead the future content storage and streaming
-                industry <br />
-                through security-specific blockchain technology.
+                한국의 뉴미디어 크리에이터들이 <br />
+                양질의 콘텐츠를 제작할 수 있도록 돕고
+                <br />전 세계 시청자들과 소통할수 있도록 제공하고있습니다.
               </ContentInnerDetails2>
               <ButtonStyle2 onClick={gotoSecondSection} style={{ top: "0" }}>
                 Next
@@ -339,8 +374,7 @@ function ATB() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/nasa1.jpg") + ")",
-
+            backgroundImage: "url(" + require("assets/img/creator2.jpg") + ")",
             height: "1400px",
             maxWidth: "100%",
           }}
@@ -367,44 +401,46 @@ function ATB() {
                 ></img> */}
                 <h1
                   style={{
-                    textAlign: "right",
+                    textAlign: "left",
                     marginLeft: "0px",
-                    fontSize: "70px",
-                    fontWeight: "1000",
+                    fontSize: "55px",
+                    fontWeight: "600",
                     fontFamily: "NotoKR,San-Serif",
-                    color: "#fff",
+                    color: "black",
                   }}
                   ref={commentSection}
                 >
-                  Internet
+                  소셜마케팅 · 플랫폼
                 </h1>
                 <Underdivier></Underdivier>
                 <img
                   alt="..."
                   className="n-logo"
-                  src={require("assets/img/internet.png")}
+                  src={require("assets/img/content-management.png")}
                   style={{ marginTop: "50px" }}
                   // style={{ width: "50px", height: "50px" }}
                 ></img>
               </ContentInner2>
-              <ContentInnerDetails2>
-                We are currently focusing on developing a global Content
-                Distribution Network (CDN) <br />
-                using IPFS(decentralized, web 3.0) and its data sever solutions{" "}
+              <ContentInnerDetails3>
+                한국의 뉴미디어 크리에이터들이 양질의 콘텐츠를 <br />
+                제작할 수 있도록 돕고 전 세계 시청자들과 <br />
+                소통할수 있도록 제공하고있습니다.
                 <br />
-                those will lead the future content storage and streaming
-                industry <br />
-                through security-specific blockchain technology.
-              </ContentInnerDetails2>
+                <b style={{ fontSize: "15px" }}>
+                  "여러분의 콘텐츠를 가장 완벽한 형태로 중국의 모든 플랫폼과
+                  연결합니다"
+                </b>
+              </ContentInnerDetails3>
               <ButtonStyle3 onClick={gotoThirdSection} style={{ top: "0" }}>
                 Next
               </ButtonStyle3>
               <div
                 style={{
                   bottom: "-130%",
+
                   position: "absolute",
                   textAlign: "50%",
-                  marginLeft: "60%",
+                  marginLeft: "30%",
                 }}
               >
                 <a
@@ -435,7 +471,29 @@ function ATB() {
               <img
                 alt="..."
                 className="n-logo"
-                src={require("assets/img/server2.png")}
+                src={require("assets/img/broadcast.jpg")}
+                style={{
+                  maxWidth: "800px",
+                  height: "500px",
+                  position: "relative",
+                }}
+
+                // style={{ width: "50px", height: "50px" }}
+              ></img>
+            </div>
+
+            <div
+              style={child}
+              style={{
+                maxWidth: "800px",
+                height: "500px",
+                position: "relative",
+              }}
+            >
+              <img
+                alt="..."
+                className="n-logo"
+                src={require("assets/img/edit1.jpg")}
                 style={{
                   maxWidth: "800px",
                   height: "500px",
@@ -449,7 +507,7 @@ function ATB() {
               <img
                 alt="..."
                 className="n-logo"
-                src={require("assets/img/code2.jpg")}
+                src={require("assets/img/creator2.png")}
                 style={{
                   maxWidth: "800px",
                   height: "500px",
@@ -464,7 +522,7 @@ function ATB() {
               <img
                 alt="..."
                 className="n-logo"
-                src={require("assets/img/code3.jpg")}
+                src={require("assets/img/media7.jpg")}
                 style={{
                   maxWidth: "800px",
                   height: "500px",
@@ -479,7 +537,7 @@ function ATB() {
               <img
                 alt="..."
                 className="n-logo"
-                src={require("assets/img/code1.jpg")}
+                src={require("assets/img/creator3.jpg")}
                 style={{
                   maxWidth: "800px",
                   height: "500px",
@@ -497,4 +555,4 @@ function ATB() {
   );
 }
 
-export default ATB;
+export default ATC;

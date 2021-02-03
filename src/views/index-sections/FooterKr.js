@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import styled, { keyframes } from "styled-components";
 
-const Strategy = () => {
+const MarketingSecondOneline = styled.div`
+marginTop: "130px",
+// border: "solid 1px black",
+position: "relative",
+width: "80%",
+display: "inline-block",
+marginLeft: "10%",
+marginRight: "10%",
+`;
+
+const FooterKr = () => {
   React.useEffect(() => {
     Aos.init({});
   }, []);
+
   return (
-    <div>
-      <div class="footer" style={{ height: "700px", padding: "0px" }}>
-        {/* <div style={{ height: "200px" }}></div> */}
+    <>
+      {/* <div className="divider" style={{ marginTop: "30px" }}></div>
+      {/* background: "#f5f5f7", */}{" "}
+      <div class="footer" style={{ height: "1000px", padding: "0px" }}>
+        <div style={{ height: "200px" }}></div>
         <div
           className="marketing"
           style={{
@@ -18,7 +32,7 @@ const Strategy = () => {
             margin: "0 auto",
           }}
         >
-          {/* <h2
+          <h2
             style={{
               fontWeight: "500",
               lineHeight: "1.4",
@@ -34,7 +48,7 @@ const Strategy = () => {
             프로젝트별 명쾌한 자사, 경쟁사 분석 및 <br />
             IT 트렌드 반영을 통해 고객사의 문제를 해결하고, <br />
             비지니스 성장을 돕고 있습니다.
-          </h2> */}
+          </h2>
           <div style={{ height: "200px" }}></div>
           {/*첫번째 */}
           <div
@@ -82,7 +96,7 @@ const Strategy = () => {
                 src={require("assets/img/1.5x/handout.png")}
                 style={{ width: "10%" }}
               ></img> */}
-              Strategy
+              전략 · 기획
             </h4>
 
             <div
@@ -94,9 +108,9 @@ const Strategy = () => {
                 color: "#878890",
               }}
             >
-              Pre-interview, requirement analysis steps Identify your client's
-              projects.
-              <br /> Derive Implications for Project Strategy and Korean Version
+              사전 인터뷰, 요구사항 분석 단계를 통해 <br />
+              고객사의 프로젝트를 파악하고,
+              <br /> 시사점을 도출해 프로젝트 전략과
             </div>
             <div
               style={{
@@ -157,7 +171,7 @@ const Strategy = () => {
               data-aos-duration="350"
               data-aos-easing="ease-in-out"
             >
-              Design
+              디자인
             </h4>
 
             <div
@@ -173,10 +187,9 @@ const Strategy = () => {
               data-aos-duration="350"
               data-aos-easing="ease-in-out"
             >
-              Apply the latest trend design and for greater user convenience We
-              are providing you with an attractive design.
-              <br />
-              for more future
+              최신 트렌드 디자인을 적용 및 <br />
+              사용자 편의성을 증대할 수 있는 <br />
+              매력적인 디자인을 제공해 드리고 있습니다.
             </div>
             <div
               style={{
@@ -224,6 +237,7 @@ const Strategy = () => {
             ></img>
             <h4
               style={{
+                display: "block",
                 height: "42px",
                 margin: "0",
                 fontWeight: "700",
@@ -238,7 +252,7 @@ const Strategy = () => {
               data-aos-duration="350"
               data-aos-easing="ease-in-out"
             >
-              Development
+              개발 · 구현
             </h4>
 
             <div
@@ -254,10 +268,10 @@ const Strategy = () => {
               data-aos-duration="350"
               data-aos-easing="ease-in-out"
             >
-              Developed for user and administrator purposes, Flexible internal
-              system connectivity, re-establishment of infrastructure
+              사용자 및 관리자 목적 중심으로 개발하며, <br />
+              유연한 내부 시스템 연계, 인프라 재정립을 통해
               <br />
-              Implement to successfully open. <br />
+              성공적으로 오픈할 수 있도록 구현합니다. <br />
             </div>
             <div
               style={{
@@ -319,7 +333,7 @@ const Strategy = () => {
               data-aos-duration="350"
               data-aos-easing="ease-in-out"
             >
-              Image
+              영상 · 이미지
             </h4>
 
             <div
@@ -335,17 +349,17 @@ const Strategy = () => {
               data-aos-duration="350"
               data-aos-easing="ease-in-out"
             >
-              for richer corporate and product branding We are filming and
-              producing digital images and videos.
+              보다 풍부한 기업 및 제품 브랜딩을 위한 <br />
+              디지털 이미지 및 영상물을 촬영, 제작하고 있습니다.
               <br />
-              In addition, the content business is under way.
+              더불어 컨텐츠 사업또한 진행중입니다
             </div>
           </div>
         </div>
         <div style={{ height: "300px" }}></div>
       </div>
-    </div>
+    </>
   );
 };
 
-export default Strategy;
+export default FooterKr;

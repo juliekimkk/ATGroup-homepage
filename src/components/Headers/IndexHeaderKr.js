@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import React, { useEffect, useRef } from "react";
-import IndexNavbar from "../../components/Navbars/IndexNavbar.js";
+import IndexNavbar from "../Navbars/IndexNavbar.js";
 import { TimelineLite, TweenMax, Power3 } from "gsap";
 import styled from "styled-components";
 import Aos from "aos";
@@ -83,7 +83,7 @@ const ButtonToWebsite = styled.button`
   }
 `;
 
-function IndexHeader() {
+function IndexHeaderKr() {
   let app = useRef(null);
   let pageHeader = React.createRef();
   let content = useRef(null);
@@ -164,12 +164,12 @@ function IndexHeader() {
                 </ContentInner>
                 <ContentInnerDetails>
                   <b>
-                    AT Group invests, develops, and deploys international
-                    business infrastructure A group of five individual companies
+                    AT 그룹은 국제 비즈니스 인프라를 투자, 개발 및 배포하는{" "}
+                    5개의 개별 기업입니다 한글판
                   </b>
                   <br />
                   <b style={{ fontSize: "20px" }}>
-                    We provide high-quality multimedia data
+                    "고품질 멀티미디어 데이터를 제공합니다."
                   </b>
                 </ContentInnerDetails>
                 <div
@@ -227,4 +227,4 @@ function IndexHeader() {
   );
 }
 
-export default IndexHeader;
+export default IndexHeaderKr;
