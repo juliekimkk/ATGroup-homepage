@@ -24,7 +24,7 @@ export default function GenerateMap() {
   useEffect(() => {
     mapscript();
   }, []);
-
+  const { kakao } = window;
   const mapscript = () => {
     /*
     const script = document.createElement("script");
