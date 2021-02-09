@@ -5,10 +5,10 @@ import React from "react";
 // } from "reactstrap";
 
 // core components
-import IndexNavbar from "components/Navbars/IndexNavbar.js";
-import IndexHeader from "components/Headers/IndexHeader.js";
+import IndexHeaderKr from "components/Headers/IndexHeaderKr.js";
+
 import DarkFooter from "components/Footers/DarkFooter.js";
-import Map from "./views/index-sections/kakaomap.js";
+
 // import Init from "../assets/css/init.css";
 
 // sections for this page
@@ -28,9 +28,8 @@ import CompleteExamples from "./views/index-sections/CompleteExamples.js";
 import SignUp from "./views/index-sections/SignUp.js";
 import Examples from "./views/index-sections/Examples.js";
 import Download from "./views/index-sections/Download.js";
-import kakaomapKr from "views/index-sections/kakaomap.js";
+import KakaomapKr from "views/index-sections/kakaomap.js";
 
-import IndexHeaderKr from "components/Headers/IndexHeaderKr.js";
 import ContentKr from "views/index-sections/ContentKr.js";
 import IndexNavbarKr from "components/Navbars/IndexNavbarKr.js";
 
@@ -53,7 +52,7 @@ function AppKr() {
         <IndexHeaderKr />
         <div className="main">
           <ContentKr />
-          <kakaomapKr />
+          <KakaomapKr />
           {/* <Map /> */}
           {/* <Footer />
 

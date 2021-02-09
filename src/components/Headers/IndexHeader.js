@@ -116,7 +116,6 @@ function IndexHeader() {
         ></div>
         <div style={{ height: "4200px" }}>
           <IndexNavbar />
-
           <div
             className="page-header-image"
             style={{

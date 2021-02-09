@@ -114,7 +114,7 @@ function IndexNavbar() {
                   <p>About Us</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <Link to="/history" style={{ color: "black" }}>
+                  <Link to="history" style={{ color: "black" }}>
                     <DropdownItem>history</DropdownItem>
                   </Link>
                   {/* <DropdownItem href="/vision" target="">

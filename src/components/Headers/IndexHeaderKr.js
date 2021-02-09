@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import React, { useEffect, useRef } from "react";
-import IndexNavbar from "../Navbars/IndexNavbar.js";
+import IndexNavbarKr from "../Navbars/IndexNavbarKr.js";
 import { TimelineLite, TweenMax, Power3 } from "gsap";
 import styled from "styled-components";
 import Aos from "aos";
@@ -115,8 +115,7 @@ function IndexHeaderKr() {
           ref={pageHeader}
         ></div>
         <div style={{ height: "4200px" }}>
-          <IndexNavbar />
-
+          <IndexNavbarKr />
           <div
             className="page-header-image"
             style={{

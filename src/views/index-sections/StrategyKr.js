@@ -8,7 +8,7 @@ const StrategyKr = () => {
   }, []);
   return (
     <div>
-      <div class="footer" style={{ height: "700px", padding: "0px" }}>
+      <div className="footer" style={{ height: "700px", padding: "0px" }}>
         {/* <div style={{ height: "200px" }}></div> */}
         <div
           className="marketing"
@@ -100,7 +100,7 @@ const StrategyKr = () => {
             </div>
             <div
               style={{
-                display: "block;",
+                display: "block",
                 width: "1px",
                 backgroundColor: "#eee",
                 position: "absolute",
