@@ -44,7 +44,7 @@ function App() {
   });
   return (
     <>
-      <IndexNavbar />
+      {/* <IndexNavbar /> */}
       <div className="wrapper">
         <IndexHeader />
         <div className="main">

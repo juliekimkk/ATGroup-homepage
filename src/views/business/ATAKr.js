@@ -122,7 +122,7 @@ const EmptySpace3 = styled.div`
 import { Container } from "reactstrap";
 // core components
 
-function ATA() {
+function ATAKr() {
   let app = useRef(null);
   let pageHeader = React.createRef();
   let content = useRef(null);
@@ -460,4 +460,4 @@ function ATA() {
   );
 }
 
-export default ATA;
+export default ATAKr;

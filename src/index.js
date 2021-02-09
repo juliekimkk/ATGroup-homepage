@@ -70,7 +70,7 @@ import AppKr from "AppKr";
 import ATAKr from "views/business/ATAKr";
 import ATBKr from "views/business/ATBKr";
 import ATCKr from "views/business/ATCKr";
-import HistoryKr from "views/aboutus/HistoryKr";
+import historyKr from "views/aboutus/HistoryKr";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -181,7 +181,7 @@ ReactDOM.render(
         <Route path="/ATAKr" render={(props) => <ATAKr {...props} />} />
         <Route path="/ATBKr" render={(props) => <ATBKr {...props} />} />
         <Route path="/ATCKr" render={(props) => <ATCKr {...props} />} />
-        <Route path="/historyKr" render={(props) => <HistoryKr {...props} />} />
+        <Route path="/HistoryKr" component={historyKr} />
 
         <Redirect path="/App" />
         <Redirect from="/" to="/App" />

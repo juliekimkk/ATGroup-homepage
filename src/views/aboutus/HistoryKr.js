@@ -73,7 +73,7 @@ const HistoryKr = () => {
                 style={{ fontSize: "70px", fontWeight: "600" }}
                 ref={commentSection}
               >
-                COMPANY HISTORY
+                회사 역사
               </h1>
               <div className="mainTextInner">
                 Outstanding Realization through Innovative Technology

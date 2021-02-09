@@ -29,9 +29,10 @@ import SignUp from "./views/index-sections/SignUp.js";
 import Examples from "./views/index-sections/Examples.js";
 import Download from "./views/index-sections/Download.js";
 import kakaomapKr from "views/index-sections/kakaomap.js";
-import IndexNavbarKr from "components/Navbars/IndexNavbarKr.js";
+
 import IndexHeaderKr from "components/Headers/IndexHeaderKr.js";
 import ContentKr from "views/index-sections/ContentKr.js";
+import IndexNavbarKr from "components/Navbars/IndexNavbarKr.js";
 
 function AppKr() {
   React.useEffect(() => {
@@ -47,7 +48,7 @@ function AppKr() {
   });
   return (
     <>
-      <IndexNavbarKr />
+      {/* <IndexNavbarKr /> */}
       <div className="wrapper">
         <IndexHeaderKr />
         <div className="main">
