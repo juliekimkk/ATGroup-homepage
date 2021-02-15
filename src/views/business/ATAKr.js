@@ -205,7 +205,7 @@ function ATAKr() {
               <div style={{ position: "relative", display: "block" }}>
                 <ButtonStyle onClick={gotoFirstSection}>Next</ButtonStyle>
                 <a
-                  href={"https://aboutheapp.netlify.app/"}
+                  href={"https://abouttheapp.netlify.app/"}
                   className="Link_detail"
                   style={{
                     border: "solid #fff 1px",
