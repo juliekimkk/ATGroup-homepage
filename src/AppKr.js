@@ -47,7 +47,7 @@ function AppKr() {
   });
   return (
     <>
-      {/* <IndexNavbarKr /> */}
+      
       <div className="wrapper">
         <IndexHeaderKr />
         <div className="main">

@@ -207,7 +207,7 @@ function ATA() {
               <div style={{ position: "relative", display: "block" }}>
                 <ButtonStyle onClick={gotoFirstSection}>Next</ButtonStyle>
                 <a
-                  href={"http://atcworld.cafe24.com/default/"}
+                  href={"https://aboutheapp.netlify.app/"}
                   className="Link_detail"
                   style={{
                     border: "solid #fff 1px",
