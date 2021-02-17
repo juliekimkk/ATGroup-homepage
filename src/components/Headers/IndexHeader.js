@@ -5,17 +5,17 @@ import { TimelineLite, TweenMax, Power3 } from "gsap";
 import styled from "styled-components";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import "./text.css";
 
 // reactstrap components
 import { Container, NavLink } from "reactstrap";
 // core components
 
 const ContentInnerDetails = styled.div`
-  font-weight: 500;
-  font-size: 23px;
-  // font-family: "NotoKR", "San-Serif";
+  font-weight: bold;
+  font-size: 1em;
   color: black;
-  margin-top: 100px;
+  margin-top: 1px;
   font-family: "Montserrat,Helvetica Neue";
   line-height: 5;
 `;
@@ -106,14 +106,23 @@ function IndexHeader() {
   return (
     <>
       <div className="page-header clear-filter">
-        <div
+        {/* <div
           className="page-header-image"
+          
           style={{
             backgroundImage: "url(" + require("assets/img/company1.jpg") + ")",
             opacity: "0.7",
           }}
           ref={pageHeader}
-        ></div>
+        ></div> */}
+        <div
+          className="page-header-image"
+          style={{ opacity: "0.8" }}
+          id="mainimage"
+        >
+          <img src={require("assets/img/company1.jpg")}></img>
+        </div>
+
         <div style={{ height: "4200px" }}>
           <IndexNavbar />
           <div
@@ -122,14 +131,13 @@ function IndexHeader() {
               // backgroundImage:
               //   "url(" + require("assets/img/company1.jpg") + ")",
               // opacity: 0.8,
-              height: "1400px",
+              maxHeight: "100%",
               maxWidth: "100%",
               opacity: "0.9",
             }}
             ref={pageHeader}
           >
             <div className="content_total" ref={(el) => (app = el)}>
-              <EmptySpace></EmptySpace>
               <Content
                 data-aos="fade-up"
                 data-aos-duration="700"
@@ -143,34 +151,30 @@ function IndexHeader() {
                     src={require("assets/img/ATC.png")}
                     style={{ width: "100px", height: "100px" }}
                   ></img> */}
-                  <h1
-                    style={{
-                      margin: "0",
-                      textAlign: "center",
-                      marginLeft: "20px",
-                      fontSize: "70px",
-                      fontWeight: "1000",
-                      color: "black",
-                      fontFamily: "Montserrat,Helvetica Neue",
-                    }}
+                  <b
+                    // style={{
+                    //   margin: "0",
+                    //   textAlign: "center",
+                    //   marginLeft: "20px",
+                    //   fontSize: "50px",
+                    //   color: "black",
+                    //   fontFamily: "Montserrat,Helvetica Neue",
+                    // }}
+                    id="fontmain"
                     ref={commentSection}
                   >
                     {/* ATA (A<span style={{ color: "#fff" }}>bout</span> T
                   <span style={{ color: "#fff" }}>he&nbsp;</span>A
                   <span style={{ color: "#fff" }}>pp</span>) */}
                     AT GROUP
-                  </h1>
+                  </b>
                 </ContentInner>
-                <ContentInnerDetails>
+                <div id="fontmainsub">
                   <b>
                     AT Group invests, develops, and deploys international
                     business infrastructure A group of five individual companies
                   </b>
-                  <br />
-                  <b style={{ fontSize: "20px" }}>
-                    We provide high-quality multimedia data
-                  </b>
-                </ContentInnerDetails>
+                </div>
                 <div
                   style={{
                     position: "relative",

@@ -1,0 +1,53 @@
+@media (max-width: 3000px) {
+  #squareTop {
+    margin-top: 100px;
+  }
+
+  #main > #onebyone > h4 {
+    font-weight: bold;
+  }
+
+  .clickimage {
+    width: "10%";
+  }
+}
+
+@media (max-width: 375px) {
+  #squareTop {
+    margin-top: 100px;
+  }
+  #main {
+    max-width: 375px;
+    width: 100%;
+  }
+  #logoname {
+    font-size: 1em;
+  }
+
+  #main > #onebyone {
+    width: 50%;
+    height: 240px;
+    float: left;
+    color: black;
+    font-size: 0.7em;
+    border: red solid 1px;
+  }
+
+  #main > #onebyone > h4 {
+    font-weight: bold;
+  }
+
+  .clickimage {
+    width: 50%;
+  }
+}
+
+/* 
+#main > div:nth-child(1) {
+  background-color: red;
+}
+
+#main > div:nth-child(2) {
+  clear: both;
+  float: none;
+} */

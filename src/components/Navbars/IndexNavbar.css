@@ -1,0 +1,15 @@
+@media (max-width: 3000px) {
+  #navbarmain {
+  }
+}
+
+@media (max-width: 375px) {
+  #navbarmain {
+    max-width: 100px;
+    /* width: 100%; */
+  }
+
+  #logoname {
+    font-size: 1em;
+  }
+}
