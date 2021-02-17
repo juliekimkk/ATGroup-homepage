@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./IndexNavbar.css";
-
 // reactstrap components
 import {
   Button,
@@ -85,7 +83,6 @@ function IndexNavbar() {
                   color: CurrentPath === "/index" ? "black" : null,
                   fontWeight: "bold",
                 }}
-                id="logoname"
               >
                 AT GROUP
               </LogoText>
