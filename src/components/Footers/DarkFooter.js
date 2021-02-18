@@ -9,7 +9,7 @@ const FooterTotal = styled.div`
   height: 100px;
 `;
 const Underdivier = styled.div`
-  width: 2550px;
+  width: 100%;
   height: 1px;
   border: 0.5px solid #3f3f40;
   margin-left: 0;

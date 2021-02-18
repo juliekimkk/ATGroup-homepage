@@ -5,6 +5,7 @@ import { TimelineLite, TweenMax, Power3 } from "gsap";
 import styled from "styled-components";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import "./text.css";
 
 // reactstrap components
 import { Container, NavLink } from "reactstrap";
@@ -129,47 +130,45 @@ function IndexHeader() {
             ref={pageHeader}
           >
             <div className="content_total" ref={(el) => (app = el)}>
-              <EmptySpace></EmptySpace>
+              {/* <EmptySpace></EmptySpace> */}
               <Content
                 data-aos="fade-up"
                 data-aos-duration="700"
                 data-aos-easing="ease-in-out"
                 data-aos-delay="400"
               >
-                <ContentInner>
+                <ContentInner id="fontmain">
                   {/* <img
                     alt="..."
                     className="n-logo"
                     src={require("assets/img/ATC.png")}
                     style={{ width: "100px", height: "100px" }}
                   ></img> */}
-                  <h1
-                    style={{
-                      margin: "0",
-                      textAlign: "center",
-                      marginLeft: "20px",
-                      fontSize: "70px",
-                      fontWeight: "1000",
-                      color: "black",
-                      fontFamily: "Montserrat,Helvetica Neue",
-                    }}
-                    ref={commentSection}
+                  <b
+                  // style={{
+                  //   margin: "0",
+                  //   textAlign: "center",
+                  //   marginLeft: "20px",
+                  //   fontSize: "70px",
+                  //   fontWeight: "1000",
+                  //   color: "black",
+                  //   fontFamily: "Montserrat,Helvetica Neue",
+                  // }}
+                  // ref={commentSection}
                   >
                     {/* ATA (A<span style={{ color: "#fff" }}>bout</span> T
                   <span style={{ color: "#fff" }}>he&nbsp;</span>A
                   <span style={{ color: "#fff" }}>pp</span>) */}
                     AT GROUP
-                  </h1>
+                  </b>
                 </ContentInner>
-                <ContentInnerDetails>
+                <ContentInnerDetails id="fontmainsub">
                   <b>
                     AT Group invests, develops, and deploys international
                     business infrastructure A group of five individual companies
                   </b>
                   <br />
-                  <b style={{ fontSize: "20px" }}>
-                    We provide high-quality multimedia data
-                  </b>
+                  <b>We provide high-quality multimedia data</b>
                 </ContentInnerDetails>
                 <div
                   style={{

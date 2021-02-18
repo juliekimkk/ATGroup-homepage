@@ -10,14 +10,7 @@ const Strategy = () => {
     <div>
       <div class="footer" style={{ height: "700px", padding: "0px" }}>
         {/* <div style={{ height: "200px" }}></div> */}
-        <div
-          className="marketing"
-          style={{
-            fontFamily: "Helvetica Neue, Arial, sans-serif",
-            maxWidth: "1600px",
-            margin: "0 auto",
-          }}
-        >
+        <div className="marketing" id="main">
           {/* <h2
             style={{
               fontWeight: "500",
@@ -35,19 +28,11 @@ const Strategy = () => {
             IT 트렌드 반영을 통해 고객사의 문제를 해결하고, <br />
             비지니스 성장을 돕고 있습니다.
           </h2> */}
-          <div style={{ height: "200px" }}></div>
+          <div id="squareTop"></div>
           {/*첫번째 */}
           <div
             className="marketing_second_onebox"
-            style={{
-              // border: "solid green 1px",
-              position: "relative",
-              display: "inline-block",
-              margin: "0 auto",
-              // padding: "1%",
-              width: "25%",
-              textAlign: "center",
-            }}
+            id="onebyone"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-duration="350"
@@ -65,25 +50,14 @@ const Strategy = () => {
                 marginBottom: "8px",
               }}
             ></img>
-            <h4
-              style={{
-                // display: "block",
-                height: "42px",
-                margin: "0",
-                fontWeight: "600",
-                fontSize: "27px",
-                textAlign: "center",
-                transform: "translate(50%)",
-                width: "50%",
-              }}
-            >
+            <b id="logoname">
               {/* <img
                 className="clickimage"
                 src={require("assets/img/1.5x/handout.png")}
                 style={{ width: "10%" }}
               ></img> */}
               Strategy
-            </h4>
+            </b>
 
             <div
               className="company_marketing_detail"
