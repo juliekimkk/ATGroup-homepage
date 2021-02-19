@@ -1,0 +1,35 @@
+@media (max-width: 2700px) {
+  #fontsize {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 70px;
+  }
+  #content-section {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+  #fontsize {
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: bold;
+    line-height: 50px;
+  }
+  #content-section {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #fontsize {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 30px;
+  }
+  #content-section {
+    margin-top: 100px;
+  }
+}

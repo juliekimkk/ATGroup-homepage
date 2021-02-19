@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import Strategy from "./Strategy";
 import ATseperate from "./ATseperate";
 import Kakaomap from "./kakaomap";
+import "./content.css";
 
 const textAnimation = keyframes`${fadeInUp}`;
 
@@ -33,17 +34,18 @@ const Content = () => {
   return (
     <div>
       <FirstText>
-        <div style={{ height: "200px" }} id="content-section"></div>
+        <div id="content-section"></div>
         <div
           className="ContentText"
-          style={{
-            textAlign: "center",
-            marginTop: "px",
-            fontSize: "20px",
-            fontWeight: "bold",
-            lineHeight: "60px",
-            letterSpacing: "1px",
-          }}
+          id="fontsize"
+          // style={{
+          //   textAlign: "center",
+          //   marginTop: "px",
+          //   fontSize: "20px",
+          //   fontWeight: "bold",
+          //   lineHeight: "60px",
+          //   letterSpacing: "1px",
+          // }}
           data-aos="fade-up"
           data-aos-offset="100"
           data-aos-delay="50"
@@ -54,11 +56,10 @@ const Content = () => {
           // data-aos-anchor-placement="top-center"
         >
           We are investing heavily in emerging environmentally friendly and
-          future-oriented projects.
           <br />
-          From Korea to China, Southeast Asia, Japan, Russia, Central Asia,
-          <br />
-          We've established a strong business network.
+          future-oriented projects. From Korea to China, <br />
+          Southeast Asia, Japan, Russia, Central Asia, We've established a
+          strong business network.
           {/* VOGO Group, with its roots going back to 1970s, has been dedicated to
           advance Korea's Industrial Development through <br />
           Construction of Major Infrastructures, IT Technology Innovation,

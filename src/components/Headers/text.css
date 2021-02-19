@@ -84,7 +84,8 @@
 /* }
 } */
 
-@media (max-width: 3000px) {
+/*데스크탑 아이맥*/
+@media (max-width: 2600px) {
   #fontmain {
     font-size: 5em;
     color: black;
@@ -102,7 +103,27 @@
   }
 }
 
-@media (max-width: 375px) {
+/*테블릿 1024-아이패드프로 */
+@media (min-width: 768px) {
+  #fontmain {
+    font-size: 5em;
+    color: black;
+    margin-top: 300px;
+  }
+
+  #fontmainsub {
+    font-size: 20;
+    font-weight: bold;
+    font-size: 2em;
+    color: black;
+    margin-top: 1px;
+    font-family: "Montserrat,Helvetica Neue";
+    line-height: 7;
+  }
+}
+
+/*대부분의 모바일*/
+@media (min-width: 320px) and (max-width: 480px) {
   #fontmain {
     font-size: 3em;
     color: black;
@@ -116,5 +137,6 @@
     font-family: "Montserrat,Helvetica Neue";
     line-height: 5;
     letter-spacing: -1px;
+    width: 100%;
   }
 }

@@ -1,53 +1,169 @@
+/*데스크탑*/
 @media (max-width: 3000px) {
-  #squareTop {
+  .marketing {
+    justify-content: center;
     margin-top: 100px;
   }
+  .marketing2 {
+    justify-content: center;
+    margin-top: 150px;
+  }
 
-  #main > #onebyone > h4 {
+  #main {
+    max-width: 2700px;
+    width: 100%;
+    display: flex;
+  }
+
+  #onebyone {
+    max-width: 100%;
+    /* height: 240px; */
+    float: block;
+    color: black;
+
+    font-size: 1.7em;
+    /* border: red solid 1px; */
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #onebyone > h4 {
     font-weight: bold;
   }
 
+  .company_marketing_detail {
+    height: 130px;
+    text-align: center;
+    margin-top: 20px;
+    color: #878890;
+    font-size: 0.6em;
+    max-width: 400px;
+    width: 100%;
+    font-size: 0.8em;
+  }
   .clickimage {
-    width: "10%";
+    width: auto;
+    margin: 0 auto;
   }
 }
 
-@media (max-width: 375px) {
-  #squareTop {
-    margin-top: 100px;
+/*아이패드*/
+@media (min-width: 768px) and (max-width: 1025px) {
+  .marketing {
+    justify-content: center;
+    margin-top: 150px;
   }
+  .marketing2 {
+    justify-content: center;
+    margin-top: 150px;
+  }
+
   #main {
-    max-width: 375px;
+    max-width: 2700px;
+    width: 100%;
+    display: flex;
+  }
+
+  #onebyone {
+    max-width: 100%;
+    float: block;
+    color: black;
+    font-size: 1.7em;
+    /* border: red solid 1px; */
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+  }
+
+  #onebyone > h4 {
+    font-weight: bold;
+  }
+
+  .company_marketing_detail {
+    height: 130px;
+    text-align: center;
+    width: max-content;
+    margin-top: 20px;
+    color: #878890;
+    font-size: 0.6em;
+    max-width: 250px;
+    width: 100%;
+    font-size: 0.9em;
+  }
+  .clickimage {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/*모바일*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .marketing {
+    justify-content: center;
+    margin-top: 100px;
+    max-width: 480px;
+    width: 100%;
+    display: flex;
+  }
+  .marketing2 {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  /* .marketing > .marketing_second_onebox > #onebyone {
+    width: 25%;
+    height: 400px;
+    float: left;
+    border: solid blue 1px;
+    position: relative;
+  } */
+
+  .marketing_second_onebox {
+    float: left;
+    max-width: 480px;
     width: 100%;
   }
-  #logoname {
-    font-size: 1em;
-  }
-
-  #main > #onebyone {
-    width: 50%;
-    height: 240px;
-    float: left;
+  #onebyone {
+    /* height: 240px; */
     color: black;
-    font-size: 0.7em;
-    border: red solid 1px;
+    font-size: 1.2em;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 2%;
   }
 
-  #main > #onebyone > h4 {
+  #onebyone > h4 {
     font-weight: bold;
   }
 
-  .clickimage {
-    width: 50%;
-  }
+  .company_marketing_detail {
+    height: 130px;
+    text-align: center;
 
-  #logosize {
-    width: 10px;
-    height: 10px;
+    width: max-content;
+    margin-top: 20px;
+    color: #878890;
+    font-size: 0.6em;
+    max-width: 250px;
+    width: 100%;
+    font-size: 0.9em;
+  }
+  .clickimage {
+    width: 70%;
+    margin: 0 auto;
   }
 }
 
-/* 
+/*
     #main > div:nth-child(1) {
       background-color: red;
     }
