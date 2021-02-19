@@ -59,7 +59,7 @@
   }
   .marketing2 {
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 50px;
   }
 
   #main {
@@ -80,7 +80,9 @@
     display: grid;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 2%;
+    margin-top: -5%;
+    word-spacing: -2px;
+    line-height: 30px;
   }
 
   #onebyone > h4 {
@@ -98,6 +100,11 @@
     width: 100%;
     font-size: 0.9em;
   }
+
+  .marketing_second_onebox {
+    padding: 10%;
+  }
+
   .clickimage {
     width: 100%;
     margin: 0 auto;
@@ -133,7 +140,7 @@
   #onebyone {
     /* height: 240px; */
     color: black;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 0 auto;
     justify-content: center;
     text-align: center;
@@ -162,13 +169,3 @@
     margin: 0 auto;
   }
 }
-
-/*
-    #main > div:nth-child(1) {
-      background-color: red;
-    }
-    
-    #main > div:nth-child(2) {
-      clear: both;
-      float: none;
-    } */
