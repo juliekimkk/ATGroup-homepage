@@ -1,0 +1,52 @@
+@media (max-width: 3000px) {
+  #margintop {
+    margin-top: 300px;
+    text-align: center;
+    font-size: 3.5em;
+    color: rgb(88, 88, 88);
+  }
+
+  #bottom {
+    margin-bottom: 80px;
+  }
+  #map {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+/*아이패드*/
+@media (min-width: 768px) and (max-width: 1025px) {
+  #margintop {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2.5em;
+    color: rgb(88, 88, 88);
+  }
+
+  #bottom {
+    margin-bottom: 30px;
+  }
+  #map {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+/*핸드폰*/
+@media (min-width: 320px) and (max-width: 480px) {
+  #margintop {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(88, 88, 88);
+  }
+
+  #bottom {
+    margin-bottom: 30px;
+  }
+  #map {
+    width: 100%;
+    height: 300px;
+  }
+}

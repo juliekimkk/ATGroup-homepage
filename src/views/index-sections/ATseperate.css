@@ -18,6 +18,8 @@
 
   #content_section_img1 > img {
     height: 450px;
+    max-width: 635.75px;
+    width: 100%;
   }
 
   #content_section_img1 > #content_section_img1_details > b {
@@ -103,28 +105,60 @@
 
 /*모바일*/
 @media (min-width: 320px) and (max-width: 480px) {
+  #content_section_total {
+    max-width: 1024;
+    width: 100%;
+  }
+  #our_business {
+    text-align: center;
+    font-size: 3em;
+  }
+
+  #content_section_oneline {
+    max-width: 100%;
+    height: 350px;
+
+    position: relative;
+    display: flex;
+  }
+
+  /*한칸*/
+  #content_section_img1 {
+    width: 100%;
+    max-width: 192px;
+    height: 350px;
+  }
+
+  #content_section_img1 > img {
+    height: 350px;
+  }
+  #content_section_img1 > #content_section_img1_details > b {
+    font-size: 1.5em;
+  }
+  #content_section_img1 > #content_section_img1_details {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 1.3em;
+    height: 350px;
+  }
+
+  #ptext {
+    position: relative;
+    font-size: 0.6em;
+    margin-top: 15%;
+    text-align: center;
+    width: 90%;
+    color: "white";
+  }
   #link_detail {
     border: solid black 1px;
     display: block;
-    width: 200px;
+    width: 160px;
     height: 30px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 10px;
     text-decoration: none;
     color: black;
-  }
-
-  #companyStory {
-    position: relative;
-    display: inblcok;
-    width: 100%;
-    height: 450px;
-    text-align: center;
-    margin: 0px;
-    padding: 30px;
-    background-color: #fafafa;
-    /* &:hover {
-      background-color: #f5e9dd;
-    } */
+    font-size: 0.8em;
   }
 }

@@ -1,12 +1,13 @@
 /*eslint-disable*/
 import React from "react";
+import "./DarkFooter.css";
 
 // reactstrap components
 import { Container } from "reactstrap";
 import styled from "styled-components";
 
 const FooterTotal = styled.div`
-  height: 100px;
+  height: 150px;
 `;
 const Underdivier = styled.div`
   width: 100%;
@@ -17,23 +18,24 @@ const Underdivier = styled.div`
   position: relative;
 `;
 
-const Info = styled.div`
-  margin-top: 0px;
+// const Info = styled.div`
+//   margin-top: 0px;
 
-  text-align: center;
-  position: relative;
-  margin: 0 auto;
-`;
+//   text-align: center;
+//   position: relative;
+//   margin: 0 auto;
+// `;
 
 function DarkFooter() {
   return (
     <footer className="footer" data-background-color="black">
       <FooterTotal>
-        <Info>
-          주소 : 서울특별시 금천구 가산디지털1로 75-15 1011~1012호
-          &nbsp;&nbsp;|&nbsp;&nbsp;전화 : 02-6956-8800
-          &nbsp;&nbsp;|&nbsp;&nbsp;이메일 : info@atg.camp
-        </Info>
+        <div id="info">
+          <p>주소 : 서울특별시 금천구 가산디지털1로 75-15 1011~1012호</p>
+          <p>
+            전화 : 02-6956-8800 &nbsp;&nbsp;|&nbsp;&nbsp;이메일 : info@atg.camp
+          </p>
+        </div>
         <Underdivier></Underdivier>
 
         <Container>

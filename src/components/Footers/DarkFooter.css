@@ -1,0 +1,26 @@
+@media (max-width: 2700px) {
+  #info {
+    margin-top: 100px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1025px) {
+  #info {
+    margin-top: 100px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    font-size: 0.9em;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  #info {
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    font-size: 0.7em;
+  }
+}

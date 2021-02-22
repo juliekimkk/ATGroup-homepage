@@ -1,6 +1,7 @@
 /*global kakao */
 import React, { useEffect } from "react";
 import styled from "styled-components";
+import "./kakaomap.css";
 
 const Location = styled.div`
   width: 100%;
@@ -59,8 +60,9 @@ export default function GenerateMap() {
   };
 
   return (
-    <div style={{ marginTop: "150px", textAlign: "center" }}>
-      <h3>LOCATION</h3>
+    <div id="margintop">
+      <p>LOCATION</p>
+      <div id="bottom"></div>
       <div
         style={{
           display: "block",
@@ -68,25 +70,7 @@ export default function GenerateMap() {
           justifyContent: "center",
         }}
       >
-        <div
-          className="detail"
-          style={{
-            // fontSize: "18px",
-            lineHeight: "18px",
-            color: "#1e1e1e",
-            position: "relative",
-            fontWeight: "bold",
-            textAlign: "center",
-          }}
-        >
-          <h3>VOGO Group Headquarter</h3>
-          <p>
-            Address : 10F 75-15, Gasan digital 1-ro, Geumcheon-gu, Seoul,
-            Republic of Korea
-          </p>
-          <p>Phone : 02-6956-8800</p>
-        </div>
-        <div id="map" style={{ width: "100%", height: "300px" }}></div>
+        <div id="map"></div>
       </div>
     </div>
   );
