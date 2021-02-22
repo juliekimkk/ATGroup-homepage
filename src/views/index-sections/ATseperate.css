@@ -1,0 +1,130 @@
+@media (max-width: 3000px) {
+  #our_business {
+    text-align: center;
+    font-size: 5em;
+  }
+
+  #content_section_oneline {
+    width: 3000px;
+    max-width: 100%;
+    height: 450px;
+    position: relative;
+    display: flex;
+  }
+
+  #content_section_img1 {
+    width: 50%;
+  }
+
+  #content_section_img1 > img {
+    height: 450px;
+  }
+
+  #content_section_img1 > #content_section_img1_details > b {
+    font-size: 3em;
+  }
+
+  #content_section_img1 > #content_section_img1_details {
+    text-align: center;
+    margin-top: 15%;
+    font-size: 1.2em;
+  }
+  #link_detail {
+    border: solid black 1px;
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+/*아이패드*/
+@media (min-width: 768px) and (max-width: 1025px) {
+  #content_section_total {
+    max-width: 1024;
+    width: 100%;
+  }
+  #our_business {
+    text-align: center;
+    font-size: 4em;
+  }
+
+  #content_section_oneline {
+    max-width: 100%;
+    height: 350px;
+
+    position: relative;
+    display: flex;
+  }
+
+  /*한칸*/
+  #content_section_img1 {
+    width: 100%;
+    max-width: 192px;
+    height: 350px;
+  }
+
+  #content_section_img1 > img {
+    height: 350px;
+  }
+  #content_section_img1 > #content_section_img1_details > b {
+    font-size: 1.5em;
+  }
+  #content_section_img1 > #content_section_img1_details {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 1.3em;
+    height: 350px;
+  }
+
+  #ptext {
+    position: relative;
+    font-size: 0.6em;
+    margin-top: 15%;
+    text-align: center;
+    width: 90%;
+    color: "white";
+  }
+  #link_detail {
+    border: solid black 1px;
+    display: block;
+    width: 160px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 0.8em;
+  }
+}
+
+/*모바일*/
+@media (min-width: 320px) and (max-width: 480px) {
+  #link_detail {
+    border: solid black 1px;
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-decoration: none;
+    color: black;
+  }
+
+  #companyStory {
+    position: relative;
+    display: inblcok;
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    margin: 0px;
+    padding: 30px;
+    background-color: #fafafa;
+    /* &:hover {
+      background-color: #f5e9dd;
+    } */
+  }
+}

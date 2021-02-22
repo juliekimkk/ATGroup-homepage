@@ -6,6 +6,7 @@ import styled, { keyframes } from "styled-components";
 import ATAbutton from "../business/ATA";
 import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
+import "./ATseperate.css";
 
 const Ourstory = styled.div`
   width: 100%;
@@ -13,19 +14,20 @@ const Ourstory = styled.div`
   border: solid 2px red;
 `;
 
-const Content_section_oneline = styled.div`
-  width: 100%;
-  height: 450px;
-  position: relative;
-  display: flex;
-`;
+// const Content_section_oneline = styled.div`
+//   width: 3000px;
+//   max-width: 100%;
+//   height: 450px;
+//   position: relative;
+//   display: flex;
+// `;
 
 const Content_section_img1 = styled.div`
   position: relative;
   display: flex;
-  width: 25%;
+  width: 50%;
   height: 450px;
-  background: url(http://corp.revu.net/wp-content/uploads/2019/07/home_category5.jpg);
+
   background-size: 100%;
 `;
 
@@ -44,7 +46,7 @@ const Content_section_img6 = styled.div`
   width: 25%;
   height: 450px;
 
-  background: url(http://corp.revu.net/wp-content/uploads/2019/07/home_category7.jpg);
+  // background: url(http://corp.revu.net/wp-content/uploads/2019/07/home_category7.jpg);
   background-size: 100%;
 `;
 
@@ -85,13 +87,13 @@ const PText = styled.div`
   &:hover {
   }
 `;
-// const ATALink = styled.div`
-//   position: relative;
-//   width: 100%;
-//   height: 36px;
-//   margin: 0 auto;
-//   margin-top: 10%;
-// `;
+const ATALink = styled.div`
+  position: relative;
+  width: 100%;
+  height: 36px;
+  margin: 0 auto;
+  margin-top: 10%;
+`;
 
 const ButtonStyle = styled.button`
   margin-top: 3%;
@@ -117,10 +119,11 @@ const ATseperate = () => {
     Aos.init({});
   }, []);
   return (
-    <div>
+    <>
       {/*History 화이트영역 */}
       <div
         className="text_start"
+
         // style={{ backgroundColor: "#eeeeee" }}
       >
         <div className="vc_column-inner">
@@ -131,10 +134,7 @@ const ATseperate = () => {
 
             <div className="wpb_text_column wpb_content_element  Headlineshadow2">
               <div className="wpb_wrapper">
-                <h2
-                  className="content_maintext"
-                  style={{ textAlign: "center" }}
-                >
+                <div id="our_business">
                   <span
                     style={{ color: "#585858" }}
                     data-aos="fade-down"
@@ -145,7 +145,7 @@ const ATseperate = () => {
                   >
                     OUR BUSINESS
                   </span>
-                </h2>
+                </div>
               </div>
             </div>
 
@@ -158,14 +158,15 @@ const ATseperate = () => {
             <div className="gem-divider" style={{ height: "70px" }}></div>
 
             <div
-              className="content_section_total"
+              id="content_section_total"
               style={{
                 width: "100%",
                 height: "900px",
               }}
             >
-              <Content_section_oneline>
-                <Content_section_img1
+              <div id="content_section_oneline">
+                <div
+                  id="content_section_img1"
                   data-aos="fade-right"
                   data-aos-duration="1000"
                   data-aos-easing="ease-in"
@@ -175,14 +176,14 @@ const ATseperate = () => {
                     alt="..."
                     className="n-logo"
                     src={require("assets/img/e-sports2.jpg")}
-                    style={{ width: "100%", height: "100%" }}
                   ></img>
-                </Content_section_img1>
-                <div style={{ width: "25%" }}>
-                  <CompanyStory>
-                    <h2>ATA</h2>
+                </div>
+
+                <div id="content_section_img1">
+                  <div id="content_section_img1_details">
+                    <b>ATA</b>
                     <Divider></Divider>
-                    <PText>
+                    <div id="ptext">
                       <AnimationWrapper>
                         <p>
                           We've been using platform technology and data that's
@@ -191,46 +192,34 @@ const ATseperate = () => {
                           influencer marketing platform company.
                         </p>
                       </AnimationWrapper>
-                    </PText>
+                    </div>
 
                     <Link to="/ATA">
-                      <a
-                        target="top"
-                        style={{
-                          border: "solid black 1px",
-                          display: "block",
-                          width: "200px",
-                          height: "30px",
-                          margin: "0 auto",
-                          marginTop: "50px",
-                          textDecoration: "none",
-                          color: "black",
-                        }}
-                      >
+                      <a id="link_detail" target="top">
                         View Details
                       </a>
                     </Link>
-                  </CompanyStory>
+                  </div>
                 </div>
 
-                <Content_section_img3
+                <div
+                  id="content_section_img1"
                   data-aos="fade-right"
                   data-aos-duration="1000"
                   data-aos-easing="ease-in"
                 >
                   {" "}
                   <img
-                    alt="..."
                     className="n-logo"
                     src={require("assets/img/blockchain.jpg")}
-                    style={{ width: "100%", height: "100%" }}
                   ></img>
-                </Content_section_img3>
-                <div style={{ width: "25%" }}>
-                  <CompanyStory>
-                    <h2>ATB</h2>
+                </div>
+
+                <div id="content_section_img1">
+                  <div id="content_section_img1_details">
+                    <b>ATB</b>
                     <Divider></Divider>
-                    <PText>
+                    <div id="ptext">
                       <AnimationWrapper>
                         <p>
                           We've been using platform technology and data that's
@@ -239,36 +228,23 @@ const ATseperate = () => {
                           influencer marketing platform company.
                         </p>
                       </AnimationWrapper>
-                    </PText>
+                    </div>
 
                     <Link to="/ATB">
-                      <a
-                        href="/ATB"
-                        className="Link_detail"
-                        style={{
-                          border: "solid black 1px",
-                          display: "block",
-                          width: "200px",
-                          height: "30px",
-                          margin: "0 auto",
-                          marginTop: "50px",
-                          textDecoration: "none",
-                          color: "black",
-                        }}
-                      >
+                      <a id="link_detail" target="top">
                         View Details
                       </a>
                     </Link>
-                  </CompanyStory>
+                  </div>
                 </div>
-              </Content_section_oneline>
+              </div>
 
-              <Content_section_oneline>
-                <div style={{ width: "25%" }}>
-                  <CompanyStory>
-                    <h2>ATC</h2>
+              <div id="content_section_oneline">
+                <div id="content_section_img1">
+                  <div id="content_section_img1_details">
+                    <b>ATC</b>
                     <Divider></Divider>
-                    <PText>
+                    <div id="ptext">
                       <AnimationWrapper>
                         <p>
                           We've been using platform technology and data that's
@@ -277,29 +253,18 @@ const ATseperate = () => {
                           influencer marketing platform company.
                         </p>
                       </AnimationWrapper>
-                    </PText>
+                    </div>
 
                     <Link to="/ATC">
-                      <a
-                        className="Link_detail"
-                        style={{
-                          border: "solid black 1px",
-                          display: "block",
-                          width: "200px",
-                          height: "30px",
-                          margin: "0 auto",
-                          marginTop: "50px",
-                          textDecoration: "none",
-                          color: "black",
-                        }}
-                      >
+                      <a id="link_detail" target="top">
                         View Details
                       </a>
                     </Link>
-                  </CompanyStory>
+                  </div>
                 </div>
 
-                <Content_section_img6
+                <div
+                  id="content_section_img1"
                   data-aos="fade-left"
                   data-aos-duration="1000"
                   data-aos-easing="ease-in"
@@ -309,60 +274,45 @@ const ATseperate = () => {
                     alt="..."
                     className="n-logo"
                     src={require("assets/img/media3.jpg")}
-                    style={{ width: "100%", height: "100%" }}
                   ></img>
-                </Content_section_img6>
+                </div>
 
-                <div style={{ width: "25%" }}>
-                  <CompanyStory>
-                    <h2>HISTORY</h2>
+                <div id="content_section_img1">
+                  <div id="content_section_img1_details">
+                    <b>HISTORY</b>
                     <Divider></Divider>
-                    <PText>
+                    <div id="ptext">
                       <AnimationWrapper>
                         <p>
-                          AT Group invests, develops, and delivers international
-                          business infrastructure £br A group of five individual
-                          companies.
+                          We've been using platform technology and data that's
+                          been stored for over a decade. Global to drive
+                          continuous growth and innovation on the foundation A
+                          influencer marketing platform company.
                         </p>
                       </AnimationWrapper>
-                    </PText>
+                    </div>
 
                     <Link to="/history">
-                      <a
-                        className="Link_detail"
-                        style={{
-                          border: "solid black 1px",
-                          display: "block",
-                          width: "200px",
-                          height: "30px",
-                          margin: "0 auto",
-                          marginTop: "50px",
-                          textDecoration: "none",
-                          color: "black",
-                        }}
-                      >
+                      <a id="link_detail" target="top">
                         View Details
                       </a>
                     </Link>
-                  </CompanyStory>
+                  </div>
                 </div>
 
-                <Content_section_img8
+                <div
+                  id="content_section_img1"
                   data-aos="fade-left"
                   data-aos-duration="1000"
                   data-aos-easing="ease-in"
                 >
                   {" "}
                   <img
-                    alt="..."
                     className="n-logo"
                     src={require("assets/img/building.jpg")}
-                    style={{ width: "100%", height: "100%" }}
                   ></img>
-                </Content_section_img8>
-              </Content_section_oneline>
-
-              <div></div>
+                </div>
+              </div>
               {/* <div
                 className="empty_space_footer"
                 style={{ height: "0px" }}
@@ -371,7 +321,7 @@ const ATseperate = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
