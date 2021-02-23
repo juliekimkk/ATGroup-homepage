@@ -152,9 +152,8 @@ const Strategy = () => {
               data-aos-easing="ease-in-out"
             >
               for richer corporate and product branding We are filming and
-              producing digital images and videos.
-              <br />
-              In addition, the content business is under way.
+              producing digital images and videos. In addition, the content
+              business is under way.
             </div>
           </div>
         </div>

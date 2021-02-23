@@ -9,6 +9,11 @@
     margin-top: 150px;
   }
 
+  .marketing_second_onebox {
+    margin: auto 0;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
   #main {
     max-width: 2700px;
     width: 100%;
@@ -44,6 +49,8 @@
     max-width: 400px;
     width: 100%;
     font-size: 0.8em;
+    text-align: justify;
+    word-break: break-all;
   }
   .clickimage {
     width: auto;
@@ -78,8 +85,6 @@
     justify-content: center;
     text-align: center;
     display: grid;
-    margin-left: 10%;
-    margin-right: 10%;
     margin-top: -5%;
     word-spacing: -2px;
     line-height: 30px;
@@ -99,10 +104,13 @@
     max-width: 250px;
     width: 100%;
     font-size: 0.9em;
+    text-align: justify;
+    word-break: break-all;
   }
 
   .marketing_second_onebox {
     padding: 10%;
+    margin: auto 0;
   }
 
   .clickimage {
@@ -156,16 +164,71 @@
     height: 130px;
     text-align: center;
 
-    width: max-content;
+    /* width: max-content; */
     margin-top: 20px;
     color: #878890;
     font-size: 0.6em;
-    max-width: 250px;
+    max-width: 140px;
     width: 100%;
+
     font-size: 0.9em;
+    text-align: justify;
+    word-break: break-all;
   }
   .clickimage {
     width: 70%;
     margin: 0 auto;
+  }
+
+  #our_business {
+    text-align: center;
+    font-size: 4em;
+  }
+
+  #content_section_oneline {
+    max-width: 100%;
+    height: 350px;
+    position: relative;
+    display: flex;
+  }
+
+  /*한칸*/
+  #content_section_img1 {
+    width: 100%;
+    max-width: 192px;
+    height: 350px;
+  }
+
+  #content_section_img1 > img {
+    height: 350px;
+  }
+  #content_section_img1 > #content_section_img1_details > b {
+    font-size: 1.5em;
+  }
+  #content_section_img1 > #content_section_img1_details {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 1.3em;
+    height: 350px;
+  }
+
+  #ptext {
+    position: relative;
+    font-size: 0.6em;
+    margin-top: 15%;
+    text-align: center;
+    width: 90%;
+    color: "white";
+  }
+  #link_detail {
+    border: solid black 1px;
+    display: block;
+    width: 160px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 0.8em;
   }
 }

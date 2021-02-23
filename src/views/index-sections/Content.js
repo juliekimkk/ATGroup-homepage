@@ -55,7 +55,7 @@ const Content = () => {
           // // data-aos-once="false"
           // data-aos-anchor-placement="top-center"
         >
-          We are investing heavily in emerging environmentally friendly and
+          We are investing heavily in "emerging environmentally friendly and"
           <br />
           future-oriented projects. From Korea to China, <br />
           Southeast Asia, Japan, Russia, Central Asia, We've established a

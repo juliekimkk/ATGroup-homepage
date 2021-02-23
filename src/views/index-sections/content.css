@@ -1,8 +1,8 @@
 @media (max-width: 2700px) {
   #fontsize {
     text-align: center;
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 0.7em;
+    font-weight: normal;
     line-height: 70px;
   }
   #content-section {
@@ -13,8 +13,8 @@
 @media (min-width: 768px) and (max-width: 1025px) {
   #fontsize {
     text-align: center;
-    font-size: 1.3em;
-    font-weight: bold;
+    font-size: 0.7em;
+    font-weight: normal;
     line-height: 50px;
   }
   #content-section {
@@ -26,7 +26,7 @@
   #fontsize {
     text-align: center;
     font-size: 0.7em;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 30px;
   }
   #content-section {

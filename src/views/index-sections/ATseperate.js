@@ -183,16 +183,15 @@ const ATseperate = () => {
                   <div id="content_section_img1_details">
                     <b>ATA</b>
                     <Divider></Divider>
-                    <div id="ptext">
-                      <AnimationWrapper>
-                        <p>
-                          We've been using platform technology and data that's
-                          been stored for over a decade. Global to drive
-                          continuous growth and innovation on the foundation A
-                          influencer marketing platform company.
-                        </p>
-                      </AnimationWrapper>
-                    </div>
+
+                    <AnimationWrapper class="ptext">
+                      <p>
+                        We've been using platform technology and data that's
+                        been stored for over a decade. Global to drive
+                        continuous growth and innovation on the foundation A
+                        influencer marketing platform company.
+                      </p>
+                    </AnimationWrapper>
 
                     <Link to="/ATA">
                       <a id="link_detail" target="top">
@@ -219,16 +218,14 @@ const ATseperate = () => {
                   <div id="content_section_img1_details">
                     <b>ATB</b>
                     <Divider></Divider>
-                    <div id="ptext">
-                      <AnimationWrapper>
-                        <p>
-                          We've been using platform technology and data that's
-                          been stored for over a decade. Global to drive
-                          continuous growth and innovation on the foundation A
-                          influencer marketing platform company.
-                        </p>
-                      </AnimationWrapper>
-                    </div>
+                    <AnimationWrapper class="ptext">
+                      <p>
+                        We've been using platform technology and data that's
+                        been stored for over a decade. Global to drive
+                        continuous growth and innovation on the foundation A
+                        influencer marketing platform company.
+                      </p>
+                    </AnimationWrapper>
 
                     <Link to="/ATB">
                       <a id="link_detail" target="top">
@@ -244,16 +241,14 @@ const ATseperate = () => {
                   <div id="content_section_img1_details">
                     <b>ATC</b>
                     <Divider></Divider>
-                    <div id="ptext">
-                      <AnimationWrapper>
-                        <p>
-                          We've been using platform technology and data that's
-                          been stored for over a decade. Global to drive
-                          continuous growth and innovation on the foundation A
-                          influencer marketing platform company.
-                        </p>
-                      </AnimationWrapper>
-                    </div>
+                    <AnimationWrapper class="ptext">
+                      <p>
+                        We've been using platform technology and data that's
+                        been stored for over a decade. Global to drive
+                        continuous growth and innovation on the foundation A
+                        influencer marketing platform company.
+                      </p>
+                    </AnimationWrapper>
 
                     <Link to="/ATC">
                       <a id="link_detail" target="top">
@@ -281,16 +276,14 @@ const ATseperate = () => {
                   <div id="content_section_img1_details">
                     <b>HISTORY</b>
                     <Divider></Divider>
-                    <div id="ptext">
-                      <AnimationWrapper>
-                        <p>
-                          We've been using platform technology and data that's
-                          been stored for over a decade. Global to drive
-                          continuous growth and innovation on the foundation A
-                          influencer marketing platform company.
-                        </p>
-                      </AnimationWrapper>
-                    </div>
+                    <AnimationWrapper class="ptext">
+                      <p>
+                        We've been using platform technology and data that's
+                        been stored for over a decade. Global to drive
+                        continuous growth and innovation on the foundation A
+                        influencer marketing platform company.
+                      </p>
+                    </AnimationWrapper>
 
                     <Link to="/history">
                       <a id="link_detail" target="top">
