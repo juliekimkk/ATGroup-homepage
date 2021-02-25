@@ -6,36 +6,9 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Strategy from "views/index-sections/Strategy";
 import HistoryText2 from "./historyText2";
+import "./historyText.css";
 
 const bounceAnimation = keyframes`${fadeInUp}`;
-
-const FadeInUpAnimation = styled.div`
-  animation: 1s ${bounceAnimation};
-`;
-
-const Content = styled.div`
-  position: relative;
-  text-align: center;
-  font-family: "NotoKR", "San-Serif";
-`;
-const EmptySpace = styled.div`
-  height: 100px;
-`;
-const ContentInner = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: ;
-`;
-const ContentInnerDetails = styled.div`
-  font-weight: 500;
-  font-size: 23px;
-  // font-family: "NotoKR", "San-Serif";
-  color: black;
-  margin-top: 30px;
-  font-family: "Montserrat,Helvetica Neue";
-`;
 
 const HistoryText = () => {
   React.useEffect(() => {
@@ -46,30 +19,11 @@ const HistoryText = () => {
     <>
       <div class="footer" style={{ height: "1500px", padding: "0px" }}>
         {/* <div style={{ height: "200px" }}></div> */}
-        <div
-          className="marketing"
-          style={{
-            fontFamily: "Helvetica Neue, Arial, sans-serif",
-            maxWidth: "1600px",
-            margin: "0 auto",
-            display: "block",
-            position: "relative",
-          }}
-        >
+        <div className="total_territory">
           <div style={{ height: "200px" }}></div>
           {/*첫번째 */}
           <div
-            className="marketing_second_onebox"
-            style={{
-              // border: "solid green 1px",
-              position: "relative",
-              display: "block",
-              margin: "0 auto",
-              // padding: "1%",
-              maxWidth: "100%",
-              textAlign: "center",
-              height: "600px",
-            }}
+            className="total_territory_inner"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-duration="500"
@@ -100,25 +54,10 @@ const HistoryText = () => {
                 width: "50%",
               }}
             >
-              {/* <img
-                className="clickimage"
-                src={require("assets/img/1.5x/handout.png")}
-                style={{ width: "10%" }}
-              ></img> */}
               HISTORY
             </h4>
 
-            <div
-              className="company_marketing_detail"
-              style={{
-                height: "130px",
-                textAlign: "center",
-                marginTop: "20px",
-                color: "#878890",
-                fontSize: "20px",
-                lineHeight: "1.7",
-              }}
-            >
+            <div className="company_introduction_text">
               ​​Based on a trading company in the 70s, VOGO Group constructed
               Inchon Steal Plant and later focused on foreign trade. In the
               1990s, we operated IT KOSDAQ Company and Solar Energy related
@@ -136,17 +75,7 @@ const HistoryText = () => {
 
           {/*두번째 */}
           <div
-            className="marketing_second_onebox"
-            style={{
-              // border: "solid green 1px",
-              position: "relative",
-              display: "block",
-              margin: "0 auto",
-              // padding: "1%",
-              maxWidth: "100%",
-              textAlign: "center",
-              height: "1000px",
-            }}
+            className="total_territory_inner"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-duration="500"
@@ -171,31 +100,16 @@ const HistoryText = () => {
                 height: "42px",
                 margin: "0",
                 fontWeight: "600",
-                fontSize: "27px",
+                fontSize: "35px",
                 textAlign: "center",
                 transform: "translate(50%)",
                 width: "50%",
               }}
             >
-              {/* <img
-                className="clickimage"
-                src={require("assets/img/1.5x/handout.png")}
-                style={{ width: "10%" }}
-              ></img> */}
               VISION
             </h4>
 
-            <div
-              className="company_marketing_detail"
-              style={{
-                height: "130px",
-                textAlign: "center",
-                marginTop: "20px",
-                color: "#878890",
-                fontSize: "20px",
-                lineHeight: "1.7",
-              }}
-            >
+            <div className="company_introduction_text">
               VOGO is a leading Investor and Developer in the world's Natural
               resource and mining sectors, showing unparalleled development,
               operational and financial expertise in mining. Our unique

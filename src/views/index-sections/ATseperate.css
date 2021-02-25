@@ -10,10 +10,17 @@
     height: 450px;
     position: relative;
     display: flex;
+    float: left;
+  }
+  #two_by_one {
+    width: 100%;
+    /* max-width: 450px; */
+    display: flex;
   }
 
   #content_section_img1 {
     width: 50%;
+    float: left;
   }
 
   #content_section_img1 > img {
@@ -29,7 +36,7 @@
   #content_section_img1 > #content_section_img1_details {
     text-align: center;
     margin-top: 10%;
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .ptext > p {
     text-align: justify;
@@ -38,6 +45,7 @@
     max-width: 400px;
     text-align: center;
     margin: 0 auto;
+    line-height: 50px;
   }
   #link_detail {
     border: solid black 1px;
@@ -67,11 +75,17 @@
     width: 1024px;
     height: 350px;
   }
+  #two_by_one {
+    width: 100%;
+    /* max-width: 450px; */
+    display: flex;
+  }
 
   /*한칸*/
   #content_section_img1 {
-    width: 25%;
     height: 350px;
+    width: 50%;
+    float: left;
   }
 
   #content_section_img1 > img {
@@ -132,59 +146,69 @@
 
   #content_section_oneline {
     max-width: 100%;
-    width: 1024px;
-    height: 350px;
+    width: 480px;
+    height: 250px;
   }
 
-  /*한칸*/
+  /*2/1한칸*/
+  #two_by_one {
+    width: 50%;
+    /* max-width: 450px; */
+  }
+  /* 4/1한칸 */
   #content_section_img1 {
     width: 50%;
-    height: 300px;
+    max-width: 93.75px;
+    height: 250px;
     float: left;
   }
-
+  /*사진*/
   #content_section_img1 > img {
-    height: 350px;
-    width: 50%;
+    height: 250px;
+    width: 100%;
   }
-  #content_section_img1 > #content_section_img1_details > b {
-    font-size: 1.5em;
-  }
+
   #content_section_img1 > #content_section_img1_details {
     text-align: center;
     margin-top: 10%;
-    font-size: 1.3em;
-    height: 350px;
+    font-size: 1em;
+    max-height: 250px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  /*진한제목 전체*/
+  #content_section_img1 > #content_section_img1_details > b {
+    font-size: 1.1em;
+    max-height: 250px;
   }
   .ptext > p {
     text-align: justify;
     word-break: break-all;
     width: 100%;
     max-width: 182px;
-    height: 250px;
+    max-height: 250px;
     text-align: center;
     margin: 0 auto;
-    font-size: 1em;
-    line-height: 25px;
+    font-size: 0.8em;
+    line-height: 16px;
   }
 
-  #ptext {
-    position: relative;
-    font-size: 0.6em;
-    margin-top: 15%;
-    text-align: center;
-    width: 90%;
-    color: "white";
-  }
   #link_detail {
     border: solid black 1px;
     display: block;
-    width: 160px;
-    height: 30px;
+    width: 90px;
+    height: 22px;
     margin: 0 auto;
-    margin-top: 0px;
+    margin-top: 2px;
     text-decoration: none;
     color: black;
     font-size: 0.8em;
+  }
+  .clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    float: none;
   }
 }

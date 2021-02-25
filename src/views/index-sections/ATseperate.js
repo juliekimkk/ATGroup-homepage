@@ -8,110 +8,12 @@ import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
 import "./ATseperate.css";
 
-const Ourstory = styled.div`
-  width: 100%;
-  height: 905px;
-  border: solid 2px red;
-`;
-
-// const Content_section_oneline = styled.div`
-//   width: 3000px;
-//   max-width: 100%;
-//   height: 450px;
-//   position: relative;
-//   display: flex;
-// `;
-
-const Content_section_img1 = styled.div`
-  position: relative;
-  display: flex;
-  width: 50%;
-  height: 450px;
-
-  background-size: 100%;
-`;
-
-const Content_section_img3 = styled.div`
-  position: relative;
-  display: flex;
-  width: 25%;
-  height: 450px;
-  background: url(http://corp.revu.net/wp-content/uploads/2019/07/home_category6.jpg);
-  background-size: 100%;
-`;
-
-const Content_section_img6 = styled.div`
-  position: relative;
-  display: flex;
-  width: 25%;
-  height: 450px;
-
-  // background: url(http://corp.revu.net/wp-content/uploads/2019/07/home_category7.jpg);
-  background-size: 100%;
-`;
-
-const Content_section_img8 = styled.div`
-  position: relative;
-  display: flex;
-  width: 25%;
-  height: 450px;
-`;
-
-const CompanyStory = styled.div`
-  position: relative;
-  display: inblcok;
-  width: 100%;
-  height: 450px;
-  text-align: center;
-  margin: 0px;
-  padding: 50px;
-  background-color: #fafafa;
-  &:hover {
-    background-color: #f5e9dd;
-  }
-`;
-
 const Divider = styled.div`
 position: relative;
 width: 50px;
 background: #101010";
 height: 2px;
 margin: 0 auto
-`;
-const PText = styled.div`
-  position: relative;
-  font-size: 13px;
-  margin-top: 10%;
-  width: 100%;
-  color: "white";
-  &:hover {
-  }
-`;
-const ATALink = styled.div`
-  position: relative;
-  width: 100%;
-  height: 36px;
-  margin: 0 auto;
-  margin-top: 10%;
-`;
-
-const ButtonStyle = styled.button`
-  margin-top: 3%;
-  border: solid 1px #fff;
-  width: 130px;
-  height: 40px;
-  text-align: center;
-  color: #fff;
-  padding: 0;
-  position: relative;
-  font-weight: bold;
-  font-size: 15px;
-  &:hover {
-    background: #fff;
-    color: black;
-    border: 1px solid #fff;
-    font-weight: bold;
-  }
 `;
 
 const ATseperate = () => {
@@ -165,73 +67,76 @@ const ATseperate = () => {
               }}
             >
               <div id="content_section_oneline">
-                <div
-                  id="content_section_img1"
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in"
-                >
-                  {" "}
-                  <img
-                    alt="..."
-                    className="n-logo"
-                    src={require("assets/img/e-sports2.jpg")}
-                  ></img>
-                </div>
+                <div id="two_by_one">
+                  <div
+                    id="content_section_img1"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in"
+                  >
+                    {" "}
+                    <img
+                      alt="..."
+                      className="n-logo"
+                      src={require("assets/img/e-sports2.jpg")}
+                    ></img>
+                  </div>
 
-                <div id="content_section_img1">
-                  <div id="content_section_img1_details">
-                    <b>ATA</b>
-                    <Divider></Divider>
+                  <div id="content_section_img1">
+                    <div id="content_section_img1_details">
+                      <b>ATA</b>
+                      {/* <Divider></Divider> */}
 
-                    <AnimationWrapper class="ptext">
-                      <p>
-                        We've been using platform technology and data that's
-                        been stored for over a decade. Global to drive
-                        continuous growth and innovation on the foundation A
-                        influencer marketing platform company.
-                      </p>
-                    </AnimationWrapper>
+                      <AnimationWrapper class="ptext">
+                        <p>
+                          We've been using platform technology and data that's
+                          been stored for over a decade. Global to drive
+                          continuous growth and innovation on the foundation A
+                          influencer marketing platform company.
+                        </p>
+                      </AnimationWrapper>
 
-                    <Link to="/ATA">
-                      <a id="link_detail" target="top">
-                        View Details
-                      </a>
-                    </Link>
+                      <Link to="/ATA">
+                        <a id="link_detail" target="top">
+                          View Details
+                        </a>
+                      </Link>
+                    </div>
                   </div>
                 </div>
+                <div id="two_by_one">
+                  <div
+                    id="content_section_img1"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in"
+                  >
+                    {" "}
+                    <img
+                      className="n-logo"
+                      src={require("assets/img/blockchain.jpg")}
+                    ></img>
+                  </div>
 
-                <div
-                  id="content_section_img1"
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in"
-                >
-                  {" "}
-                  <img
-                    className="n-logo"
-                    src={require("assets/img/blockchain.jpg")}
-                  ></img>
-                </div>
+                  <div id="content_section_img1">
+                    <div id="content_section_img1_details">
+                      <b>ATB</b>
+                      <Divider></Divider>
+                      <AnimationWrapper class="ptext">
+                        <p>
+                          We've been using platform technology and data that's
+                          been stored for over a decade. Global to drive
+                          continuous growth and innovation on the foundation A
+                          influencer marketing platform company.
+                        </p>
+                      </AnimationWrapper>
 
-                <div id="content_section_img1">
-                  <div id="content_section_img1_details">
-                    <b>ATB</b>
-                    <Divider></Divider>
-                    <AnimationWrapper class="ptext">
-                      <p>
-                        We've been using platform technology and data that's
-                        been stored for over a decade. Global to drive
-                        continuous growth and innovation on the foundation A
-                        influencer marketing platform company.
-                      </p>
-                    </AnimationWrapper>
-
-                    <Link to="/ATB">
-                      <a id="link_detail" target="top">
-                        View Details
-                      </a>
-                    </Link>
+                      <Link to="/ATB">
+                        <a id="link_detail" target="top">
+                          View Details
+                        </a>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>

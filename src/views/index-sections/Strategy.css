@@ -56,6 +56,10 @@
     width: auto;
     margin: 0 auto;
   }
+  #under_empty {
+    height: 300px;
+    width: 1px;
+  }
 }
 
 /*아이패드*/
@@ -116,6 +120,9 @@
   .clickimage {
     width: 100%;
     margin: 0 auto;
+  }
+  #under_empty {
+    height: 200px;
   }
 }
 
@@ -230,5 +237,8 @@
     text-decoration: none;
     color: black;
     font-size: 0.8em;
+  }
+  #under_empty {
+    height: 70px;
   }
 }

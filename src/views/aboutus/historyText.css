@@ -1,0 +1,90 @@
+/*데스크탑*/
+@media (max-width: 3000px) {
+  .total_territory {
+    font-family: "Helvetica Neue, Arial, sans-serif";
+    max-width: 1600px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+  }
+  .total_territory_inner {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    height: 600px;
+  }
+  .company_introduction_text {
+    text-align: center;
+    margin-top: 20px;
+    color: #878890;
+    font-size: 1.3em;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: justify;
+    word-break: break-all;
+  }
+}
+
+/*아이패드*/
+@media (min-width: 768px) and (max-width: 1025px) {
+  .total_territory {
+    font-family: "Helvetica Neue, Arial, sans-serif";
+    max-width: 1600px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+  }
+  .total_territory_inner {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    height: 600px;
+  }
+  .company_introduction_text {
+    text-align: center;
+    margin-top: 20px;
+    color: #878890;
+    font-size: 1.2em;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: justify;
+    word-break: break-all;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+/*모바일*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .total_territory {
+    font-family: "Helvetica Neue, Arial, sans-serif";
+    max-width: 375px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+  }
+  .total_territory_inner {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    max-height: 500px;
+  }
+  .company_introduction_text {
+    text-align: center;
+    margin-top: 20px;
+    color: #878890;
+    font-size: 1em;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: justify;
+    word-break: break-all;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}

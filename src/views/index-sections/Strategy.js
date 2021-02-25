@@ -158,7 +158,7 @@ const Strategy = () => {
           </div>
         </div>
       </div>
-      <div style={{ height: "300px" }}></div>
+      <div id="under_empty"></div>
     </div>
     // </div>
   );
