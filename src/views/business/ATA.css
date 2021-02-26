@@ -1,0 +1,254 @@
+/*데스크탑*/
+@media (max-width: 3000px) {
+  /*첫번째영역*/
+  .backgroundImg {
+    max-width: 2800px;
+    width: 100%;
+    height: 1400px;
+  }
+  .text_whole_box {
+    position: relative;
+    text-align: center;
+    font-family: "NotoKR";
+  }
+  .logo_name_box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .logo_name_box > img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 50%;
+    object-fit: cover;
+  }
+  .logo_name_box > p {
+    margin: 0 auto;
+    margin-top: 50%;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 1000;
+    color: #f6dc3f;
+    font-family: "Montserrat,Helvetica Neue";
+  }
+  .text_details {
+    max-width: 1000px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.8em;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-family: Montserrat, Helvetica Neue;
+    text-align: justify;
+    word-break: break-all;
+  }
+
+  .buttonStyle {
+    background: transparent;
+    border: solid 1px #fff;
+    vertical-align: middle;
+    width: 130px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 1%;
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .buttonStyle:hover {
+    background: #fff;
+    color: black;
+    border: 1px solid #fff;
+    font-weight: bold;
+  }
+
+  /*두번째영역*/
+  .content2 {
+    position: relative;
+    text-align: left;
+    margin-left: 30%;
+    font-family: NotoKR, San-Serif;
+    z-index: 2;
+  }
+
+  .subject {
+    text-align: left;
+    margin-left: 0px;
+    font-size: 5em;
+    font-weight: 1000;
+    font-family: "NotoKR,San-Serif";
+    color: #fff;
+  }
+  .underDivider {
+    width: 50px;
+    height: 1px;
+    border: 0.5px solid #f0ff87;
+    margin-left: 0;
+    margin-top: 2%;
+  }
+  .contentInnerDetails2 {
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "NotoKR", "San-Serif";
+    color: #fff;
+    margin-top: 130px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1075px) {
+  .backgroundImg {
+    max-width: 1075px;
+    width: 100%;
+    height: 1400px;
+  }
+  .text_whole_box {
+    position: relative;
+    text-align: center;
+    font-family: "NotoKR";
+  }
+  .logo_name_box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    max-width: 700px;
+    width: 100%;
+  }
+  .logo_name_box > img {
+    margin: 0 auto;
+    margin-top: 60%;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+  }
+  .logo_name_box > p {
+    margin: 0 auto;
+    margin-top: 60%;
+    margin-left: 0px;
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: 1000;
+    color: #f6dc3f;
+    font-family: "Montserrat,Helvetica Neue";
+  }
+  .text_details {
+    max-width: 700px;
+    width: 100%;
+    font-weight: 450;
+    font-size: 2em;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-family: Montserrat, Helvetica Neue;
+    text-align: justify;
+    word-break: break-all;
+  }
+
+  .buttonStyle {
+    background: transparent;
+    border: solid 1px #fff;
+    vertical-align: middle;
+    width: 130px;
+    height: 38px;
+    margin: 0 auto;
+    margin-top: 1%;
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .buttonStyle:hover {
+    background: #fff;
+    color: black;
+    border: 1px solid #fff;
+    font-weight: bold;
+  }
+  /**/
+}
+
+/*아이폰*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .backgroundImg {
+    max-width: 480px;
+    width: 100%;
+    height: 1400px;
+  }
+  .text_whole_box {
+    position: relative;
+    text-align: center;
+    font-family: "NotoKR";
+  }
+  .logo_name_box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    max-width: 300px;
+    width: 100%;
+  }
+  .logo_name_box > img {
+    margin: 0 auto;
+    margin-top: 60%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  .logo_name_box > p {
+    margin: 0 auto;
+    margin-top: 60%;
+    margin-left: 0px;
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: 1000;
+    color: #f6dc3f;
+    font-family: "Montserrat,Helvetica Neue";
+  }
+  .text_details {
+    max-width: 300px;
+    width: 100%;
+    font-weight: 450;
+    font-size: 1.3em;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-family: Montserrat, Helvetica Neue;
+    text-align: justify;
+    word-break: break-all;
+  }
+
+  .buttonStyle {
+    background: transparent;
+    border: solid 1px #fff;
+    vertical-align: middle;
+    width: 120px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 5%;
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    position: relative;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .buttonStyle:hover {
+    background: #fff;
+    color: black;
+    border: 1px solid #fff;
+    font-weight: bold;
+  }
+}

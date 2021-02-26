@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 // reactstrap components
 import {
   Button,
@@ -10,17 +11,16 @@ import {
   UncontrolledDropdown,
   NavbarBrand,
   Navbar,
-  NavItem,
-  NavLink,
   Nav,
   Container,
-  PopoverBody,
-  PopoverHeader,
-  UncontrolledPopover,
-  UncontrolledTooltip,
+  NavbarToggler,
+  NavItem,
+  NavLink,
+  NavbarText,
 } from "reactstrap";
 
 import styled from "styled-components";
+import { Header } from "semantic-ui-react";
 
 const LogoText = styled.div`
   color: black;

@@ -8,20 +8,6 @@ import DarkFooter from "components/Footers/DarkFooter";
 import { Link } from "react-router-dom";
 import "./historyText2.css";
 
-const ATALink = styled.div`
-  position: relative;
-  width: 140px;
-  height: 30px;
-  margin: 0 auto;
-  &:hover {
-    background: #fff;
-    color: black;
-    font-weight: bold;
-    border: 1px solid #fff;
-    border-radius: 50px 50px 50px 50px;
-  }
-`;
-
 const HistoryText2 = () => {
   React.useEffect(() => {
     Aos.init({});

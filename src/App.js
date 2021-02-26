@@ -50,6 +50,7 @@ function App() {
         <div className="main">
           <Content />
           <GenerateMap />
+
           {/* <Map /> */}
           {/* <Footer /> */}
 

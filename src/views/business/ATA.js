@@ -8,36 +8,34 @@ import { bounce, bounceInLeft, fadeInUp } from "react-animations";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useWindowScroll } from "react-use";
+import "./ATA.css";
 
 import HorizontalScroll from "react-scroll-horizontal";
 // import "views/aboutus/font.css";
 
 // const textAnimation = keyframes`${fadeInUp}`;
 
-const ContentInnerDetails = styled.div`
-  font-weight: 500;
-  font-size: 23px;
+// const ContentInnerDetails = styled.div`
+//   font-weight: 500;
+//   font-size: 23px;
 
-  color: #fff;
-  margin-top: 30px;
-  font-family: Montserrat, Helvetica Neue;
-`;
-const Content = styled.div`
-  position: relative;
-  text-align: center;
+//   color: #fff;
+//   margin-top: 30px;
+//   font-family: Montserrat, Helvetica Neue;
+// `;
+// const Content = styled.div`
+//   position: relative;
+//   text-align: center;
 
-  font-family: "NotoKR", "San-Serif";
-`;
-const ContentInner = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: ;
-`;
-const EmptySpace = styled.div`
-  height: 400px;
-`;
+//   font-family: "NotoKR", "San-Serif";
+// `;
+// const ContentInner = styled.div`
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-weight: ;
+// `;
 
 /*두번째영역 */
 
@@ -156,129 +154,87 @@ function ATA() {
         <IndexNavbar />
 
         <div
-          className="page-header-image"
+          className="backgroundImg"
           style={{
             backgroundImage: "url(" + require("assets/img/e-sports2.jpg") + ")",
-            // opacity: 0.8,
-            height: "1400px",
-            maxWidth: "100%",
           }}
           ref={pageHeader}
         >
-          <div className="content_total" ref={(el) => (app = el)}>
-            <EmptySpace></EmptySpace>
-            <Content
-              data-aos="fade-up"
-              data-aos-duration="700"
-              data-aos-easing="ease-in-out"
-              data-aos-delay="400"
-            >
-              <ContentInner>
-                <img
-                  alt="..."
-                  className="n-logo"
-                  src={require("assets/img/ATAgray.png")}
-                  style={{ width: "100px", height: "100px" }}
-                ></img>
-                <h1
-                  style={{
-                    margin: "0",
-                    textAlign: "center",
-                    marginLeft: "20px",
-                    fontSize: "70px",
-                    fontWeight: "1000",
-                    color: "#f6dc3f",
-                    fontFamily: "Montserrat,Helvetica Neue",
-                  }}
-                >
-                  {/* ATA (A<span style={{ color: "#fff" }}>bout</span> T
-                  <span style={{ color: "#fff" }}>he&nbsp;</span>A
-                  <span style={{ color: "#fff" }}>pp</span>) */}
-                  ATA (About The App)
-                </h1>
-              </ContentInner>
-              <ContentInnerDetails>
-                ⁠ATA, About the APP ⁠ATA focuses on investing and developing
-                game and media solutions, operating official e-sports teams
-                under its wing.
-                <br />
-                We run an official e-sports team.
-              </ContentInnerDetails>
-              <div style={{ position: "relative", display: "block" }}>
-                <ButtonStyle onClick={gotoFirstSection}>Next</ButtonStyle>
-                <a
-                  href={"https://abouttheapp.netlify.app/"}
-                  className="Link_detail"
-                  style={{
-                    border: "solid #fff 1px",
-                    display: "block",
-                    width: "250px",
-                    height: "40px",
-                    margin: "0 auto",
-                    marginTop: "50px",
-                    textDecoration: "none",
-                    color: "#fff",
-                    fontSize: "20px",
-                    verticalAlign: "middle",
-                  }}
-                >
-                  Go official website
-                </a>
+          <div
+            classList="text_whole_box"
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="400"
+          >
+            <div className="logo_name_box">
+              <img src={require("assets/img/ATAgray.png")}></img>
+              <p>ATA (About The App)</p>
+            </div>
+            <div className="text_details">
+              ⁠ATA, About the APP ⁠ATA focuses on investing and developing game
+              and media solutions, operating official e-sports teams under its
+              wing. We run an official e-sports team.
+            </div>
+            <div style={{ position: "relative", display: "block" }}>
+              <div className="buttonStyle" onClick={gotoFirstSection}>
+                Next
               </div>
-            </Content>
+              <a
+                href={"https://abouttheapp.netlify.app/"}
+                className="officalPage"
+                style={{
+                  border: "solid #fff 1px",
+                  display: "block",
+                  width: "250px",
+                  height: "40px",
+                  margin: "0 auto",
+                  marginTop: "50px",
+                  textDecoration: "none",
+                  color: "#fff",
+                  fontSize: "20px",
+                  verticalAlign: "middle",
+                  textAlign: "center",
+                }}
+              >
+                Go official website
+              </a>
+            </div>
           </div>
         </div>
 
         {/*두번째 */}
 
         <div
-          className="page-header-image"
+          className="backgroundImg"
           style={{
             backgroundImage: "url(" + require("assets/img/e-sports3.jpg") + ")",
             opacity: "0.95",
-            height: "1400px",
-            maxWidth: "100%",
           }}
           ref={pageHeader}
         >
           <div className="content_total" ref={(el) => (app = el)}>
             <EmptySpace2></EmptySpace2>
-            <Content2
+            <div
+              className="content2"
               data-aos="fade-up"
               data-aos-duration="700"
               data-aos-easing="ease-in-out"
               data-aos-delay="400"
             >
-              <ContentInner2>
-                {/* <img
-                  alt="..."++
-                  className="n-logo"
-                  src={require("assets/img/ATA.png")}
-                  style={{ width: "100px", height: "100px" }}
-                ></img> */}
-                <h1
-                  style={{
-                    textAlign: "left",
-                    marginLeft: "0px",
-                    fontSize: "70px",
-                    fontWeight: "1000",
-                    fontFamily: "NotoKR,San-Serif",
-                    color: "#fff",
-                  }}
-                  ref={commentSection}
-                >
-                  E-SPORTS
-                </h1>
-                <Underdivier></Underdivier>
+              <b className="subject" ref={commentSection}>
+                E-SPORTS
+              </b>
+              <div className="underDivider">
                 <img
                   alt="..."
                   className="n-logo"
                   src={require("assets/img/competition.png")}
                   style={{ marginTop: "50px" }}
-                  // style={{ width: "50px", height: "50px" }}
                 ></img>
-              </ContentInner2>
-              <ContentInnerDetails2>
+              </div>
+
+              <div className="contentInnerDetails2">
                 We collaborate with a variety of multi-media partners to develop
                 <br />
                 future leading multi-media projects. <br />
@@ -287,11 +243,11 @@ function ATA() {
                 <br />
                 league and entertainment production to communicate better with
                 the global community.
-              </ContentInnerDetails2>
+              </div>
               <ButtonStyle onClick={gotoSecondSection} style={{ top: "0" }}>
                 Next
               </ButtonStyle>
-            </Content2>
+            </div>
           </div>
         </div>
         {/* </div> */}
@@ -299,7 +255,7 @@ function ATA() {
         {/*세번째 */}
 
         <div
-          className="page-header-image"
+          className="backgroundImg"
           style={{
             backgroundImage: "url(" + require("assets/img/e-sports4.jpg") + ")",
 
@@ -349,14 +305,14 @@ function ATA() {
                   // style={{ width: "50px", height: "50px" }}
                 ></img>
               </ContentInner2>
-              <ContentInnerDetails2>
+              <div className="contentInnerDetails2">
                 ⁠ATA operates various e-sports and content businesses, <br />
                 holding an inhouse official e-sports team <br />
                 as ATA LAVEGA popular in PUBG(Player's unknown battleground).
-              </ContentInnerDetails2>
-              <ButtonStyle onClick={gotoThirdSection} style={{ top: "0" }}>
+              </div>
+              <div className="buttonStyle" onClick={gotoThirdSection}>
                 Next
-              </ButtonStyle>
+              </div>
 
               <div
                 className="gotoUp"
