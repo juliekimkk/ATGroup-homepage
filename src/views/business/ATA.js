@@ -214,7 +214,7 @@ function ATA() {
           ref={pageHeader}
         >
           <div className="content_total" ref={(el) => (app = el)}>
-            <EmptySpace2></EmptySpace2>
+            <div id="emptySpace"></div>
             <div
               className="content2"
               data-aos="fade-up"
@@ -228,7 +228,6 @@ function ATA() {
               <div className="underDivider">
                 <img
                   alt="..."
-                  className="n-logo"
                   src={require("assets/img/competition.png")}
                   style={{ marginTop: "50px" }}
                 ></img>
@@ -236,17 +235,18 @@ function ATA() {
 
               <div className="contentInnerDetails2">
                 We collaborate with a variety of multi-media partners to develop
-                <br />
-                future leading multi-media projects. <br />
-                ⁠Furthermore, we are in the process of producing media networks
-                in the global e-sports
-                <br />
+                future leading multi-media projects. ⁠Furthermore, we are in the
+                process of producing media networks in the global e-sports
                 league and entertainment production to communicate better with
                 the global community.
               </div>
-              <ButtonStyle onClick={gotoSecondSection} style={{ top: "0" }}>
+              <div
+                className="buttonStyle2"
+                onClick={gotoSecondSection}
+                style={{ top: "0" }}
+              >
                 Next
-              </ButtonStyle>
+              </div>
             </div>
           </div>
         </div>

@@ -113,7 +113,7 @@ const ATseperatekr = () => {
                     {" "}
                     <img
                       className="n-logo"
-                      src={require("assets/img/blockchain.jpg")}
+                      src={require("assets/img/atb.main.jpg")}
                     ></img>
                   </div>
 

@@ -239,14 +239,11 @@ function ATB() {
                 </h1>
               </ContentInner>
               <ContentInnerDetails>
-                ATB는 블록체인 기반 기술 투자자 겸 운영자로
-                <br />
-                글로벌 유력 블록체인 연구진과 함께 선도 기술을 개발하고
-                있습니다.
+                ATB는 블록체인기반 기술투자자이자 운영자 입니다
               </ContentInnerDetails>
               <div style={{ position: "relative", display: "block" }}>
                 <ButtonStyle onClick={gotoFirstSection}>NEXT</ButtonStyle>
-                <a
+                {/* <a
                   href={"http://atcworld.cafe24.com/default/"}
                   className="Link_detail"
                   style={{
@@ -263,7 +260,7 @@ function ATB() {
                   }}
                 >
                   공식 홈페이지 바로가기
-                </a>
+                </a> */}
               </div>
             </Content>
           </div>
@@ -319,13 +316,10 @@ function ATB() {
                 ></img>
               </ContentInner2>
               <ContentInnerDetails2>
-                우리는 현재 보안특화 블록체인 기술을 통해
-                <br />
-                미래의 콘텐츠저장 및 스트리밍 산업을 선도할
-                <br />
-                IPFS(분권화, 웹 3.0)를 활용한 글로벌 콘텐츠 유통망(CDN)과
-                <br />
-                데이터 서버 솔루션 개발에 주력하고 있습니다.
+                기존 인터넷은 http 프로토콜 형식의 중앙 집중 클라우드 서버로써
+                파일 업로드 및 저장 속도가 느리고 손실 및 보안에 취약합니다. 4차
+                산업혁명시대에 블록체인 기술이 집중 조명받으면서 기존 취약점이
+                보안된 ‘블록체인 기반의 IPFS 프로토콜’로 변화하고 있습니다.
               </ContentInnerDetails2>
               <ButtonStyle2 onClick={gotoSecondSection} style={{ top: "0" }}>
                 Next
@@ -389,13 +383,10 @@ function ATB() {
                 ></img>
               </ContentInner2>
               <ContentInnerDetails2>
-                우리는 현재 보안특화 블록체인 기술을 통해
-                <br />
-                미래의 콘텐츠저장 및 스트리밍 산업을 선도할
-                <br />
-                IPFS(분권화, 웹 3.0)를 활용한 글로벌 콘텐츠 유통망(CDN)과
-                <br />
-                데이터 서버 솔루션 개발에 주력하고 있습니다.
+                ATB는 IPFS 기반 IDC운영사업중이며 IPFS 클라우드 마이닝 해시파워
+                임대 서비스를 제공합니다 번거로운 채광 프로세스를 최적화 하여
+                채굴장치 구매, 설치, 운영 등 단계를 생략 하였고 사용자는 바로
+                신속히 채광을 시작할수 있습니다
               </ContentInnerDetails2>
               <ButtonStyle3 onClick={gotoThirdSection} style={{ top: "0" }}>
                 Next

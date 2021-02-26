@@ -103,11 +103,33 @@
     color: #fff;
     margin-top: 130px;
   }
+  .buttonStyle2 {
+    background: transparent;
+    border: solid 1px #fff;
+    vertical-align: middle;
+    width: 130px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 1%;
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 0px;
+  }
+  .buttonStyle2:hover {
+    background: #fff;
+    color: black;
+    border: 1px solid #fff;
+    font-weight: bold;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1075px) {
   .backgroundImg {
-    max-width: 1075px;
+    max-width: 2800px;
     width: 100%;
     height: 1400px;
   }
@@ -123,30 +145,30 @@
     align-items: center;
     font-weight: 500;
     max-width: 700px;
+    margin: 0 auto;
     width: 100%;
   }
   .logo_name_box > img {
+    width: 100px;
+    height: 100px;
     margin: 0 auto;
-    margin-top: 60%;
-    width: 90px;
-    height: 90px;
+    margin-top: 50%;
     object-fit: cover;
   }
   .logo_name_box > p {
     margin: 0 auto;
-    margin-top: 60%;
-    margin-left: 0px;
+    margin-top: 50%;
     text-align: center;
-    font-size: 3.5em;
+    font-size: 4em;
     font-weight: 1000;
     color: #f6dc3f;
     font-family: "Montserrat,Helvetica Neue";
   }
   .text_details {
-    max-width: 700px;
+    max-width: 1000px;
     width: 100%;
-    font-weight: 450;
-    font-size: 2em;
+    font-weight: 500;
+    font-size: 1.8em;
     color: #fff;
     margin: 0 auto;
     margin-top: 30px;
@@ -160,7 +182,7 @@
     border: solid 1px #fff;
     vertical-align: middle;
     width: 130px;
-    height: 38px;
+    height: 40px;
     margin: 0 auto;
     margin-top: 1%;
     text-align: center;
@@ -176,7 +198,64 @@
     border: 1px solid #fff;
     font-weight: bold;
   }
-  /**/
+
+  /*두번째영역*/
+  .content2 {
+    position: relative;
+    text-align: left;
+    margin-left: 15%;
+    margin-top: 400px;
+    font-family: NotoKR, San-Serif;
+    z-index: 2;
+  }
+
+  .subject {
+    text-align: left;
+    margin-left: 0px;
+    font-size: 5em;
+    font-weight: 1000;
+    font-family: "NotoKR,San-Serif";
+    color: #fff;
+  }
+  .underDivider {
+    width: 100px;
+    height: 1px;
+    border: 0.5px solid #f0ff87;
+    margin-left: 0;
+    margin-top: 2%;
+  }
+  .contentInnerDetails2 {
+    width: 600px;
+    font-weight: 500;
+    font-size: 2em;
+    font-family: "NotoKR", "San-Serif";
+    color: #fff;
+    margin-top: 130px;
+    text-align: justify;
+    word-break: break-all;
+  }
+  .buttonStyle2 {
+    background: transparent;
+    border: solid 1px #fff;
+    vertical-align: middle;
+    width: 130px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 5%;
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 0px;
+  }
+  .buttonStyle2:hover {
+    background: #fff;
+    color: black;
+    border: 1px solid #fff;
+    font-weight: bold;
+  }
 }
 
 /*아이폰*/
@@ -184,7 +263,7 @@
   .backgroundImg {
     max-width: 480px;
     width: 100%;
-    height: 1400px;
+    height: 812px;
   }
   .text_whole_box {
     position: relative;
@@ -246,6 +325,63 @@
     font-size: 15px;
   }
   .buttonStyle:hover {
+    background: #fff;
+    color: black;
+    border: 1px solid #fff;
+    font-weight: bold;
+  }
+  /*두번째영역*/
+  .content2 {
+    position: relative;
+    text-align: left;
+    margin-left: 15%;
+    font-family: NotoKR, San-Serif;
+    z-index: 2;
+  }
+
+  .subject {
+    text-align: left;
+    margin-left: 0px;
+    margin-top: 100px;
+    font-size: 3em;
+    font-weight: 1000;
+    font-family: "NotoKR,San-Serif";
+    color: #fff;
+  }
+  .underDivider {
+    width: 50px;
+    height: 1px;
+    border: 0.5px solid #f0ff87;
+    margin-left: 0;
+    margin-top: 2%;
+  }
+  .contentInnerDetails2 {
+    width: 250px;
+    font-weight: 500;
+    font-size: 1.2em;
+    font-family: "NotoKR", "San-Serif";
+    color: #fff;
+    margin-top: 130px;
+    text-align: justify;
+    word-break: break-all;
+  }
+  .buttonStyle2 {
+    background: transparent;
+    border: solid 1px #fff;
+    vertical-align: middle;
+    width: 130px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 5%;
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 0px;
+  }
+  .buttonStyle2:hover {
     background: #fff;
     color: black;
     border: 1px solid #fff;

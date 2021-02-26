@@ -197,11 +197,13 @@ function ATB() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage:
-              "url(" + require("assets/img/blockchain.jpg") + ")",
+            backgroundImage: "url(" + require("assets/img/atb.index.png") + ")",
             // opacity: 0.8,
             height: "1400px",
-            maxWidth: "100%",
+            backgroundSize: "cover",
+            width: "100%",
+
+            backgroundRepeat: "no-repeat",
           }}
           ref={pageHeader}
         >
