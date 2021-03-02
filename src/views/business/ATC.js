@@ -1,72 +1,16 @@
 import IndexNavbar from "../../components/Navbars/IndexNavbar.js";
 
 /*eslint-disable*/
-import React, { useEffect, useRef, Component } from "react";
-import { BrowserRouter as Route, Link, useParams } from "react-router-dom";
-
+import React, { useEffect, useRef, useState } from "react";
 import { TimelineLite, TweenMax, Power3 } from "gsap";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { bounce, bounceInLeft, fadeInUp } from "react-animations";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useWindowScroll } from "react-use";
+import "./ATA.css";
 
 import HorizontalScroll from "react-scroll-horizontal";
-// import "views/aboutus/font.css";
-
-// const textAnimation = keyframes`${fadeInUp}`;
-
-const ContentInnerDetails = styled.div`
-  font-weight: 500;
-  font-size: 23px;
-  font-family: "NotoKR", "San-Serif";
-  color: #fff;
-  margin-top: 30px;
-  fontfamily: "Montserrat,Helvetica Neue";
-`;
-const Content = styled.div`
-  position: relative;
-  text-align: center;
-  font-family: "NotoKR", "San-Serif";
-`;
-const Underdivier = styled.div`
-  width: 50px;
-  border: 0.5px solid #fff;
-  margin-left: 0;
-  margin-top: 2%;
-`;
-const ContentInner = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: ;
-`;
-const EmptySpace = styled.div`
-  height: 400px;
-`;
-
-const ButtonStyle = styled.button`
-  margin-top: 1%;
-  background: transparent;
-  border: solid 1px #fff;
-  width: 130px;
-  height: 40px;
-  text-align: center;
-  color: black;
-  padding: 0;
-  position: relative;
-  font-weight: bold;
-  font-size: 15px;
-  &:hover {
-    background: #fff;
-    color: black;
-    border: 1px solid #fff;
-    font-weight: bold;
-  }
-`;
-
-/*두번째영역 */
 
 const EmptySpace2 = styled.div`
   height: 400px;
@@ -78,9 +22,9 @@ const Content2 = styled.div`
   font-family: NotoKR, San-Serif;
   z-index: 2;
 `;
-const Underdivier2 = styled.div`
+const Underdivier = styled.div`
   width: 50px;
-  border: 0.5px solid #fff;
+  border: 0.5px solid #f0ff87;
   margin-left: 0;
   margin-top: 2%;
 `;
@@ -90,87 +34,14 @@ const ContentInner2 = styled.div`
   justify-content: left;
   align-items: center;
 `;
-const ContentInnerDetails2 = styled.div`
-  font-weight: 500;
-  font-size: 20px;
-  font-family: "NotoKR", "San-Serif";
-  color: #fff;
-  margin-top: 20px;
-`;
-
-const ButtonStyle2 = styled.button`
-  margin-top: 3%;
-  background: transparent;
-  border: solid 1px #fff;
-  width: 130px;
-  height: 40px;
-  text-align: center;
-  color: #fff;
-  padding: 0;
-  position: relative;
-  font-weight: bold;
-  font-size: 15px;
-  &:hover {
-    background: #fff;
-    color: black;
-    border: 1px solid #fff;
-    font-weight: bold;
-  }
-`;
-
-const ButtonToWebsite = styled.a`
-  margin-top: 10%;
-  background: transparent;
-  border: solid 1px #fff;
-  width: 230px;
-  height: 50px;
-  text-align: center;
-  color: #fff;
-  padding: 0;
-  position: absolute;
-  margin-left: -7%;
-  font-size: 17px;
-  font-weight: bold;
-  &:hover {
-    background: #f6dc3f;
-    color: black;
-    font-size: 17px;
-    font-weight: bold;
-    border: 1px solid #f6dc3f;
-  }
-`;
 
 /*세번째영역 */
 const EmptySpace3 = styled.div`
   height: 350px;
 `;
 
-const ContentInnerDetails3 = styled.div`
-  font-weight: 500;
-  font-size: 20px;
-  font-family: "NotoKR", "San-Serif";
+const MainName = styled.div`
   color: black;
-  margin-top: 20px;
-`;
-
-const ButtonStyle3 = styled.button`
-  margin-top: 3%;
-  background: transparent;
-  border: solid 1px black;
-  width: 130px;
-  height: 40px;
-  text-align: center;
-  color: black;
-  padding: 0;
-  position: relative;
-  font-weight: bold;
-  font-size: 15px;
-  &:hover {
-    background: #fff;
-    color: black;
-    border: 1px solid #fff;
-    font-weight: bold;
-  }
 `;
 
 // reactstrap components
@@ -195,12 +66,6 @@ function ATC() {
 
   const gotoTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
-  const [user, setUser] = React.useState(null);
-  const { account } = useParams();
-  // React.useEffect(() => {
-  //   fetch(`http://atcworld.cafe24.com/default/${account}`).then(setUser);
-  // }, account);
-
   const child = { width: `50%`, height: `100%` };
   const parent = {
     width: `100%`,
@@ -217,153 +82,106 @@ function ATC() {
         <IndexNavbar />
 
         <div
-          className="page-header-image"
+          className="backgroundImg"
           style={{
             backgroundImage: "url(" + require("assets/img/media3.jpg") + ")",
-            // opacity: 0.8,
-            height: "1400px",
-            maxWidth: "100%",
-            opacity: "0.9",
           }}
           ref={pageHeader}
         >
-          <div className="content_total" ref={(el) => (app = el)}>
-            <EmptySpace></EmptySpace>
-            <Content
-              data-aos="fade-up"
-              data-aos-duration="700"
-              data-aos-easing="ease-in-out"
-              data-aos-delay="400"
-            >
-              <ContentInner>
-                <img
-                  alt="..."
-                  className="n-logo"
-                  src={require("assets/img/ATCwhite2.png")}
-                  style={{ width: "100px", height: "100px" }}
-                ></img>
-                <h1
-                  style={{
-                    margin: "0",
-                    textAlign: "center",
-                    marginLeft: "20px",
-                    fontSize: "70px",
-                    fontWeight: "1000",
-                    color: "#fff",
-                    fontFamily: "Montserrat,Helvetica Neue",
-                  }}
-                >
-                  {/* ATA (A<span style={{ color: "#fff" }}>bout</span> T
-                  <span style={{ color: "#fff" }}>he&nbsp;</span>A
-                  <span style={{ color: "#fff" }}>pp</span>) */}
-                  ATC (About The Contents)
-                </h1>
-              </ContentInner>
-              <ContentInnerDetails>
-                ⁠ATC produces and distributes Korean new media contents <br />
-                focusing on the delivery of content data to Greater Chinese and
-                Southeast
-                <br /> Asian markets to provide high-quality multimedia data in
-                cooperation with <br />
-                various major creators and media partners.
-              </ContentInnerDetails>
-              <div style={{ position: "relative", display: "block" }}>
-                <ButtonStyle onClick={gotoFirstSection}>Next</ButtonStyle>
-                {/* <Route
-                  render={({ history }) => (
-                    <ButtonToWebsite
-                      onClick={() => {
-                        history.push("/ATA");
-                      }}
-                    >
-                      공식홈페이지 바로가기
-                    </ButtonToWebsite>
-                  )}
-                /> */}
-
-                {/* <ButtonToWebsite>공식홈페이지 바로가기 </ButtonToWebsite> */}
-
-                <a
-                  href={"http://atcworld.cafe24.com/default/"}
-                  className="Link_detail"
-                  style={{
-                    border: "solid #fff 1px",
-                    display: "block",
-                    width: "250px",
-                    height: "40px",
-                    margin: "0 auto",
-                    marginTop: "50px",
-                    textDecoration: "none",
-                    color: "#fff",
-                    fontSize: "20px",
-                    verticalAlign: "middle",
-                  }}
-                >
-                  Go offical homepage
-                </a>
+          <div
+            classList="text_whole_box"
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="400"
+          >
+            <div className="logo_name_box mainName">
+              <img src={require("assets/img/ATCwhite2.png")}></img>
+              <p style={{ color: "#fff" }}>ATC (About The Contents)</p>
+            </div>
+            <div className="text_details" style={{ color: "#fff" }}>
+              ⁠ATC produces and distributes Korean new media contents <br />
+              focusing on the delivery of content data to Greater Chinese and
+              Southeast
+              <br /> Asian markets to provide high-quality multimedia data in
+              cooperation with <br />
+              various major creators and media partners.
+            </div>
+            <div style={{ position: "relative", display: "block" }}>
+              <div
+                className="buttonStyle"
+                onClick={gotoFirstSection}
+                style={{ color: "#fff", border: "1px solid #fff" }}
+              >
+                Next
               </div>
-            </Content>
+              <a
+                href={"http://atcworld.cafe24.com/default/"}
+                className="officalPage"
+                style={{
+                  border: "solid #fff 1px",
+                  display: "block",
+                  width: "250px",
+                  height: "40px",
+                  margin: "0 auto",
+                  marginTop: "50px",
+                  textDecoration: "none",
+                  color: "#fff",
+                  fontSize: "20px",
+                  verticalAlign: "middle",
+                  textAlign: "center",
+                }}
+              >
+                Go official website
+              </a>
+            </div>
           </div>
         </div>
 
         {/*두번째 */}
 
         <div
-          className="page-header-image"
+          className="backgroundImg"
           style={{
             backgroundImage: "url(" + require("assets/img/media6.jpg") + ")",
             opacity: "0.95",
-            height: "1400px",
-            maxWidth: "100%",
+            overflow: "auto",
           }}
           ref={pageHeader}
         >
           <div className="content_total" ref={(el) => (app = el)}>
-            <EmptySpace2></EmptySpace2>
-            <Content2
+            {/* <div id="emptySpace"></div> */}
+            <div
+              className="content2"
               data-aos="fade-up"
               data-aos-duration="700"
               data-aos-easing="ease-in-out"
               data-aos-delay="400"
             >
-              <ContentInner2>
-                {/* <img
-                  alt="..."++
-                  className="n-logo"
-                  src={require("assets/img/ATA.png")}
-                  style={{ width: "100px", height: "100px" }}
-                ></img> */}
-                <h1
-                  style={{
-                    textAlign: "left",
-                    marginLeft: "0px",
-                    fontSize: "70px",
-                    fontWeight: "1000",
-                    fontFamily: "NotoKR,San-Serif",
-                    color: "#fff",
-                  }}
-                  ref={commentSection}
-                >
-                  Contents
-                </h1>
-                <Underdivier2></Underdivier2>
+              <b className="subject" ref={commentSection}>
+                Investing
+              </b>
+              <div className="underDivider">
                 <img
                   alt="..."
-                  className="n-logo"
                   src={require("assets/img/content.png")}
                   style={{ marginTop: "50px" }}
-                  // style={{ width: "50px", height: "50px" }}
                 ></img>
-              </ContentInner2>
-              <ContentInnerDetails2>
+              </div>
+
+              <div className="contentInnerDetails2">
                 We help Korean new-media creators to produce high-quality
                 contents
                 <br /> and  provide  to global viewer around the world.
-              </ContentInnerDetails2>
-              <ButtonStyle2 onClick={gotoSecondSection} style={{ top: "0" }}>
+              </div>
+              <div
+                className="buttonStyle2"
+                onClick={gotoSecondSection}
+                style={{ top: "0" }}
+              >
                 Next
-              </ButtonStyle2>
-            </Content2>
+              </div>
+            </div>
           </div>
         </div>
         {/* </div> */}
@@ -371,56 +189,35 @@ function ATC() {
         {/*세번째 */}
 
         <div
-          className="page-header-image"
+          className="backgroundImg"
           style={{
             backgroundImage: "url(" + require("assets/img/creator2.jpg") + ")",
-            height: "1400px",
-            maxWidth: "100%",
+            opacity: "0.95",
+            overflow: "auto",
           }}
           ref={pageHeader}
         >
-          <div
-            className="content_total"
-            ref={(el) => (app = el)}
-            style={{ height: "1400px" }}
-          >
-            <EmptySpace3></EmptySpace3>
-            <Content2
+          <div className="content_total" ref={(el) => (app = el)}>
+            {/* <div id="emptySpace"></div> */}
+            <div
+              className="content2"
               data-aos="fade-up"
               data-aos-duration="700"
               data-aos-easing="ease-in-out"
               data-aos-delay="400"
             >
-              <ContentInner2>
-                {/* <img
-                  alt="..."++
-                  className="n-logo"
-                  src={require("assets/img/ATA.png")}
-                  style={{ width: "100px", height: "100px" }}
-                ></img> */}
-                <h1
-                  style={{
-                    textAlign: "left",
-                    marginLeft: "0px",
-                    fontSize: "55px",
-                    fontWeight: "600",
-                    fontFamily: "NotoKR,San-Serif",
-                    color: "black",
-                  }}
-                  ref={commentSection}
-                >
-                  Social Marketing and Flatform
-                </h1>
-                <Underdivier></Underdivier>
+              <b className="subject" ref={commentSection}>
+                Team
+              </b>
+              <div className="underDivider">
                 <img
                   alt="..."
-                  className="n-logo"
-                  src={require("assets/img/content-management.png")}
+                  src={require("assets/img/internet.png")}
                   style={{ marginTop: "50px" }}
-                  // style={{ width: "50px", height: "50px" }}
                 ></img>
-              </ContentInner2>
-              <ContentInnerDetails3>
+              </div>
+
+              <div className="contentInnerDetails2">
                 We help Korean new-media creators to produce high-quality
                 contents
                 <br /> and  provide  to global viewer around the world.
@@ -429,58 +226,20 @@ function ATC() {
                   "Your content is the most complete form of all the platforms
                   in China, Connect"
                 </b>
-              </ContentInnerDetails3>
-              <ButtonStyle3 onClick={gotoThirdSection} style={{ top: "0" }}>
-                Next
-              </ButtonStyle3>
-              <div
-                style={{
-                  bottom: "-130%",
-
-                  position: "absolute",
-                  textAlign: "50%",
-                  marginLeft: "30%",
-                }}
-              >
-                <a
-                  href="#"
-                  onClick={gotoTop}
-                  stlye={{ scrollBehavior: "smooth" }}
-                >
-                  <img
-                    className="clickimage"
-                    src={require("assets/img/up-arrow3.png")}
-                  ></img>
-                </a>
               </div>
-            </Content2>
+              <div
+                className="buttonStyle2"
+                onClick={gotoSecondSection}
+                style={{ top: "0" }}
+              >
+                Next
+              </div>
+            </div>
           </div>
         </div>
-
+        {/*하단 갤러리 */}
         <div style={parent}>
           <HorizontalScroll>
-            <div
-              style={child}
-              style={{
-                maxWidth: "800px",
-                height: "500px",
-                position: "relative",
-              }}
-            >
-              <img
-                alt="..."
-                className="n-logo"
-                src={require("assets/img/broadcast.jpg")}
-                style={{
-                  maxWidth: "800px",
-                  height: "500px",
-                  position: "relative",
-                }}
-
-                // style={{ width: "50px", height: "50px" }}
-              ></img>
-            </div>
-
             <div
               style={child}
               style={{
@@ -506,7 +265,7 @@ function ATC() {
               <img
                 alt="..."
                 className="n-logo"
-                src={require("assets/img/creator2.png")}
+                src={require("assets/img/creator2.jpg")}
                 style={{
                   maxWidth: "800px",
                   height: "500px",

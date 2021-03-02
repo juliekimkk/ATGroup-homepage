@@ -17,12 +17,13 @@
     justify-content: center;
     align-items: center;
     font-weight: 500;
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
     width: 100%;
   }
+
   .logo_name_box > img {
-    width: 100px;
+    width: 120px;
     height: 100px;
     margin: 0 auto;
     margin-top: 50%;
@@ -37,6 +38,7 @@
     color: #f6dc3f;
     font-family: "Montserrat,Helvetica Neue";
   }
+
   .text_details {
     max-width: 1000px;
     width: 100%;
@@ -77,6 +79,8 @@
     position: relative;
     text-align: left;
     margin-left: 30%;
+    margin-top: 400px;
+    overflow: hidden;
     font-family: NotoKR, San-Serif;
     z-index: 2;
   }
@@ -84,6 +88,7 @@
   .subject {
     text-align: left;
     margin-left: 0px;
+    margin-top: 20%;
     font-size: 5em;
     font-weight: 1000;
     font-family: "NotoKR,San-Serif";
@@ -98,10 +103,13 @@
   }
   .contentInnerDetails2 {
     font-weight: 500;
+    width: 40%;
     font-size: 20px;
     font-family: "NotoKR", "San-Serif";
     color: #fff;
     margin-top: 130px;
+    text-align: justify;
+    word-break: break-all;
   }
   .buttonStyle2 {
     background: transparent;
@@ -165,8 +173,7 @@
     font-family: "Montserrat,Helvetica Neue";
   }
   .text_details {
-    max-width: 1000px;
-    width: 100%;
+    max-width: 85%;
     font-weight: 500;
     font-size: 1.8em;
     color: #fff;
@@ -297,8 +304,7 @@
     font-family: "Montserrat,Helvetica Neue";
   }
   .text_details {
-    max-width: 300px;
-    width: 100%;
+    max-width: 85%;
     font-weight: 450;
     font-size: 1.3em;
     color: #fff;
@@ -335,14 +341,17 @@
     position: relative;
     text-align: left;
     margin-left: 15%;
+    margin-top: 30%;
     font-family: NotoKR, San-Serif;
     z-index: 2;
+    overflow: auto;
   }
 
   .subject {
     text-align: left;
     margin-left: 0px;
-    margin-top: 100px;
+    margin-top: 0%;
+    overflow: auto;
     font-size: 3em;
     font-weight: 1000;
     font-family: "NotoKR,San-Serif";

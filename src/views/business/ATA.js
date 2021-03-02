@@ -11,33 +11,6 @@ import { useWindowScroll } from "react-use";
 import "./ATA.css";
 
 import HorizontalScroll from "react-scroll-horizontal";
-// import "views/aboutus/font.css";
-
-// const textAnimation = keyframes`${fadeInUp}`;
-
-// const ContentInnerDetails = styled.div`
-//   font-weight: 500;
-//   font-size: 23px;
-
-//   color: #fff;
-//   margin-top: 30px;
-//   font-family: Montserrat, Helvetica Neue;
-// `;
-// const Content = styled.div`
-//   position: relative;
-//   text-align: center;
-
-//   font-family: "NotoKR", "San-Serif";
-// `;
-// const ContentInner = styled.div`
-//   position: relative;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   font-weight: ;
-// `;
-
-/*두번째영역 */
 
 const EmptySpace2 = styled.div`
   height: 400px;
@@ -60,55 +33,6 @@ const ContentInner2 = styled.div`
   display: block;
   justify-content: left;
   align-items: center;
-`;
-const ContentInnerDetails2 = styled.div`
-  font-weight: 500;
-  font-size: 20px;
-  font-family: "NotoKR", "San-Serif";
-  color: #fff;
-  margin-top: 20px;
-`;
-
-const ButtonStyle = styled.button`
-  margin-top: 1%;
-  background: transparent;
-  border: solid 1px #fff;
-  width: 130px;
-  height: 40px;
-  text-align: center;
-  color: #fff;
-  padding: 0;
-  position: relative;
-  font-weight: bold;
-  font-size: 15px;
-  &:hover {
-    background: #fff;
-    color: black;
-    border: 1px solid #fff;
-    font-weight: bold;
-  }
-`;
-
-const ButtonToWebsite = styled.button`
-  margin-top: 10%;
-  background: transparent;
-  border: solid 1px #fff;
-  width: 230px;
-  height: 50px;
-  text-align: center;
-  color: #fff;
-  padding: 0;
-  position: absolute;
-  margin-left: -7%;
-  font-size: 17px;
-  font-weight: bold;
-  &:hover {
-    background: #f6dc3f;
-    color: black;
-    font-size: 17px;
-    font-weight: bold;
-    border: 1px solid #f6dc3f;
-  }
 `;
 
 /*세번째영역 */
@@ -210,11 +134,12 @@ function ATA() {
           style={{
             backgroundImage: "url(" + require("assets/img/e-sports3.jpg") + ")",
             opacity: "0.95",
+            overflow: "auto",
           }}
           ref={pageHeader}
         >
           <div className="content_total" ref={(el) => (app = el)}>
-            <div id="emptySpace"></div>
+            {/* <div id="emptySpace"></div> */}
             <div
               className="content2"
               data-aos="fade-up"
@@ -258,87 +183,46 @@ function ATA() {
           className="backgroundImg"
           style={{
             backgroundImage: "url(" + require("assets/img/e-sports4.jpg") + ")",
-
-            height: "1400px",
-            maxWidth: "100%",
+            opacity: "0.95",
+            overflow: "auto",
           }}
           ref={pageHeader}
         >
-          <div
-            className="content_total"
-            ref={(el) => (app = el)}
-            style={{ height: "1400px" }}
-          >
-            <EmptySpace3></EmptySpace3>
-            <Content2
+          <div className="content_total" ref={(el) => (app = el)}>
+            {/* <div id="emptySpace"></div> */}
+            <div
+              className="content2"
               data-aos="fade-up"
               data-aos-duration="700"
               data-aos-easing="ease-in-out"
               data-aos-delay="400"
             >
-              <ContentInner2>
-                {/* <img
-                  alt="..."++
-                  className="n-logo"
-                  src={require("assets/img/ATA.png")}
-                  style={{ width: "100px", height: "100px" }}
-                ></img> */}
-                <h1
-                  style={{
-                    textAlign: "left",
-                    marginLeft: "0px",
-                    fontSize: "70px",
-                    fontWeight: "1000",
-                    fontFamily: "NotoKR,San-Serif",
-                    color: "#fff",
-                  }}
-                  ref={commentSection}
-                >
-                  TEAM
-                </h1>
-                <Underdivier></Underdivier>
+              <b className="subject" ref={commentSection}>
+                Team
+              </b>
+              <div className="underDivider">
                 <img
                   alt="..."
-                  className="n-logo"
                   src={require("assets/img/united.png")}
                   style={{ marginTop: "50px" }}
-                  // style={{ width: "50px", height: "50px" }}
                 ></img>
-              </ContentInner2>
-              <div className="contentInnerDetails2">
-                ⁠ATA operates various e-sports and content businesses, <br />
-                holding an inhouse official e-sports team <br />
-                as ATA LAVEGA popular in PUBG(Player's unknown battleground).
-              </div>
-              <div className="buttonStyle" onClick={gotoThirdSection}>
-                Next
               </div>
 
-              <div
-                className="gotoUp"
-                style={{
-                  bottom: "-130%",
-                  position: "absolute",
-                  textAlign: "50%",
-                  marginLeft: "30%",
-                }}
-                data-aos="fade-up"
-                data-aos-duration="900"
-                data-aos-delay="400"
-                data-aos-easing="ease-in-out"
-              >
-                <a
-                  href="#"
-                  onClick={gotoTop}
-                  stlye={{ scrollBehavior: "smooth" }}
-                >
-                  <img
-                    className="clickimage"
-                    src={require("assets/img/up-arrow3.png")}
-                  ></img>
-                </a>
+              <div className="contentInnerDetails2">
+                We collaborate with a variety of multi-media partners to develop
+                future leading multi-media projects. ⁠Furthermore, we are in the
+                process of producing media networks in the global e-sports
+                league and entertainment production to communicate better with
+                the global community.
               </div>
-            </Content2>
+              <div
+                className="buttonStyle2"
+                onClick={gotoSecondSection}
+                style={{ top: "0" }}
+              >
+                Next
+              </div>
+            </div>
           </div>
         </div>
         {/*하단 갤러리 */}
